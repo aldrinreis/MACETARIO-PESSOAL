@@ -1,0 +1,4 @@
+## ver hora
+```
+date;clock
+```
