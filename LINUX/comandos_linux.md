@@ -1,4 +1,0 @@
-## ver hora
-```
-date;clock
-```
