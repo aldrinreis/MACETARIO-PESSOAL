@@ -1,6 +1,5 @@
 > **Comandos**
-Mostrar kernel: 
-<br>
+Mostrar kernel: <br>
 
 ```echo $0```
 ``````echo $SHELL``````
