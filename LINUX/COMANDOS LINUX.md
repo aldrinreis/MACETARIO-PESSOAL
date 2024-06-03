@@ -1,5 +1,8 @@
 > **Comandos**
-Mostrar kernel: ```echo $0```
+Mostrar kernel: 
+<br>
+
+```echo $0```
 ``````echo $SHELL``````
 ```tail /etc/passwd```
 <br>
