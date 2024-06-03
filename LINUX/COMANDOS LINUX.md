@@ -8,6 +8,6 @@ Mostrar kernel: <br>
 
 
 > **Ubuntu:**
-* Listar pacotes: ```sudo dpkg  -l | grep pacote```
+* Listar pacotes: ```sudo dpkg  -l | grep nome_Pacote```
 
-* Instalar pacote: ```sudo apt-get install vim```
+* Instalar pacote: ```sudo apt-get install nome_Pacote```
