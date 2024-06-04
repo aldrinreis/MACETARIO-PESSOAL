@@ -33,6 +33,7 @@
 - **```touch```** – Muda timestamps
 - **```cat```** - Imprime arquivo na tela
 - **```tac```** - Imprime arquivo na tela debaixo pra cima
+-**```diff```** - Compara arquivos e diretórios **```dif -r```**
 - **```wc``** - Conta linhas palavras e caracteres <br>
 
 Usar um comando como entrada e outro ex: ```tail -n5 aluno.txt|wc -w```
