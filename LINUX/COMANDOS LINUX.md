@@ -25,8 +25,17 @@
 - **```cut```** – Separa um arquivo por campos e imprime apenas partes especificadas
 - **```tr```** – Transforma caracteres
 - **```sed```** – Filtragem e Transformação de Conteúdo
+- **```find```** – Procura arquivos
+- **```ln```** – Cria links entre arquivos
+- **```head```**  **```tail```** – Mostra o começo e fim de um arquivo
+- **```more```** **```less```** – Visualiza arquivos por páginas
+- **```file```** – Indica o tipo de arquivo
+- **```touch```** – Muda timestamps
 - **```cat```** - Imprime arquivo na tela
 - **```tac```** - Imprime arquivo na tela debaixo pra cima
+- **```wc``** - Conta linhas palavras e caracteres <br>
+
+Usar um comando como entrada e outro ex: ```tail -n5 aluno.txt|wc -w```
 <br>
 
 > ##### **Administração S.O :**
@@ -41,17 +50,8 @@
 - **```cp```** – Cópia de arquivos e diretórios
 - **```mv```** – Move ou renomeia arquivos e diretórios
 - **```rm```** – Remove arquivos e diretórios
-- **```find```** – Procura arquivos
-- **```ln```** – Cria links entre arquivos
-- **```cat```** – Exibe o conteúdo de um arquivo
-- **```head```**  **```tail```** – Mostra o começo e fim de um arquivo
-- **```more```** **```less```** – Visualiza arquivos por páginas
-- **```file```** – Indica o tipo de arquivo
-- **```touch```** – Muda timestamps
 - **```sleep``** - Espera
-- **```wc``** - Conta linhas palavras e caracteres <br>
 
-Usar um comando como entrada e outro ex: ```tail -n5 aluno.txt|wc -w```
 
 <br>
 
