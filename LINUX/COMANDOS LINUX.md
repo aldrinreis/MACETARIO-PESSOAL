@@ -20,14 +20,14 @@
 
 - **```sort```** – Ordena um arquivo alfabeticamente
 - **```uniq```** – Elimina linhas repetidas
-- **```grep```** – Procura texto e expressões dentro de um arquivo/diretório/comando - *Aceita Expressões Regulares*
+- **```grep```** – **-r recursirvo** Procura texto e expressões dentro de um arquivo/diretório/comando - *Aceita Expressões Regulares* 
 - **```egrep```** – Aceita expressões regulares simples.
- **```egrep```** – Não aceita expressões regulares.
+- **```egrep```** – Não aceita expressões regulares.
 - **```paste```** – Combina arquivos em um só
 - **```cut```** – Separa um arquivo por campos e imprime apenas partes especificadas
 - **```tr```** – Transforma caracteres
 - **```sed```** – Filtragem e Transformação de Conteúdo
-- **```find```** – Procura arquivos
+- **```find```** – Procura arquivos ```find ./ name alunos* -exec ls -l {} \:```
 - **```ln```** – Cria links entre arquivos
 - **```head```**  **```tail```** – Mostra o começo e fim de um arquivo
 - **```more```** **```less```** – Visualiza arquivos por páginas
@@ -35,8 +35,10 @@
 - **```touch```** – Muda timestamps
 - **```cat```** - Imprime arquivo na tela
 - **```tac```** - Imprime arquivo na tela debaixo pra cima
--**```diff```** - Compara arquivos e diretórios **```dif -r```**
-- **```wc``** - Conta linhas palavras e caracteres <br>
+- **```diff```** - Compara arquivos e diretórios **```dif -r```**
+- **```seq```** - Realiza sequencias
+- **```expr```** - Realiza contas
+- **```wc```** - Conta linhas palavras e caracteres <br>
 
 Usar um comando como entrada e outro ex: ```tail -n5 aluno.txt|wc -w```
 <br>
@@ -66,7 +68,7 @@ Usar um comando como entrada e outro ex: ```tail -n5 aluno.txt|wc -w```
 - **```id```** – Mostra o usuário atual
 - **```man```** – Ajuda sobre algum comando, assunto ou arquivo de configuração
 - **```info```** – Ajuda sobre algum comando, assunto ou arquivo de configuração
-- **```date```** – Mostra a data e hora do sistema
+- **```date```** – Mostra a data e hora do sistema ```date +%H```
 - **```cal```** – Mostra um calendário amigável
 - **```df```** – Mostra informações de espaço em disco
 - **```du```** – Mostra espaço em disco usado por diretórios
