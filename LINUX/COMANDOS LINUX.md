@@ -58,6 +58,10 @@ Usar um comando como entrada e outro ex: ```tail -n5 aluno.txt|wc -w```
 - **```sleep``** - Espera
 - **```whatis``** - Exibe uma descrição breve do comando
 - **```which``** - É utilizado para localizar o caminho completo de um executável 
+<br>
+
+- **Execução de comandos sequenciais ```;``` ou ```&&```** Usando o && caso algum comando falhe o próximo não é executado.
+
 
 <br>
 
