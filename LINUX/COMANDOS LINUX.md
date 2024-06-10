@@ -60,7 +60,7 @@ Usar um comando como entrada e outro ex: ```tail -n5 aluno.txt|wc -w```
 - **```which``** - É utilizado para localizar o caminho completo de um executável 
 <br>
 
-- **Execução de comandos sequenciais ```;``` ou ```&&```** Usando o && caso algum comando falhe o próximo não é executado.
+- **Execução de comandos sequenciais ```;``` ou ```&&``` ou ```||```** Usando o && caso algum comando falhe o próximo não é executado. O || só executa o próximo se o primeiro tiver falhado.
 
 
 <br>
