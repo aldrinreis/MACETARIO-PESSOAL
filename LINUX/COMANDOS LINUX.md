@@ -20,7 +20,9 @@
 
 - **```sort```** – Ordena um arquivo alfabeticamente
 - **```uniq```** – Elimina linhas repetidas
-- **```grep```** – Procura texto e expressões dentro de um arquivo/diretório/comando
+- **```grep```** – Procura texto e expressões dentro de um arquivo/diretório/comando - *Aceita Expressões Regulares*
+- **```egrep```** – Aceita expressões regulares simples.
+ **```egrep```** – Não aceita expressões regulares.
 - **```paste```** – Combina arquivos em um só
 - **```cut```** – Separa um arquivo por campos e imprime apenas partes especificadas
 - **```tr```** – Transforma caracteres
@@ -52,7 +54,8 @@ Usar um comando como entrada e outro ex: ```tail -n5 aluno.txt|wc -w```
 - **```mv```** – Move ou renomeia arquivos e diretórios
 - **```rm```** – Remove arquivos e diretórios
 - **```sleep``** - Espera
-
+- **```whatis``** - Exibe uma descrição breve do comando
+- **```which``** - É utilizado para localizar o caminho completo de um executável 
 
 <br>
 
