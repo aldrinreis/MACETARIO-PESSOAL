@@ -21,3 +21,8 @@
 
 - **Variável Recebendo Comando** **```HORA=`date +%H` ```** - Comando dentro de crases.
 - **Variável Recebendo Comando** **```HORA=$(date +%H) ```**
+
+#### Aspas no shell.
+
+- **```"" ou ''```** - Protegem o comando - **""** protege todos os caracteres exceto *$ ` /* as **''** protegem tudo
+- **```\```** - Protege o próximo caractere
