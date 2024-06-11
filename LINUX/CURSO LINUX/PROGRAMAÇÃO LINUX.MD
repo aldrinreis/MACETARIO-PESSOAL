@@ -9,5 +9,15 @@
 
 - **```ls -l alunos.txttxt 2> /dev/null``** – Joga saida para lugar nenhum. <br>
 
-- **Redirecionamento de entrada** **```tr 'a' 'Z' alunos.txt < alunos.txt``** - Comando para entrada.
+- **Redirecionamento de entrada** **```tr 'a' 'Z' alunos.txt < alunos.txt``** - Comando para entrada.<hr>
 
+#### Variáveis no shell.
+
+- **```env|less```** ou **```set|less```**- Ver variáveis do sistema - O set ver as variaveis locais e exportadas e o env so as exportadas.
+- **```echo $HOME```** - Referenciando variáveis. <br>
+
+- **Declarando variável** **```VARIAVEL1=valor```** - sem espaço. **```echo $VARIAVEL1```**<br>
+- **Exportando variável** **```export VARIAVEL1```** ou **```export VAR1=valor```**- Torna visível para os processos filhos.<br>
+
+- **Variável Recebendo Comando** **```HORA=`date +%H` ```** - Comando dentro de crases.
+- **Variável Recebendo Comando** **```HORA=$(date +%H) ```**
