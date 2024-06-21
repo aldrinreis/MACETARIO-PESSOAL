@@ -65,6 +65,32 @@ Usar um comando como entrada e outro ex: ```tail -n5 aluno.txt|wc -w```
 
 <br>
 
+<br>
+
+> #### **File Globing** e **REGEX**
+
+- **File Globing**
+
+- **```ls -l aula[12]```** arquivos terminados com 1 ou 2 **||** **```ls -l {aula,AULA}```** lista aquivos aula e AULA
+- **```ls -l aula1*```** Pode ou não  ter um caractere após o 1
+- **```ls -l aula1?```** Exige  ter um caractere após o 1 **```ls -l aula1??```** - para dois caracteres.
+<br>
+
+- **REGEX**
+
+- **```egrep "[Ll]inux" texto.txt```** - [Ll]inux=Linux, linux
+- **```egrep "b[aei]g" texto.txt```** - b[aei]g = bag beg big
+- **```egrep "b[a-o]g" texto.txt```** - b[a-o]g = bag beg big bog .....
+- **```egrep "^Linux" texto.txt```** - Primeira palavra da linha seja Linux
+- **```egrep "Linux$" texto.txt```** - Indica o final da linha. O caractere deve estar do lado direito da expressão.
+- **```egrep -v "^$" texto.txt```** - **Não mostra linhas em branco**
+- **```egrep "b[a-i]g*" texto.txt```** - o *g* pode não existir ou existir  varias vezes.
+- **```egrep "b[a-i]g+" texto.txt```** - Uma ou várias ocorrências do caractere anterior.
+- **```egrep "b[a-i]g?" texto.txt```** - Nenhuma ou apenas uma ocorrência do caractere anterior.
+- **```egrep "o.Linux" texto.txt```** - Indica qualquer caractere único
+
+
+
 
 > ##### **Dados S.O/Hardware :**
 
