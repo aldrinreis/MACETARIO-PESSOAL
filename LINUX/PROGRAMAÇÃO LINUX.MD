@@ -26,3 +26,13 @@
 
 - **```"" ou ''```** - Protegem o comando - **""** protege todos os caracteres exceto *$ ` /* as **''** protegem tudo
 - **```\```** - Protege o próximo caractere
+
+
+> #### Scripts
+
+- **Inicio** ```#!/bin/bash```<br>
+
+- **PATH** ```PATH="$PATH:/home/ricardo/Cursos/ShellScript/Scripts"``` || **Para Ver os PATHS** ```echo $PATH```
+- **PATH DEFINITIVO** ```vi ~/.profile```<br>
+
+- **Comentárioss** ```#```
