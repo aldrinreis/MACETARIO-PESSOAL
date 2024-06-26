@@ -53,3 +53,13 @@ No script usar o comando ```exit``` ou ```exit 10```
 - **PATH DEFINITIVO** ```vi ~/.profile```<br>
 
 - **Comentárioss** ```#```
+
+
+#### Recebendo entradas
+
+###### Atraves do read
+
+Pode ser usardo de duas formar ou usando ```read -p``` ou o echo seguido do read.
+Ex: ```read -p "informe seu curso: " CURSO```
+Ex2: ```"O nome completo do aluno é: $(grep "$ALUNO" $ARQALUNOS)"```
+
