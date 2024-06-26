@@ -22,6 +22,23 @@
 - **Variável Recebendo Comando** **```HORA=`date +%H` ```** - Comando dentro de crases.
 - **Variável Recebendo Comando** **```HORA=$(date +%H) ```**
 
+<hr>
+
+- **Variáveis no código**
+**```DATAHORA=$(date +%H:%M)```**<br>
+
+**```echo "Exibir data e hora atual: $DATAHORA"```**
+
+
+#### Exit codes
+
+```echo $?``` - para o último comando.
+
+No script usar o comando ```exit``` ou ```exit 10```
+
+
+
+
 #### Aspas no shell.
 
 - **```"" ou ''```** - Protegem o comando - **""** protege todos os caracteres exceto *$ ` /* as **''** protegem tudo
