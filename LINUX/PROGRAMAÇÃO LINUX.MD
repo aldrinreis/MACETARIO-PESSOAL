@@ -59,7 +59,12 @@ No script usar o comando ```exit``` ou ```exit 10```
 
 ###### Atraves do read
 
-Pode ser usardo de duas formar ou usando ```read -p``` ou o echo seguido do read.
+Pode ser usardo de duas formar ou usando ```read -p``` ou o echo seguido do read.<br>
+
+```echo "informe o curso:" ```
+```read CURSO```
+
 Ex: ```read -p "informe seu curso: " CURSO```
 Ex2: ```"O nome completo do aluno é: $(grep "$ALUNO" $ARQALUNOS)"```
 
+*read -s deixa caracteres ocultos*
