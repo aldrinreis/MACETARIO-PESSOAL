@@ -61,7 +61,7 @@ No script usar o comando ```exit``` ou ```exit 10```
 
 Pode ser usardo de duas formar ou usando ```read -p``` ou o echo seguido do read.<br>
 
-```echo "informe o curso:" ```
+```echo -n "informe o curso:" ```
 ```read CURSO```
 
 Ex: ```read -p "informe seu curso: " CURSO```
