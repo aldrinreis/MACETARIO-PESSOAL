@@ -67,4 +67,29 @@ Pode ser usardo de duas formar ou usando ```read -p``` ou o echo seguido do read
 Ex: ```read -p "informe seu curso: " CURSO```
 Ex2: ```"O nome completo do aluno é: $(grep "$ALUNO" $ARQALUNOS)"```
 
+echo "O nome completo do aluno é: $ALUNOCOMPLETO"
+
 *read -s deixa caracteres ocultos*
+
+
+###### Através de parâmetros.
+
+```./script Parametro 1 ....```
+
+```
+#!/bin/bash
+# $0 - Nome do Programa
+# $# - Quantidade de Parâmetros
+# $* - Todos os parâmetros inseridos
+# $1-9 - Cada um dos parâmetros
+
+echo "O script $0 recebeu $# parâmetros"
+
+echo "Os parâmetros recebidos foram: $*"
+
+echo ""
+echo "Parâmetro \$1 = $1"
+echo "Parâmetro \$2 = $2"
+echo "Parâmetro \$3 = $3"
+echo "Parâmetro \$4 = $4"
+```
