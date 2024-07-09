@@ -34,15 +34,23 @@ echo ""
 echo "==============================================="
 echo""
 
-echo "Scrip de Relaório do Usuário"
+echo "Scrip de Relaório do Usuário: $(id -un)"
+echo ""
 
+echo "UID: $(id -g)"
+echo "Nome ou descrição: $(whoami)"
+echo ""
 
+echo "Total usado no /home/aldrinreis: $(du -sh /home/aldrinreis/ | cut -f1)"
+echo ""
 
+echo "Ultimo Login:"
+echo "$(lastlog | head -n 1)"
+echo "$(lastlog | grep aldrin)"
+echo "==============================================="
 
 echo ""
 echo ""
-
-
 
 echo "Fim do Script"
 

@@ -25,7 +25,7 @@
 - **```egrep```** – Não aceita expressões regulares.
 - **```paste```** – Combina arquivos em um só
 - **```cut```** – Separa um arquivo por campos e imprime apenas partes especificadas
-- **```tr```** – Transforma caracteres
+- **```tr```** – Transforma caracteres  ```tr '[:lower:]' '[:upper:]')```
 - **```sed```** – Filtragem e Transformação de Conteúdo
 - **```find```** – Procura arquivos ```find ./ name alunos* -exec ls -l {} \:```
 - **```ln```** – Cria links entre arquivos
