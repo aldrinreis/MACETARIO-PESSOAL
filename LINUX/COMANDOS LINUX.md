@@ -27,7 +27,7 @@
 - **```cut```** – Separa um arquivo por campos e imprime apenas partes especificadas
 - **```tr```** – Transforma caracteres  ```tr '[:lower:]' '[:upper:]')```
 - **```sed```** – Filtragem e Transformação de Conteúdo
-- **```find```** – Procura arquivos ```find ./ name alunos* -exec ls -l {} \:```
+- **```find```** – Procura arquivos ```find ./ name alunos* -exec ls -l {} \;```
 - **```ln```** – Cria links entre arquivos
 - **```head```**  **```tail```** – Mostra o começo e fim de um arquivo
 - **```more```** **```less```** – Visualiza arquivos por páginas
