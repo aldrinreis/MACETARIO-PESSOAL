@@ -54,7 +54,7 @@ echo "Quantidade de CPUs: $(grep -c ^processor /proc/cpuinfo)"
 echo "Modelo da CPU: $(grep 'model name' /proc/cpuinfo|uniq)"
 
 echo ""
-echo "Memória Total: $(grep 'MemTotal:' /proc/meminfo)"
+echo "Memória Total: $(expr $(cat /proc/meminfo|grep MemTotal|tr -d ' '| cut -d: -f2 | tr -d kB) / 1024) MB"
 echo ""
 
 echo "Partições: "

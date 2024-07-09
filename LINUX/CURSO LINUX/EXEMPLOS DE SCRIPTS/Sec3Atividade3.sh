@@ -47,6 +47,8 @@ echo ""
 echo "Ultimo Login:"
 echo "$(lastlog | head -n 1)"
 echo "$(lastlog | grep aldrin)"
+ 
+
 echo "==============================================="
 
 echo ""
@@ -54,3 +56,6 @@ echo ""
 
 echo "Fim do Script"
 
+grep -i aldrinreis  /etc/passwd > /dev/null 2>&1
+
+exit $?
