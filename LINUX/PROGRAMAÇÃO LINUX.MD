@@ -93,3 +93,77 @@ echo "Parâmetro \$2 = $2"
 echo "Parâmetro \$3 = $3"
 echo "Parâmetro \$4 = $4"
 ```
+
+#### Instruções Condicionais
+
+###### Uso DO IF
+
+```
+if <comando-condição>
+then
+    comando 1
+    comando 2
+    comando 3
+fi
+```
+```
+if <comando-condição>
+then
+    comando 1
+else
+    comando 2
+fi
+```
+```
+if <comando-condição>
+then
+    comando 1
+elif<comando-condição>
+then    
+    comando 2
+else
+    comando 3
+fi
+```
+<br>
+
+Comando test: Utilizado para criar condição
+```test <expressão>```
+
+![alt text](image.png)
+<br>
+
+![alt text](image-1.png)
+<br>
+
+![alt text](image-2.png)
+<br>
+
+![alt text](image-3.png)
+<br>
+
+Comando Teste pode ser usado tambem entre colchetes:<br>
+![alt text](image-4.png)
+<br>
+
+**EXEMPLOS**
+![alt text](image-5.png)
+<br>
+
+![alt text](image-6.png)
+<br>
+
+![Negação](image-7.png)
+<br>
+
+![And](image-8.png)
+<br>
+
+![OR](image-9.png)
+
+
+
+
+
+
+
