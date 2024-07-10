@@ -151,6 +151,8 @@ Comando Teste pode ser usado tambem entre colchetes:
 <br>
 
 **EXEMPLOS**
+<br>
+
 ![alt text](image-5.png)
 <br>
 
