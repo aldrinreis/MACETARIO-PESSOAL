@@ -10,6 +10,9 @@
 - [Instruções Condicionais](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/LINUX/PROGRAMA%C3%87%C3%83O%20LINUX.MD#instru%C3%A7%C3%B5es-condicionais)
 - [Uso do Case](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/LINUX/PROGRAMA%C3%87%C3%83O%20LINUX.MD#uso-do-case)
 
+<hr>
+<br><br>
+
 > #### Redirecionamentos de Entrada e Saída.
 
 - **```cat alunos.txt > alunos-temp.txt``** – Redireciona a saida para um novo arquivo.
@@ -21,7 +24,8 @@
 
 - **```ls -l alunos.txttxt 2> /dev/null``** – Joga saida para lugar nenhum. <br>
 
-- **Redirecionamento de entrada** **```tr 'a' 'Z' alunos.txt < alunos.txt``** - Comando para entrada.<hr>
+- **Redirecionamento de entrada** **```tr 'a' 'Z' alunos.txt < alunos.txt``** - Comando para entrada.
+<hr>
 
 > #### Variáveis no shell.
 
@@ -41,6 +45,7 @@
 
 **```echo "Exibir data e hora atual: $DATAHORA"```**
 
+<hr>
 
 > #### Exit codes
 
@@ -49,13 +54,14 @@
 No script usar o comando ```exit``` ou ```exit 10```
 
 
-
+<hr>
 
 > #### Aspas no shell.
 
 - **```"" ou ''```** - Protegem o comando - **""** protege todos os caracteres exceto *$ ` /* as **''** protegem tudo
 - **```\```** - Protege o próximo caractere
 
+<hr>
 
 > #### Scripts
 
@@ -66,6 +72,7 @@ No script usar o comando ```exit``` ou ```exit 10```
 
 - **Comentárioss** ```#```
 
+<hr>
 
 > #### Recebendo entradas
 
@@ -105,6 +112,7 @@ echo "Parâmetro \$2 = $2"
 echo "Parâmetro \$3 = $3"
 echo "Parâmetro \$4 = $4"
 ```
+<hr>
 
 #### Instruções Condicionais
 
@@ -193,6 +201,7 @@ else
 	echo "O usuário não existe"
 fi
 ````
+<hr>
 
 > ###### Uso do Case
 <br>
