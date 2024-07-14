@@ -1,30 +1,27 @@
 #!/bin/bash
 
-###################################################################################
-#                                                                                 #
-# ExemploIf.sh - Atividade 1 da Seção 3                                           #
-#                                                                                 #
-# Autor: Aldrin Reis (aldrinreisdemorais@gmail.com)                               #
-# Data Criação: 08/07/2024                                                        #
-#                                                                                 #
-# Descrição: Soma de valores da entrada do User.                                  #
-#                                                                                 #
-# Exemplo de uso: ./Sec3Atividade1.sh                                             #
-#                                                                                 #
-# Enunciado:                                                                      #
-# Crie um script que gere um relatório de algumas informações da máquina atual:   #
-# • Nome da Máquina                                                               #
-# • Data e Hora Atual                                                             # 
-# • Desde quando a máquina está ativa                                             #
-# • Versão do Kernel                                                              #
-# • Quantidade de CPUs/Cores                                                      #
-# • Modelo da CPU                                                                 #
-# • Total de Memória RAM Disponível                                               #
-# • Partições                                                                     #
-#                                                                                 #   
-#                                                                                 #
-#                                                                                 #
-###################################################################################
+#############################
+#                                                                                
+# ExemploIf.sh - Atividade 1 da Seção 3    
+#                                                                                
+# Autor: Aldrin Reis (aldrinreisdemorais@gmail.com)             
+# Data Criação: 08/07/2024
+#                                                                               
+# Descrição: Soma de valores da entrada do User.  
+#                                                                                
+# Exemplo de uso: ./Sec3Atividade1.sh
+#                                                                               
+# Enunciado:#
+# Crie um script que gere um relatório de algumas informações da máquina atual: 
+# • Nome da Máquina 
+# • Data e Hora Atual
+# • Versão do Kernel 
+# • Quantidade de CPUs/Cores 
+# • Modelo da CPU 
+# • Total de Memória RAM Disponível 
+# • Partições
+#                                                                               
+#####################################
 
 clear
 
