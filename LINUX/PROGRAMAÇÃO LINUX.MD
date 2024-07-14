@@ -1,4 +1,16 @@
-#### Redirecionamentos de Entrada e Saída.
+# **Macetário Shell Script**
+
+- [Redirecionamentos de Entrada e Saída](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/LINUX/PROGRAMA%C3%87%C3%83O%20LINUX.MD#redirecionamentos-de-entrada-e-sa%C3%ADda)
+
+- [Variáveis no shell](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/LINUX/PROGRAMA%C3%87%C3%83O%20LINUX.MD#vari%C3%A1veis-no-shell)
+- [Exit codes](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/LINUX/PROGRAMA%C3%87%C3%83O%20LINUX.MD#exit-codes)
+- [Aspas no shell](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/LINUX/PROGRAMA%C3%87%C3%83O%20LINUX.MD#aspas-no-shell)
+- [Scripts](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/LINUX/PROGRAMA%C3%87%C3%83O%20LINUX.MD#scripts)
+- [Recebendo entradas](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/LINUX/PROGRAMA%C3%87%C3%83O%20LINUX.MD#recebendo-entradas)
+- [Instruções Condicionais](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/LINUX/PROGRAMA%C3%87%C3%83O%20LINUX.MD#instru%C3%A7%C3%B5es-condicionais)
+- [Uso do Case](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/LINUX/PROGRAMA%C3%87%C3%83O%20LINUX.MD#uso-do-case)
+
+> #### Redirecionamentos de Entrada e Saída.
 
 - **```cat alunos.txt > alunos-temp.txt``** – Redireciona a saida para um novo arquivo.
 - **```cat alunos.txt >> alunos-temp.txt``** – Concatena a saida no final do arquivo.<br>
@@ -11,7 +23,7 @@
 
 - **Redirecionamento de entrada** **```tr 'a' 'Z' alunos.txt < alunos.txt``** - Comando para entrada.<hr>
 
-#### Variáveis no shell.
+> #### Variáveis no shell.
 
 - **```env|less```** ou **```set|less```**- Ver variáveis do sistema - O set ver as variaveis locais e exportadas e o env so as exportadas.
 - **```echo $HOME```** - Referenciando variáveis. <br>
@@ -30,7 +42,7 @@
 **```echo "Exibir data e hora atual: $DATAHORA"```**
 
 
-#### Exit codes
+> #### Exit codes
 
 ```echo $?``` - para o último comando.
 
@@ -39,7 +51,7 @@ No script usar o comando ```exit``` ou ```exit 10```
 
 
 
-#### Aspas no shell.
+> #### Aspas no shell.
 
 - **```"" ou ''```** - Protegem o comando - **""** protege todos os caracteres exceto *$ ` /* as **''** protegem tudo
 - **```\```** - Protege o próximo caractere
@@ -55,7 +67,7 @@ No script usar o comando ```exit``` ou ```exit 10```
 - **Comentárioss** ```#```
 
 
-#### Recebendo entradas
+> #### Recebendo entradas
 
 ###### Atraves do read
 
@@ -96,7 +108,7 @@ echo "Parâmetro \$4 = $4"
 
 #### Instruções Condicionais
 
-###### Uso DO IF
+> ###### Uso DO IF
 
 ```
 if <comando-condição>
@@ -182,7 +194,7 @@ else
 fi
 ````
 
-###### Uso do Case
+> ###### Uso do Case
 <br>
 
 ![alt text](image-10.png)
