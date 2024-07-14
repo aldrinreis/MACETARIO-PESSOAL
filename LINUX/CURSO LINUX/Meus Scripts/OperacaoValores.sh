@@ -42,6 +42,9 @@
 #
 ################################################################################
 
+## VALE LEMBRA QUE ESSA SCRIPT É A NIVEL DIDATICO
+# REPOSTA DE EXERCÍCIO DE CURSO
+# NÃO TEM TRATAMENTO DAS ENTRADAS
 
 clear
 
