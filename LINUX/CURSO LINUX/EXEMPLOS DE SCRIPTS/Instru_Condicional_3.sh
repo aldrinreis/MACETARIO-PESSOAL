@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ################################################################################
-# OperacoesValores.sh - Atividade 2 da Seção 4
+# OperacoesValores.sh - Atividade 3 da Seção 4
 #
 # Autor: Aldrin Reis (aldrinreisdemorais@gmail.com)
 # Data Criação: 14/07/2024
@@ -46,51 +46,65 @@
 clear
 
 
-
-
 echo "BEM VINDO!!!!!"
 echo ""
 #cho "$HORAATUAL"
+echo "Mini Calculadora"
 
-DIRDESTINO="$HOME/Backup"
+echo -n "Informe o primeiro valor: "
+read VALOR1
+echo ""
 
-if [ ! -d "$DIRDESTINO" ]; then
-	echo "Criando diretório de destino..."
-	mkdir -p $DIRDESTINO
-fi
+echo -n "Informe o segundo Valor: "
+read VALOR2
+echo ""
+# Menu da Calculadora
 
+echo "Escolha uma Operação:"
+echo "1 = ADIÇÃO"
+echo "2 = SUBTRAÇÃO" 
+echo "3 = MULTIPLICAÇÃO" 
+echo "4 = DIVISÃO" 
+echo "Q = SAIR" 
+echo ""
+echo -n "Opção: "
+read OPCAO
 
-DAYS7=$(find $DIRDESTINO -ctime -7 -name backup_home\*tgz)
+echo ""
 
-if [ "$DAYS7" ]; then
-	echo "Já foi gerado um backup do diretório $HOME nos últimos 7 dias."
-	echo -n "Deseja continuar? (N/S): "
-	read -n1 CONT
-	echo
+# Rotinas das Opções
 
-	if [ "$CONT" = N -o "$CONT" = n -o "$CONT" = "" ]; then
-	       echo "Backup Abortado"
-       	       exit 1
-	elif [ "$CONT" = S -o "$CONT" = s ]; then
- 		echo "Será criado um Backup para essa semana."
-	else
+case "$OPCAO" in
+	1)
+		SOMA=$(expr $VALOR1 + $VALOR2)
+		echo "Adição"
+		echo "A Soma de $VALOR + $VALOR2 é: $SOMA"
+		;;
+	2)
+		SUBTRACAO=$(expr $VALOR1 - $VALOR2)
+		echo "Subtração"
+		echo "A subtração de $VALOR - $VALOR2 é: $SUBTRACAO"
+		;;
+	3)
+		MULTIPLICACAO=$(expr $VALOR1 * $VALOR2)
+		echo "Multiplicação"
+		echo "A multiplicação de $VALOR * $VALOR2 é: $MULTIPLICACAO"
+		;;
+	4)
+		DIVISAO=$(expr $VALOR1 / $VALOR2)
+		RESTO=$(expr $VALOR1 % $VALOR2)
+		echo "Divisão"
+		echo "A divisão de $VALOR / $VALOR2 é: $DIVISAO"
+		echo "O resto da divisão é: $RESTO"
+		;;
+	q)
+		echo "Saindo..."
+		exit 0
+		;;
+	*)
 		echo "Opção Inválida"
 		exit 2
-	fi
-fi	
+		;;
+esac
 
-echo "Criando o backup"
-
-ARQ="backup_home_$(date +%Y%m%d%H%M).tgz"
-
-tar zcvpf $DIRDESTINO/$ARQ --exclude="$DIRDESTINO" "$HOME"/* > /dev/null 2>&1
-
-
-echo "Criando Backup..."
-echo "O Backup de Nome \""$ARQ"\" foi criado em $DIRDESTINO"
 echo ""
-echo "Backup Concluido"
-echo
-
-echo "Fim do Script"
-
