@@ -143,6 +143,8 @@ Comando test: Utilizado para criar condição
 <br>
 
 Comando Teste pode ser usado tambem entre colchetes:
+
+**Lembrar que é necessário colocar espaço enter os colchetes e as condições. Exemplo:** **```if [ "$HORA" -ge 6 -a "$HORA" -le 12 ]; then```**
 <br>
 <br>
 
