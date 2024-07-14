@@ -13,7 +13,7 @@
 <hr>
 <br><br>
 
-> #### Redirecionamentos de Entrada e Saída.
+> ### Redirecionamentos de Entrada e Saída.
 
 - **```cat alunos.txt > alunos-temp.txt``** – Redireciona a saida para um novo arquivo.
 - **```cat alunos.txt >> alunos-temp.txt``** – Concatena a saida no final do arquivo.<br>
@@ -27,7 +27,7 @@
 - **Redirecionamento de entrada** **```tr 'a' 'Z' alunos.txt < alunos.txt``** - Comando para entrada.
 <hr>
 
-> #### Variáveis no shell.
+> ### Variáveis no shell.
 
 - **```env|less```** ou **```set|less```**- Ver variáveis do sistema - O set ver as variaveis locais e exportadas e o env so as exportadas.
 - **```echo $HOME```** - Referenciando variáveis. <br>
@@ -47,7 +47,7 @@
 
 <hr>
 
-> #### Exit codes
+> ### Exit codes
 
 ```echo $?``` - para o último comando.
 
@@ -56,14 +56,14 @@ No script usar o comando ```exit``` ou ```exit 10```
 
 <hr>
 
-> #### Aspas no shell.
+> ### Aspas no shell.
 
 - **```"" ou ''```** - Protegem o comando - **""** protege todos os caracteres exceto *$ ` /* as **''** protegem tudo
 - **```\```** - Protege o próximo caractere
 
 <hr>
 
-> #### Scripts
+> ### Scripts
 
 - **Inicio** ```#!/bin/bash```<br>
 
@@ -74,9 +74,9 @@ No script usar o comando ```exit``` ou ```exit 10```
 
 <hr>
 
-> #### Recebendo entradas
+> ### Recebendo entradas
 
-###### Atraves do read
+#### Atraves do read
 
 Pode ser usardo de duas formar ou usando ```read -p``` ou o echo seguido do read.<br>
 
@@ -91,7 +91,7 @@ echo "O nome completo do aluno é: $ALUNOCOMPLETO"
 *read -s deixa caracteres ocultos*
 
 
-###### Através de parâmetros.
+#### Através de parâmetros.
 
 ```./script Parametro 1 ....```
 
@@ -114,9 +114,9 @@ echo "Parâmetro \$4 = $4"
 ```
 <hr>
 
-#### Instruções Condicionais
+### Instruções Condicionais
 
-> ###### Uso DO IF
+> #### Uso DO IF
 
 ```
 if <comando-condição>
@@ -203,7 +203,7 @@ fi
 ````
 <hr>
 
-> ###### Uso do Case
+> #### Uso do Case
 <br>
 
 ![CASE](/LINUX/CURSO%20LINUX/imagens/casedefinicao.png)
