@@ -1,47 +1,47 @@
 #!/bin/bash
 
-###################################################################################
-#                                                                                 #
-# Condicionais - Atividade 3 da Seção 4                                           #
-#                                                                                 #
-# Autor: Aldrin Reis (aldrinreisdemorais@gmail.com)                               #
-# Data Criação: 14/07/2024                                                        #
-#                                                                                 #
-# Descrição:                                                                      #
-#                                                                                 #
-# Crie um script que receba do usuário 2 valores e em seguida exiba um menu       #
-# para que ele escolha uma das 4 principais operações aritméticas (soma,          #
-# subtração, multiplicação e divisão). Após isso, a operação e o resultado são    #
-# exibidos ao usuário.                                                            #
-#                                                                                 #
-# Considere que:                                                                  #
-# • O script deve validar e abortar a execução caso algum dos valores não         #
-#   seja informado                                                                #
-# • No caso de multiplicação, o script deve exibir uma mensagem de erro           #
-#   caso um dos valores seja 0, e então abortar                                   #
-# • No caso de divisão, o script deve exibir uma mensagem de erro caso um         #
-#   dos valores seja 0, e então abortar                                           #
-# • Também no caso de divisão, o script deve exibir se é uma divisão exata        #
-#   ou com resto.                                                                 #
-#                                                                                 #
-# Exemplo de Execução:                                                            #
-# $ ./OperacoesValores.sh                                                         #
-# Informe o Valor 1: 50                                                           #
-# Informe o Valor 2: 20                                                           #
-# Escolha uma Operação:                                                           #
-# 1 = Soma                                                                        #
-# 2 = Subtração                                                                   #
-# 3 = Multiplicação                                                               #
-# 4 = Divisão                                                                     #
-# Q = Sair                                                                        #
-# Opção: 4                                                                        #
-# Divisão com Resto = 10                                                          #
-# 50 / 20 = 2                                                                     #
-#                                                                                 #
-# Dicas:                                                                          #
-# • O comando expr possui a opção % para obter o resto de uma divisão             #
-#                                                                                 #
-###################################################################################
+################################################################################
+# OperacoesValores.sh - Atividade 2 da Seção 4
+#
+# Autor: Aldrin Reis (aldrinreisdemorais@gmail.com)
+# Data Criação: 14/07/2024
+#
+# Descrição:
+#
+# Crie um script que receba do usuário 2 valores e em seguida exiba um menu
+# para que ele escolha uma das 4 principais operações aritmétricas (soma,
+# subtração, multiplicação e divisão). Após isso, a operação e o resultado são
+# exibidos ao usuário.
+#
+# Considere que:
+# • O script deve validar e abortar a execução caso algum dos valores não
+#   seja informado
+# • No caso de multiplicação, o script deve exibir uma mensagem de erro
+#   caso um dos valores seja 0, e então abortar
+# • No caso de divisão, o script deve exibir uma mensagem de erro caso um
+#   dos valores seja 0, e então abortar
+# • Também no caso de divisão, o script deve exibir se é uma divisão exata
+#   ou com resto.
+#
+# Exemplo de Execução:
+# $ ./OperacoesValores.sh
+# Informe o Valor 1: 50
+# Informe o Valor 2: 20
+# Escolha uma Operação:
+# 1 = Soma
+# 2 = Subtração
+# 3 = Multiplicação
+# 4 = Divisão
+# Q = Sair
+# Opção: 4
+# Divisão com Resto = 10
+# 50 / 20 = 2
+#
+# Dicas:
+# • O comando expr possui a opção % para obter o resto de uma divisão
+#
+################################################################################
+
 
 clear
 
