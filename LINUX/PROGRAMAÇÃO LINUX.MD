@@ -150,16 +150,16 @@ fi
 Comando test: Utilizado para criar condição
 ```test <expressão>```
 
-![alt text](image.png)
+![Testes Numéricos](/LINUX/CURSO%20LINUX/imagens/testevaloresnumericos.png)
 <br>
 
-![alt text](image-1.png)
+![Testes Strings](/LINUX/CURSO%20LINUX/imagens/testandostrings.png)
 <br>
 
-![alt text](image-2.png)
+![Teste de Arquivos](/LINUX/CURSO%20LINUX/imagens/testandoarquivos.png)
 <br>
 
-![alt text](image-3.png)
+![Exemplo do TESTE 1](/LINUX/CURSO%20LINUX/imagens/exemplodetestes1.png)
 <br>
 
 Comando Teste pode ser usado tambem entre colchetes:
@@ -168,26 +168,26 @@ Comando Teste pode ser usado tambem entre colchetes:
 <br>
 <br>
 
-![alt text](image-4.png)
+![Exemplo do TESTE 2](/LINUX/CURSO%20LINUX/imagens/exemplodetestes2.png)
 <br>
 <br>
 
 **EXEMPLOS**
 <br>
 
-![alt text](image-5.png)
+![Exemplo IF 1](/LINUX/CURSO%20LINUX/imagens/exemploif1.png)
 <br>
 
-![alt text](image-6.png)
+![Exemplo IF 2](/LINUX/CURSO%20LINUX/imagens/exemplodetestes2.png)
 <br>
 
-![Negação](image-7.png)
+![Negação](/LINUX/CURSO%20LINUX/imagens/exemplonegacao.png)
 <br>
 
-![And](image-8.png)
+![And](/LINUX/CURSO%20LINUX/imagens/exemploand.png)
 <br>
 
-![OR](image-9.png)
+![OR](/LINUX/CURSO%20LINUX/imagens/exemploou.png)
 <br>
 
 ````
@@ -206,13 +206,13 @@ fi
 > ###### Uso do Case
 <br>
 
-![alt text](image-10.png)
+![CASE](/LINUX/CURSO%20LINUX/imagens/casedefinicao.png)
 <br>
 
-![alt text](image-11.png)
+![CASE2](/LINUX/CURSO%20LINUX/imagens/casedefinicao2.png)
 <br>
 
-![alt text](image-12.png)
+![CASE REGEX](/LINUX/CURSO%20LINUX/imagens/caseregex.png)
 <br>
 
 ````
