@@ -203,7 +203,7 @@ fi
 ````
 <hr>
 
-> #### Uso do Case
+> #### **Uso do Case**
 <br>
 
 ![CASE](/LINUX/CURSO%20LINUX/imagens/casedefinicao.png)
