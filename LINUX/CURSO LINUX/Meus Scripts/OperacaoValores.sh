@@ -44,7 +44,7 @@
 
 ## VALE LEMBRA QUE ESSA SCRIPT É A NIVEL DIDATICO
 # REPOSTA DE EXERCÍCIO DE CURSO
-# NÃO TEM TRATAMENTO DAS ENTRADAS
+# NÃO TEM TRATAMENTO DE TODAS AS ENTRADAS
 
 clear
 
@@ -61,6 +61,15 @@ echo ""
 echo -n "Informe o segundo Valor: "
 read VALOR2
 echo ""
+
+if [ ! $VALOR1 ] || [ ! $VALOR2 ]       # Também poderia ser usado o -z
+then
+	echo "Nenhum dos valores pode ser nulo"
+	exit 1
+fi
+
+
+
 # Menu da Calculadora
 
 echo "Escolha uma Operação:"
@@ -89,18 +98,38 @@ case "$OPCAO" in
 		echo "A subtração de $VALOR - $VALOR2 é: $SUBTRACAO"
 		;;
 	3)
+		if [ $VALOR1 -eq 0 -o $VALOR2 -eq 0 ] 
+		then
+			echo "Um valor 0 não pode ser utilizado em um multiplicação"
+			exit 1
+		fi
+		
 		MULTIPLICACAO=$(expr $VALOR1 * $VALOR2)
 		echo "Multiplicação"
 		echo "A multiplicação de $VALOR * $VALOR2 é: $MULTIPLICACAO"
 		;;
 	4)
-		DIVISAO=$(expr $VALOR1 / $VALOR2)
-		RESTO=$(expr $VALOR1 % $VALOR2)
+		if [ $VALOR1 -eq 0 -o $VALOR2 -eq 0 ] 
+		then
+			echo "Um valor 0 não pode ser utilizado em uma divisão"
+			exit 1
+		fi
+
 		echo "Divisão"
+
+		if [ $(expr $VALOR1 % $VALOR2) -ne 0 ]
+		then
+			echo "Divisão com Resto = $(expr $VALOR1 % $VALOR2)"
+		else
+			echo "Divisão Exata"
+		fi
+		DIVISAO=$(expr $VALOR1 / $VALOR2)
+		
+		
 		echo "A divisão de $VALOR / $VALOR2 é: $DIVISAO"
-		echo "O resto da divisão é: $RESTO"
+		
 		;;
-	q)
+	[Qq])
 		echo "Saindo..."
 		exit 0
 		;;

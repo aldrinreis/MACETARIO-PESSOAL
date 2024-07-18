@@ -25,6 +25,7 @@
 clear
 
 HORA=$(date +%H)
+
 MINUTO=$(date +%M)
 
 TURNO=$(date +%p)
@@ -34,10 +35,10 @@ echo ""
 
 #cho "$HORAATUAL"
 
-if [ "$HORA" -ge 6 -a "$HORA" -le 12 ];
+if [ "$HORA" -ge 6 -a "$HORA" -lt 12 ];
 then
 	echo "Bom Dia!"
-elif [ "$HORA" -gt 12 -a "$HORA" -le 18 ];
+elif [ "$HORA" -gt 12 -a "$HORA" -lt 18 ];
 then
 	echo "Boa Tarde!"
 else

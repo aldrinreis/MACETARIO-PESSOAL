@@ -74,7 +74,7 @@ echo "Criando o backup"
 
 ARQ="backup_home_$(date +%Y%m%d%H%M).tgz"
 
-tar zcvpf $DIRDESTINO/$ARQ --exclude="$DIRDESTINO" "$HOME"/* > /dev/null 2>&1
+tar zcvpf $DIRDESTINO/$ARQ --absolute-names --exclude="$DIRDESTINO" "$HOME"/* > /dev/null 2>&1
 
 
 echo "Criando Backup..."
