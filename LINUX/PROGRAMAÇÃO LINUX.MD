@@ -96,7 +96,7 @@ echo "O nome completo do aluno é: $ALUNOCOMPLETO"
 
 ```./script Parametro 1 ....```
 
-```
+```bash
 #!/bin/bash
 # $0 - Nome do Programa
 # $# - Quantidade de Parâmetros
