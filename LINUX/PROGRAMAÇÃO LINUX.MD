@@ -119,7 +119,7 @@ echo "Parâmetro \$4 = $4"
 
 > #### **Uso DO IF**
 
-```
+```bash
 if <comando-condição>
 then
     comando 1
@@ -127,7 +127,7 @@ then
     comando 3
 fi
 ```
-```
+```bash
 if <comando-condição>
 then
     comando 1
@@ -135,7 +135,7 @@ else
     comando 2
 fi
 ```
-```
+```bash
 if <comando-condição>
 then
     comando 1
@@ -216,7 +216,7 @@ fi
 ![CASE REGEX](/LINUX/CURSO%20LINUX/imagens/caseregex.png)
 <br>
 
-````
+````bash
 #!/bin/bash
 
 case "$1" in
@@ -237,7 +237,7 @@ esac
 
 **Exemplo de Menu com Case**
 
-````
+````bash
 #!/bin/bash
 
 # Exibição do Menu
