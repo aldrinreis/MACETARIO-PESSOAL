@@ -191,7 +191,7 @@ Comando Teste pode ser usado tambem entre colchetes:
 ![OR](/LINUX/CURSO%20LINUX/imagens/exemploou.png)
 <br>
 
-````
+````bash
 #!/bin/bash
 USUARIO=$(grep "$1" /etc/passwd)
 
