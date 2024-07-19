@@ -281,3 +281,47 @@ esac
 ````
 
 
+> ### **Instruçõs de LOOP - Repetição**
+
+> #### **Uso do FOR**
+
+![alt text](image.png)
+
+<br>
+
+```bash
+	for numero in 1 2 3 4 5
+	do
+		echo "O Número atual é: $numero"
+	done
+```
+<br>
+
+![alt text](image-1.png)
+
+<br>
+
+![](/LINUX/image-2.png)
+<br>
+
+![alt text](image-3.png)
+<br>
+
+![alt text](image-4.png)
+<br>
+
+![alt text](image-5.png)
+<br>
+
+![alt text](image-6.png)
+<br>
+
+![alt text](image-7.png)
+<br>
+
+```bash
+	for ((i=5 ;  i <= 20; i++))
+	do
+		echo "O numero é $i"
+	done
+```
