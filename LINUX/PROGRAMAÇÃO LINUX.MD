@@ -30,6 +30,10 @@
 
 - **Redirecionamento de entrada** **```tr 'a' 'Z' alunos.txt < alunos.txt``** - Comando para entrada.
 <hr>
+<br>
+<br>
+<br>
+<br>
 
 > ### **Variáveis no shell.**
 
@@ -50,6 +54,10 @@
 **```echo "Exibir data e hora atual: $DATAHORA"```**
 
 <hr>
+<br>
+<br>
+<br>
+<br>
 
 > ### **Exit codes**
 
@@ -59,6 +67,10 @@ No script usar o comando ```exit``` ou ```exit 10```
 
 
 <hr>
+<br>
+<br>
+<br>
+<br>
 
 > ### **Aspas no shell.**
 
@@ -77,6 +89,10 @@ No script usar o comando ```exit``` ou ```exit 10```
 - **Comentárioss** ```#```
 
 <hr>
+<br>
+<br>
+<br>
+<br>
 
 > ### **Recebendo entradas**
 
@@ -117,6 +133,10 @@ echo "Parâmetro \$3 = $3"
 echo "Parâmetro \$4 = $4"
 ```
 <hr>
+<br>
+<br>
+<br>
+<br>
 
 > ### **Instruções Condicionais**
 
@@ -206,6 +226,11 @@ else
 fi
 ````
 <hr>
+<br>
+<br>
+<br>
+<br>
+
 
 > #### **Uso do Case**
 <br>
@@ -236,6 +261,9 @@ case "$1" in
 		echo "O parâmetro é um caracter especial"
 esac
 ````
+<br>
+<br>
+<br>
 <br>
 
 **Exemplo de Menu com Case**
@@ -349,6 +377,10 @@ esac
 	**```set | grep IFS```**
 
 ![IFS separator](/LINUX/CURSO%20LINUX/imagens/IFSeparator.png)
+
+<br>
+<br>
+<br>
 <br>
 
 > #### **Uso do WHILE**
