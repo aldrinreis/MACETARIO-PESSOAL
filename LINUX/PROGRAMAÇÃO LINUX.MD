@@ -9,7 +9,10 @@
 - [Recebendo entradas](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/LINUX/PROGRAMA%C3%87%C3%83O%20LINUX.MD#recebendo-entradas)
 - [Instruções Condicionais](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/LINUX/PROGRAMA%C3%87%C3%83O%20LINUX.MD#instru%C3%A7%C3%B5es-condicionais)
 - [Uso do Case](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/LINUX/PROGRAMA%C3%87%C3%83O%20LINUX.MD#uso-do-case)
-- [Instruções de Repetição - FOR](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/LINUX/PROGRAMA%C3%87%C3%83O%20LINUX.MD#instru%C3%A7%C3%B5es-condicionais)
+- [Instruções de Repetição - FOR](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/LINUX/PROGRAMA%C3%87%C3%83O%20LINUX.MD#uso-do-for)
+- [Instruções de Repetição - WHILE](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/LINUX/PROGRAMA%C3%87%C3%83O%20LINUX.MD#uso-do-while)
+- [Instruções de Repetição - UNTIL](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/LINUX/PROGRAMA%C3%87%C3%83O%20LINUX.MD#uso-do-until)
+- [Instruções de Repetição - BREAK e CONTINUE](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/LINUX/PROGRAMA%C3%87%C3%83O%20LINUX.MD#uso-do-continue-e-break)
 
 <hr>
 <br><br>
