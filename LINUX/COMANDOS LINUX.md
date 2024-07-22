@@ -55,9 +55,9 @@ Usar um comando como entrada e outro ex: ```tail -n5 aluno.txt|wc -w```
 - **```cp```** – Cópia de arquivos e diretórios
 - **```mv```** – Move ou renomeia arquivos e diretórios
 - **```rm```** – Remove arquivos e diretórios
-- **```sleep``** - Espera
-- **```whatis``** - Exibe uma descrição breve do comando
-- **```which``** - É utilizado para localizar o caminho completo de um executável 
+- **```sleep```** - Espera
+- **```whatis```** - Exibe uma descrição breve do comando
+- **```which```** - É utilizado para localizar o caminho completo de um executável 
 <br>
 
 - **Execução de comandos sequenciais ```;``` ou ```&&``` ou ```||```** Usando o && caso algum comando falhe o próximo não é executado. O || só executa o próximo se o primeiro tiver falhado.
