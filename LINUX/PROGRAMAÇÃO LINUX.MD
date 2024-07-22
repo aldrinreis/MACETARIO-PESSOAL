@@ -286,7 +286,7 @@ esac
 
 > #### **Uso do FOR**
 
-![alt text](image.png)
+![FOR Definicao](/LINUX/CURSO%20LINUX/imagens/fordefinicao.png)
 
 <br>
 
@@ -298,26 +298,26 @@ esac
 ```
 <br>
 
-![alt text](image-1.png)
+![FOR Definicao 1](/LINUX/CURSO%20LINUX/imagens/fordefinicao1.png)
 
 <br>
 
-![](/LINUX/image-2.png)
+![FOR Definicao 2](/LINUX/CURSO%20LINUX/imagens/fordefinicao2.png)
 <br>
 
-![alt text](image-3.png)
+![FOR Definicao 3](/LINUX/CURSO%20LINUX/imagens/fordefinicao3.png)
 <br>
 
-![alt text](image-4.png)
+![FOR Definicao 4](/LINUX/CURSO%20LINUX/imagens/fordefinicao4.png)
 <br>
 
-![alt text](image-5.png)
+![FOR Definicao 5](/LINUX/CURSO%20LINUX/imagens/fordefinicao5.png)
 <br>
 
-![alt text](image-6.png)
+![FOR Definicao 6](/LINUX/CURSO%20LINUX/imagens/fordefinicao6.png)
 <br>
 
-![alt text](image-7.png)
+![FOR Definicao 7](/LINUX/CURSO%20LINUX/imagens/fordefinicao7.png)
 <br>
 
 ```bash
@@ -326,3 +326,26 @@ esac
 		echo "O numero é $i"
 	done
 ```
+<br>
+
+```bash
+	for variavel in 1 2 3 4 5;do echo "O valor atual é $variavel"; done
+```
+<br>
+
+![For COM IF](/LINUX/CURSO%20LINUX/imagens/forcomif.png)
+<br>
+
+- **IFS - Separador interno**
+	Espaço, tab e quebra de linha são IFS (Internal Field Separator)
+
+	**```set | grep IFS```**
+
+![IFS separator](/LINUX/CURSO%20LINUX/imagens/IFSeparator.png)
+<br>
+
+> #### **Uso do WHILE**
+
+> #### **Uso do UNTIL**
+
+> #### **Uso do CONTINUE E BREAK**
