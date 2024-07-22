@@ -384,6 +384,41 @@ esac
 <br>
 
 > #### **Uso do WHILE**
+<br>
+
+- **Condições de [Teste usados no IF](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/LINUX/PROGRAMA%C3%87%C3%83O%20LINUX.MD#uso-do-if) podem ser usados no while.**
+
+![alt text](image.png)
+<br>
+
+![alt text](image-1.png)
+<br>
+
+![alt text](image-2.png)
+<br>
+
+![alt text](image-3.png)
+<br>
+
+```bash
+#!/bin/bash
+
+clear
+
+read -p "Informe o limite de processos: " MAXIMO
+
+while [ $(ps axu| wc -l) -le $MAXIMO ]
+do
+        echo "Tudo OK"
+        echo "Processos Atuais: $(ps axu|wc -l)"
+        sleep 3
+        echo
+done
+
+echo "Limite de Processos Excedido"
+echo "Por favor verifique o Sistema"
+```
+
 
 > #### **Uso do UNTIL**
 
