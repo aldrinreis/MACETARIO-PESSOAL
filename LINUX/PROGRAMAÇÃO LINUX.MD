@@ -418,8 +418,59 @@ done
 echo "Limite de Processos Excedido"
 echo "Por favor verifique o Sistema"
 ```
-
+<br>
+<br>
+<br>
+<br>
 
 > #### **Uso do UNTIL**
 
+- **Oposto do while**
+- *While executa uma rotina enquando algo seja verdadeio, until executa até que seja verdadeiro.*
+
+<br>
+
+![alt text](image-4.png)
+<br>
+
+![alt text](image-5.png)
+<br>
+
+![alt text](image-6.png)
+<br>
+
+![alt text](image-7.png)
+<br>
+
+```bash
+#!/bin/bash
+
+clear
+
+until ps axu|grep firefox |grep -v grep > /dev/null
+do
+	echo Inicie o Firefox
+	sleep 3
+	echo
+done
+echo Firefox Iniciado
+echo PID: $(pgrep firefox)
+
+```
+<br>
+<br>
+<br>
+<br>
+
 > #### **Uso do CONTINUE E BREAK**
+
+- **BREAK - utilizado para sair do loop**
+<br>
+
+![alt text](image-8.png)
+<br>
+
+- **CONTINUE - utilizado para voltar ao início do loop**
+<br>
+
+![alt text](image-9.png)
