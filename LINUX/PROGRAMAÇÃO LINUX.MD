@@ -13,6 +13,7 @@
 - [Instruções de Repetição - WHILE](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/LINUX/PROGRAMA%C3%87%C3%83O%20LINUX.MD#uso-do-while)
 - [Instruções de Repetição - UNTIL](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/LINUX/PROGRAMA%C3%87%C3%83O%20LINUX.MD#uso-do-until)
 - [Instruções de Repetição - BREAK e CONTINUE](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/LINUX/PROGRAMA%C3%87%C3%83O%20LINUX.MD#uso-do-continue-e-break)
+- [Funções](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/LINUX/PROGRAMA%C3%87%C3%83O%20LINUX.MD#fun%C3%A7%C3%B5es)
 
 <hr>
 <br><br>
