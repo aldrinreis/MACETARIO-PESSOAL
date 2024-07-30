@@ -505,10 +505,11 @@ echo PID: $(pgrep firefox)
 
 maiuscula () {
 local VAR1=$(echo $1 | tr a-z A-Z)
+echo $VAR1
 }
 
 maiuscula script
-echo $VAR1
+
 
 ```
 <br>
