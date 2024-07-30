@@ -474,3 +474,71 @@ echo PID: $(pgrep firefox)
 <br>
 
 ![alt text](image-9.png)
+
+
+<br>
+<br>
+<br>
+<br>
+
+> #### **Funções**
+
+<br>
+
+![alt text](image-10.png)
+
+<br>
+
+![alt text](image-11.png)
+
+<br>
+
+![alt text](image-12.png)
+<br>
+
+![alt text](image-13.png)
+<br>
+
+
+```bash
+#!/bin/bash
+
+maiuscula () {
+local VAR1=$(echo $1 | tr a-z A-Z)
+}
+
+maiuscula script
+echo $VAR1
+
+```
+<br>
+
+```bash
+#!/bin/bash
+
+ler () {
+	read -p "Informe o Nome: " NOME
+	read -p "Informe o Sobrenome: " SOBRENOME
+	return 10
+}
+
+ler
+RETURN_CODE=$?
+echo
+echo $NOME $SOBRENOME
+
+```
+<br>
+
+```bash
+
+adiciona () {
+	soma=$(expr $1 + $2)
+	echo $soma
+}
+
+adiciona 10 20
+
+echo $1 $2
+
+```
