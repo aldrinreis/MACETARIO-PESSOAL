@@ -45,6 +45,3 @@ CONTEUDO="$CONTEUDO$(date): Fim do Script\n"
 #echo "$(date): Script Finalizado" >> /tmp/msg_temp
 echo -e "$CONTEUDO" |mail -s "Relatorio do Script $0" $ADMIN 
 
-#mail -s "Relatorio de Execucao do $0" $ADMIN < /tmp/msg_temp
-
-#rm -f /tmp/msg_temp

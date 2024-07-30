@@ -545,3 +545,174 @@ adiciona 10 20
 echo $1 $2
 
 ```
+<br>
+<br>
+<br>
+<br>
+
+
+> #### **Criando Logs e Enviando Emails**
+<br>
+
+> ##### **Modo 1 - Redirecionamento**
+<br>
+
+- **```cat alunos.txt > alunos-temp.txt``** – Redireciona a saida para um novo arquivo.
+- **```cat alunos.txt >> alunos-temp.txt``** – Concatena a saida no final do arquivo.<br>
+
+- **Redirecionamento de erro** **```ls -l alunos.txte3 2>> alunos-temp.txt``** - Saída da Mensagem de erro
+- **```ls -l alunos.txt3 >> log.out 2>> log-erro.out``** - Utilizano os dois em conjunto.
+- **```ls -l alunos.txt3 >> log.out 2>>&1``** - Utilizano a saída no mesmo arquivo.<br>
+
+- **```ls -l alunos.txttxt 2> /dev/null``** – Joga saida para lugar nenhum. <br>
+<br>
+
+**Para jogar a saida na tela e para um arquivo de log**
+
+```./PrimeiroScript.sh | tee -a log.out```
+<br>
+
+No Script
+<br>
+
+```bash
+#!/bin/bash
+
+DATAHORA=$(date +%H:%M)
+ARQALUNOS="/home/ricardo/Cursos/ShellScript/arquivos/alunos2.txt"
+
+LOG="$HOME/Cursos/ShellScript/Scripts/log_interno.out"
+exec 1>> >(tee -a "$LOG")
+exec 2>&1
+
+# Funcao de leitura da data e hora
+
+echo "$(date) - Iniciando o Script..." >> $LOG
+
+clear
+echo "===== Meu Primeiro Script ======="
+echo 
+echo "Exibir data e hora atual: $DATAHORA"
+
+# Area de leitura da lista de alunos
+echo "================================="
+echo "Listagem dos Alunos: "
+# sort $ARQALUNOS | tea -a $LOG
+sort $ARQALUNOS 
+
+DATAHORA=$(date +%H)
+echo "================================="
+echo "Nova Hora Atual: $DATAHORA"
+
+echo "$(date) - Fim do Script..." >> $LOG
+
+
+``` 
+<br>
+<br>
+<br>
+<br>
+
+> ##### **Modo 2 - Uso do Exec**
+
+```bash
+exec 1>> >(tee -a "$LOG") ou 
+exec 1>> $LOG
+exec 2>&1
+```
+<br>
+<br>
+<br>
+<br>
+
+> ##### **Modo 3 - Uso do logger e ryslog**
+
+```bash
+echo "Iniciando o Script..." | logger -p local0.warn -t [$0] 
+$logger -p local0.warn -t [$0] "Iniciando o Script"
+```
+<br>
+
+```bash
+#!/bin/bash
+
+DATAHORA=$(date +%H:%M)
+ARQALUNOS="/home/ricardo/Cursos/ShellScript/arquivos/alunos2.txt"
+
+# Funcao de leitura da data e hora
+
+echo "Iniciando o Script..." | logger -p local0.warn -t [$0] 
+$logger -p local0.warn -t [$0] "Iniciando o Script"
+
+clear
+echo "===== Meu Primeiro Script ======="
+echo 
+echo "Exibir data e hora atual: $DATAHORA"
+
+# Area de leitura da lista de alunos
+echo "================================="
+echo "Listagem dos Alunos: "
+sort $ARQALUNOS | tee -a >(logger -p local0.warn -t [$0]) 
+
+DATAHORA=$(date +%H)
+echo "================================="
+echo "Nova Hora Atual: $DATAHORA"
+
+#echo "$(date) - Fim do Script..." >> $LOG
+logger -p local0.warn -t [$0] "Fim do Script"
+
+
+echo "Script Executado com Sucesso" |mail -s "Relatorio de Execucao do $0" ricardo
+```
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+> ##### **Enviado emails - comando ```mail```**
+
+<br>
+
+- **[sendEmail - Alternativa para servidores externos](https://github.com/mogaal/sendemail)**
+- **[Como configurar o sendEmail](https://www.vivaolinux.com.br/artigo/Enviando-emails-pelo-terminal)**
+
+Instalar o **bsd-mailx**
+
+```bash
+DATAHORA=$(date +%H:%M)
+ARQALUNOS="/home/ricardo/Cursos/ShellScript/arquivos/alunos2.txt"
+ADMIN=ricardo@linuxsemfronteiras.com.br
+
+# Funcao de leitura da data e hora
+
+CONTEUDO="$(date): Iniciando o Script\n"
+#echo "$(date): Iniciando o Script" >> /tmp/msg_temp 
+
+clear
+echo "===== Meu Primeiro Script ======="
+echo 
+echo "Exibir data e hora atual: $DATAHORA"
+sleep 5
+# Area de leitura da lista de alunos
+echo "================================="
+echo "Listagem dos Alunos: "
+sort $ARQALUNOS
+
+DATAHORA=$(date +%H)
+echo "================================="
+echo "Nova Hora Atual: $DATAHORA"
+
+CONTEUDO="$CONTEUDO$(date): Fim do Script\n"
+
+#echo "$(date): Script Finalizado" >> /tmp/msg_temp
+echo -e "$CONTEUDO" |mail -s "Relatorio do Script $0" $ADMIN 
+
+#mail -s "Relatorio de Execucao do $0" $ADMIN < /tmp/msg_temp
+
+#rm -f /tmp/msg_temp
+
+
+```
