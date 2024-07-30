@@ -389,16 +389,16 @@ esac
 
 - **Condições de [Teste usados no IF](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/LINUX/PROGRAMA%C3%87%C3%83O%20LINUX.MD#uso-do-if) podem ser usados no while.**
 
-![alt text](image.png)
+![WHILE DEFNIÇÃO 1](/LINUX/CURSO%20LINUX/imagens/while1.png)
 <br>
 
-![alt text](image-1.png)
+![WHILE DEFNIÇÃO 2](/LINUX/CURSO%20LINUX/imagens/while2.png)
 <br>
 
-![alt text](image-2.png)
+![WHILE DEFNIÇÃO 3](/LINUX/CURSO%20LINUX/imagens/while3.png)
 <br>
 
-![alt text](image-3.png)
+![WHILE DEFNIÇÃO 4](/LINUX/CURSO%20LINUX/imagens/while4.png)
 <br>
 
 ```bash
@@ -431,16 +431,16 @@ echo "Por favor verifique o Sistema"
 
 <br>
 
-![alt text](image-4.png)
+![UNTIL DEFINICAO 1](/LINUX/CURSO%20LINUX/imagens/unit1.png)
 <br>
 
-![alt text](image-5.png)
+![UNTIL DEFINICAO 2](/LINUX/CURSO%20LINUX/imagens/until2.png)
 <br>
 
-![alt text](image-6.png)
+![UNTIL DEFINICAO 3](/LINUX/CURSO%20LINUX/imagens/until3.png)
 <br>
 
-![alt text](image-7.png)
+![UNTIL DEFINICAO 4](/LINUX/CURSO%20LINUX/imagens/until4.png)
 <br>
 
 ```bash
@@ -468,13 +468,13 @@ echo PID: $(pgrep firefox)
 - **BREAK - utilizado para sair do loop**
 <br>
 
-![alt text](image-8.png)
+![Break](/LINUX/CURSO%20LINUX/imagens/break.png)
 <br>
 
 - **CONTINUE - utilizado para voltar ao início do loop**
 <br>
 
-![alt text](image-9.png)
+![Continue](/LINUX/CURSO%20LINUX/imagens/continue.png)
 
 
 <br>
@@ -485,19 +485,20 @@ echo PID: $(pgrep firefox)
 > #### **Funções**
 
 <br>
+<br>
 
-![alt text](image-10.png)
+![FUNCAO SINTAXE](/LINUX/CURSO%20LINUX/imagens/funcao1.png)
 
 <br>
 
-![alt text](image-11.png)
+![FUNCAO CHAMADA](/LINUX/CURSO%20LINUX/imagens/funcao2.png)
 
 <br>
 
-![alt text](image-12.png)
+![FUNCAO VARIAVEL](/LINUX/CURSO%20LINUX/imagens/funcao3.png)
 <br>
 
-![alt text](image-13.png)
+![FUNCAO RETURNO CODE](/LINUX/CURSO%20LINUX/imagens/funcao4.png)
 <br>
 
 
