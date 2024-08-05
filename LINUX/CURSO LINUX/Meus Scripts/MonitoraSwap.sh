@@ -23,8 +23,8 @@ ARQ_TEMP=/tmp/monitora-swap.tmp
 
 USO=$(free -m|grep Swap|tr -s " " |cut -d " " -f3)
 TOTAL=$(free -m|grep Swap|tr -s " " |cut -d " " -f2)
-#PERC=$(expr $USO / $TOTAL \* 100)
-PERC=92
+PERC=$(expr $USO / $TOTAL \* 100)
+#PERC=92
 
 if [ $PERC -ge $LIMITE_LOG ] 
 then

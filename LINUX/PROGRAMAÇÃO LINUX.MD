@@ -716,3 +716,60 @@ echo -e "$CONTEUDO" |mail -s "Relatorio do Script $0" $ADMIN
 
 
 ```
+
+<br>
+<br>
+<br>
+<br>
+
+
+> #### **Técnicas de Debug**
+<br>
+
+> ##### **bash e set**
+
+```bash -n``` Verificar a sintaxe de um script em Bash sem realmente executá-lo. Ele verifica o script em busca de erros de sintaxe e é útil para encontrar problemas antes de rodar o script.
+<br>
+
+```bash -x``` ativa o modo de depuração, exibindo cada comando e seus argumentos conforme são executados. É útil para entender o fluxo de execução de um script e identificar onde ele pode estar falhando.
+<br>
+
+```bash -v```  exibe cada linha do script antes de ser executada, mas não mostra a expansão dos comandos. Isso é útil para ver a estrutura do script à medida que ele é processado.
+
+```bash -xv``` combina as funcionalidades dos modos -x e -v, fornecendo uma visão detalhada do script Bash conforme ele é processado e executado. Essa combinação é útil para depuração completa e análise de scripts complexos.
+
+**SET**
+
+O comando set é usado dentro de um script Bash para controlar a depuração durante a execução. Usar set -x ativa o modo de depuração (similar a bash -x), enquanto set +x desativa o modo de depuração.
+
+```bash
+#!/bin/bash
+
+echo "Iniciando script"
+
+set -x  # Ativa a depuração
+for i in {1..3}; do
+    echo "Contagem: $i"
+done
+set +x  # Desativa a depuração
+
+echo "Script concluído"
+
+```
+
+> ##### **Passo a Passo**
+
+
+```bash
+#!/bin/bash
+
+echo "Iniciando script"
+
+set -xv   
+trap read DEBUG #começa a execução passo a passo
+
+set +xv  
+trap "" DEBUG # finaliza
+
+```
+
