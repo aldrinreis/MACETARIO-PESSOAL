@@ -20,6 +20,18 @@ fatal: not a git repository (or any of the parent directories): .git
 
 ALDRIN@ALDRIN MINGW64 /d/CURSO GIT
 ```
+```bash
+ALDRIN@ALDRIN MINGW64 /d/CURSO GIT (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+ALDRIN@ALDRIN MINGW64 /d/CURSO GIT (master)
+
+```
 
 
 - **Criar Repositório**
