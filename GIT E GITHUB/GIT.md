@@ -2,6 +2,7 @@
 <br>
 
 
+> ### **GIT FUNDAMENTAL**
 
 - **Ver Versão**
 ```bash
@@ -115,3 +116,10 @@ Usar o ```git pull```
 - **Clonando Repositórios**
 
 Usar o ```git clone```
+Exemplo ```https://github.com/aldrinreis/curso_git_01.git```
+
+- **Removendo arquivos**
+
+usar o ```git rm nome_arquivo```
+
+- **Verificando alterações por meio de log**
