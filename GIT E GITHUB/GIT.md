@@ -89,5 +89,20 @@ git branch -M main
 git push -u origin main
 ```
 
+- **Verificando alterações**
+usar o ```git status```
 
+- **Adiconando arquivos ao projeto**
+usar o ```git add file``` ou  usar o ```git add .``` para adicionar todos os arquivos.
 
+- **Salvando alterações.**
+Usar o ```git commit```
+
+Podemos usar a flag **-a** para commitar todos os arquivos.
+Boa prática usar a flag **-m** para enviar uma mensagem no commit
+
+Exemplo ```git commit .\index.html -m "envio do index html"```
+Exemplo ```git commit -a -m "Enviando todos os arquivos"```
+
+- **Enviando o código para o Repositório**
+Usar o ```git push```
