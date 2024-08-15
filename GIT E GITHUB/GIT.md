@@ -118,7 +118,7 @@ Usar o ```git pull```
 - **Clonando Repositórios**
 
 Usar o ```git clone```
-Exemplo ```git clone https://github.com/aldrinreis/curso_git_01.git```
+Exemplo ```git clone https://github.com/aldrinreis/curso_git_01.git .```
 
 - **Removendo arquivos**
 
@@ -157,3 +157,31 @@ Volta a branch ao estado inicial.
 
 
 > ### **Trabalhando com Branches**
+
+- **Criando e Visualizando Branches**
+
+Para visualizar ```git branch```
+Para criar ```git branch nome_da_branch``` - Sempre partir da Main
+
+- **Deletando Branches**
+Podemo deletar um branc com a flag -d ou -- delete
+
+Exemplo: 
+
+```bash
+PS D:\CURSO GIT\curso_git_01> git branch -d primeiro_branch
+Deleted branch primeiro_branch (was 4cb6d42).
+PS D:\CURSO GIT\curso_git_01> 
+```
+
+- **Mudando de  Branch**
+
+Usar o ```git checkout -b nome``` cria a branch e muda para ela - Sempre partir da Main
+
+Usar o ```git checkout nome``` Apenas cria a branch
+
+Sempre comittar para nao levar alterações ao mudar de branch
+
+- **Unindo Branches**
+
+Usar o ```git merge nome do branch```
