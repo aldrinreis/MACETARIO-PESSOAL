@@ -33,6 +33,14 @@ ALDRIN@ALDRIN MINGW64 /d/CURSO GIT (master)
 
 ```
 
+- **Ver Origem**
+```git remote -v```
+
+- **Remover Origem**
+
+```git remote -v```
+
+
 
 - **Criar Repositório**
 
@@ -49,3 +57,33 @@ ALDRIN@ALDRIN MINGW64 /d/CURSO GIT (master)
 $
 
 ```
+
+
+<hr>
+
+- **Clonar Repositório**
+
+[Clonando repositórios](https://docs.github.com/pt/repositories/creating-and-managing-repositories/cloning-a-repository)
+
+- **Criando Repositório**
+[Criando Repositório a publicando no GITHUB:](https://docs.github.com/en/get-started/using-git/about-git)
+
+
+**…or create a new repository on the command line**
+
+```bash
+echo "# curso_git_01" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/aldrinreis/curso_git_01.git
+git push -u origin main
+```
+**…or push an existing repository from the command line**
+```bash
+git remote add origin https://github.com/aldrinreis/curso_git_01.git
+git branch -M main
+git push -u origin main
+```
+
