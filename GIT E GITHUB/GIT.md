@@ -106,3 +106,12 @@ Exemplo ```git commit -a -m "Enviando todos os arquivos"```
 
 - **Enviando o código para o Repositório**
 Usar o ```git push```
+Exemplo ```git push```
+
+- **Recebendo Alterações**
+
+Usar o ```git pull```
+
+- **Clonando Repositórios**
+
+Usar o ```git clone```
