@@ -2,15 +2,21 @@
 <br>
 
 - **[Git Fundamental](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#git-fundamental)**
+- **[Trabalhando com Branches](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#trabalhando-com-branches)**
 
+
+<br>
+<br>
 
 > ### **GIT FUNDAMENTAL**
+<br>
 
 - **Ver Versão**
 ```bash
 $ git --version
 git version 2.46.0.windows.1
 ```
+<br>
 
 - **Verificar Repositório**
 ```git status``` *Verifica se existe repositório no diretório*
@@ -35,16 +41,17 @@ nothing to commit (create/copy files and use "git add" to track)
 ALDRIN@ALDRIN MINGW64 /d/CURSO GIT (master)
 
 ```
+<br>
 
 - **Ver Origem**
 
 ```git remote -v```
+<br>
 
 - **Remover Origem**
 
 ```git remote -v```
-
-
+<br>
 
 - **Criar Repositório**
 
@@ -61,13 +68,7 @@ ALDRIN@ALDRIN MINGW64 /d/CURSO GIT (master)
 $
 
 ```
-
-
-<hr>
-
-- **Clonar Repositório**
-
-[Clonando repositórios](https://docs.github.com/pt/repositories/creating-and-managing-repositories/cloning-a-repository)
+<br>
 
 - **Criando Repositório**
 
@@ -91,12 +92,15 @@ git remote add origin https://github.com/aldrinreis/curso_git_01.git
 git branch -M main
 git push -u origin main
 ```
+<br>
 
 - **Verificando alterações**
 usar o ```git status```
+<br>
 
 - **Adiconando arquivos ao projeto**
 usar o ```git add file``` ou  usar o ```git add .``` para adicionar todos os arquivos.
+<br>
 
 - **Salvando alterações.**
 Usar o ```git commit```
@@ -106,40 +110,54 @@ Boa prática usar a flag **-m** para enviar uma mensagem no commit
 
 Exemplo ```git commit .\index.html -m "envio do index html"```
 Exemplo ```git commit -a -m "Enviando todos os arquivos"```
+<br>
 
 - **Enviando o código para o Repositório**
 Usar o ```git push```
 Exemplo ```git push```
+<br>
 
 - **Recebendo Alterações**
-
 Usar o ```git pull```
+<br>
 
 - **Clonando Repositórios**
 
 Usar o ```git clone```
 Exemplo ```git clone https://github.com/aldrinreis/curso_git_01.git .```
 
+- **Clonar Repositório**
+
+[Clonando repositórios](https://docs.github.com/pt/repositories/creating-and-managing-repositories/cloning-a-repository)
+<br>
+
 - **Removendo arquivos**
 
 usar o ```git rm nome_arquivo```
 
+<br>
+
 - **Verificando alterações por meio de log**
 
 usar o ```git log```
+<br>
 
 - **Renomeando arquivos**
 
 usar o ```git mv``` pode ser usado para renomear ou mover o arquivo de pasta.
+<br>
 
 - **Desfazendo alterações**
 
 usar o ```git checkout nome_arquivo```
+<br>
 
 - **Igonorando aquivos e diretórios em um projeto**
 
 Inserir um arquivo chamdo .gitignore na raiz do projeto.
 Nele podemos inserir todos os arquivos que não devem entrar no versionamento.
+
+<br>
 
 - **Resetando um branch**
 
@@ -161,7 +179,8 @@ Volta a branch ao estado inicial.
 - **Criando e Visualizando Branches**
 
 Para visualizar ```git branch```
-Para criar ```git branch nome_da_branch``` - Sempre partir da Main
+Para criar ```git branch nome_da_branch``` - Sempre partir da Main ou da branch de referencia
+<br>
 
 - **Deletando Branches**
 Podemo deletar um branc com a flag -d ou -- delete
@@ -173,6 +192,7 @@ PS D:\CURSO GIT\curso_git_01> git branch -d primeiro_branch
 Deleted branch primeiro_branch (was 4cb6d42).
 PS D:\CURSO GIT\curso_git_01> 
 ```
+<br>
 
 - **Mudando de  Branch**
 
@@ -181,16 +201,21 @@ Usar o ```git checkout -b nome``` cria a branch e muda para ela - Sempre partir 
 Usar o ```git checkout nome``` Apenas cria a branch
 
 Sempre comittar para nao levar alterações ao mudar de branch
+<br>
 
 - **Unindo Branches**
 
 Usar o ```git merge nome do branch```
+<br>
+
+<hr>
 
 - **Utilizando a stash**
 
 Salvar as modificações atuais para prosseguir de outra maneira e não perder.
 
 Usar ```git stash``` -- o branch será resetado para a versão a partir do repo.
+<br>
 
 - **Recuperando a stash**
 Verificar stash criadas ```git stash list```
@@ -198,15 +223,20 @@ Verificar stash criadas ```git stash list```
 Ver alteração de cada stash ```git stash show -p id da stash```
 
 Recuperar stash ```git stash apply id da stash```
+<br>
 
 - **Removendo a stash**
 
 Para remover totalmente as stash de um branch usar: ```git stash clear```
 Para deletar uma stash específica: ```git stash drop id da stash```
+<br>
+
+<hr>
+<br>
 
 - **Ver tags**
 Usar o :```git tag```
-
+<br>
 
 - **Criando Tags**
 Criar tags nos branches.
@@ -214,12 +244,19 @@ Criar tags nos branches.
 A tag server com um checkpoint de um branch e é utilizada para demarcar estágios do desenvolvimento de algun recurso.
 
 Usar o ```git tag -a <nome da tag> -m <mensagem>```
+<br>
 
 - **Alterando Tags**
 Verificar a tag ```git show <nome da tag>```
 Trocar de tag ```git checkout <nome da tag>```
+<br>
 
 - **Enviando Tags ao repo**
 
 Usar o: ```git push origin<nome da tag>```
 Enviar todas as tags: ```git push origin --tags```
+
+<br>
+<br>
+<br>
+<br>
