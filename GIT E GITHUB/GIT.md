@@ -116,10 +116,31 @@ Usar o ```git pull```
 - **Clonando Repositórios**
 
 Usar o ```git clone```
-Exemplo ```https://github.com/aldrinreis/curso_git_01.git```
+Exemplo ```git clone https://github.com/aldrinreis/curso_git_01.git```
 
 - **Removendo arquivos**
 
 usar o ```git rm nome_arquivo```
 
 - **Verificando alterações por meio de log**
+
+usar o ```git log```
+
+- **Renomeando arquivos**
+
+usar o ```git mv``` pode ser usado para renomear ou mover o arquivo de pasta.
+
+- **Desfazendo alterações**
+
+usar o ```git checkout nome_arquivo```
+
+- **Igonorando aquivos e diretórios em um projeto**
+
+Inserir um arquivo chamdo .gitignore na raiz do projeto.
+Nele podemos inserir todos os arquivos que não devem entrar no versionamento.
+
+- **Resetando um branch**
+
+usar o ```git reset``` usado normalmente ```git reset --hard```
+
+Volta a branch ao estado inicial.
