@@ -148,3 +148,12 @@ Nele podemos inserir todos os arquivos que não devem entrar no versionamento.
 usar o ```git reset``` usado normalmente ```git reset --hard origin/main```
 
 Volta a branch ao estado inicial.
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+> ### **Trabalhando com Branches**
