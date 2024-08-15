@@ -1,6 +1,8 @@
 # **GIT e GITHUB**
 <br>
 
+- **[Git Fundamental](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#git-fundamental)**
+
 
 > ### **GIT FUNDAMENTAL**
 
@@ -141,6 +143,6 @@ Nele podemos inserir todos os arquivos que não devem entrar no versionamento.
 
 - **Resetando um branch**
 
-usar o ```git reset``` usado normalmente ```git reset --hard```
+usar o ```git reset``` usado normalmente ```git reset --hard origin/main```
 
 Volta a branch ao estado inicial.
