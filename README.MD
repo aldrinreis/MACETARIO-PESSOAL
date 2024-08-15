@@ -14,5 +14,5 @@
 * **[Git Fundamental](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#git-fundamental)**
 * **[Trabalhando com Branches](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#trabalhando-com-branches)**
 
-###### **Links úteis**
+###### **Links úteis Git e GitHub**
 - [Documentação de introdução ao git](https://docs.github.com/pt/get-started)
