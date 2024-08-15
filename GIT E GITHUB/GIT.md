@@ -34,6 +34,7 @@ ALDRIN@ALDRIN MINGW64 /d/CURSO GIT (master)
 ```
 
 - **Ver Origem**
+
 ```git remote -v```
 
 - **Remover Origem**
@@ -66,6 +67,7 @@ $
 [Clonando repositórios](https://docs.github.com/pt/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 - **Criando Repositório**
+
 [Criando Repositório a publicando no GITHUB:](https://docs.github.com/en/get-started/using-git/about-git)
 
 
