@@ -143,6 +143,8 @@ Nele podemos inserir todos os arquivos que não devem entrar no versionamento.
 
 - **Resetando um branch**
 
+**Reseta para o último push**
+
 usar o ```git reset``` usado normalmente ```git reset --hard origin/main```
 
 Volta a branch ao estado inicial.
