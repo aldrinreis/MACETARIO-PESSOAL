@@ -185,3 +185,41 @@ Sempre comittar para nao levar alterações ao mudar de branch
 - **Unindo Branches**
 
 Usar o ```git merge nome do branch```
+
+- **Utilizando a stash**
+
+Salvar as modificações atuais para prosseguir de outra maneira e não perder.
+
+Usar ```git stash``` -- o branch será resetado para a versão a partir do repo.
+
+- **Recuperando a stash**
+Verificar stash criadas ```git stash list```
+
+Ver alteração de cada stash ```git stash show -p id da stash```
+
+Recuperar stash ```git stash apply id da stash```
+
+- **Removendo a stash**
+
+Para remover totalmente as stash de um branch usar: ```git stash clear```
+Para deletar uma stash específica: ```git stash drop id da stash```
+
+- **Ver tags**
+Usar o :```git tag```
+
+
+- **Criando Tags**
+Criar tags nos branches.
+
+A tag server com um checkpoint de um branch e é utilizada para demarcar estágios do desenvolvimento de algun recurso.
+
+Usar o ```git tag -a <nome da tag> -m <mensagem>```
+
+- **Alterando Tags**
+Verificar a tag ```git show <nome da tag>```
+Trocar de tag ```git checkout <nome da tag>```
+
+- **Enviando Tags ao repo**
+
+Usar o: ```git push origin<nome da tag>```
+Enviar todas as tags: ```git push origin --tags```
