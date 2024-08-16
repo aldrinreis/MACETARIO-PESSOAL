@@ -373,3 +373,26 @@ Ao fim da solução do problema podemos fazer um **rebase**
 Comando: ```git rebase <atual> <privado> -i```
 
 Escolhemos os branchs para excluir **(squash)** e renomear com **(reword)**
+<br>
+
+- **Melhorando as menssagens dos commits**
+
+Usar quebra de linha e fechar aspas ao final.
+
+Exemplo:
+
+```bash
+PS D:\LINUX\MACETARIO-PESSOAL> git commit -a -m "Adicionado novas informações a DOC de GIT
+>>
+>> Adicionado a doc: 
+>> Como trabalhar com branches
+>> Adimistração de reps
+>> Melhorando os commits"
+```
+
+<br>
+<br>
+<br>
+<br>
+
+> ### **Explorando e entendendo o GIT HUB**
