@@ -50,7 +50,7 @@ ALDRIN@ALDRIN MINGW64 /d/CURSO GIT (master)
 
 - **Remover Origem**
 
-```git remote -v```
+```git remote rm origin```
 <br>
 
 - **Criar Repositório**
@@ -265,10 +265,111 @@ Enviar todas as tags: ```git push origin --tags```
 > ### **Compartilhamento e atualização de Repositórios**
 
 - **Encontrando branches remotas**
+
 Usar o ```git fetch``` || ```git fetch -a``` para puxar todos os branchs
+<br>
 
 - **Recebendo atualizações**
+
 Usar o ```git pull```
+<br>
 
 - **Enviando alterações**
+
 Usar o ```git push```
+<br>
+
+- **Utilizando o remote**
+
+usar o ```git remote add origin <link> ```
+
+Ver Origem ```git remote -v``` Remover Origem ```git remote rm origin```
+
+<br>
+
+- **Conhecendo dos submodules**
+
+É a maneira de possuir dois ou mais projetos em um só repositório.
+Para adicionar submódulo usar o: ```git submodule add <link do repo>```
+Para verificar os submódulos usar: ```git submodule```
+
+Puxar as info do submódulo => Dentro do diretório do submódulo: ```git pull```
+
+<br>
+
+- **Atualizando os submodules**
+
+Após commitar as mudanças
+Usar o: ```git push --recurse-submodules=on-demand```
+<br>
+
+
+> ### **Análise e inspenção de repositórios**
+
+- **Exibindo detalhes de branches e tags**
+
+Usar o ```git show``` para tag usar o ```git show <nome da tag>```
+<br>
+
+- **Exibindo diferenças**
+
+usara para branches: ```git diff``` || ```git diff nome do branche```
+
+usar para arquivos: ```git diff <arquivo> <arquivo_b>``` || ```git diff HEAD:<arquivo> <arquivo_b>```
+<br>
+
+- **Log de atividades resumido**
+
+Usar o : ```git shortlog```
+
+<br>
+<br>
+<br>
+<br>
+
+> ### **Adminstração de Repositórios**
+
+- **Limpando arquivos untracked**
+
+Usar o: ```git clean``` - Limpa aquivos não trackeados, ou seja arquivos que você não utilizou o git add
+
+<br>
+
+- **Otimizando o repositório**
+
+O comando ```git gc``` é uma abreviação para *garbage collector* identifica arquivos que não são mais necessários e exclui.
+
+<br>
+
+- **Verificando integridade dos arquivos**
+
+Usar o: ```git fsck``` verifica possível corrupção em arquivos.
+<br>
+
+- **Reflog**
+Comando ```git reflog```- Mapeia todos os seus passos no repositório. Tempo de expiração padrão dos reflogs é 30 dias.
+É possível voltar a estado anterio do código com: ```git reset --hard <id do reflog>```
+
+<br>
+
+- **Comprimindo o Repositório**
+
+```git archive --format zip --output main_files.zip main```
+
+<br>
+<br>
+<br>
+<br>
+
+> ### **Melhorando os Commits do projeto**
+
+- **Técnica de private branches**
+
+Criar a branch privada: ```git checkout -b private_nome_branch```
+
+É possivel criar branche que não serão compartilhadas no repositório.
+Ao fim da solução do problema podemos fazer um **rebase**
+
+Comando: ```git rebase <atual> <privado> -i```
+
+Escolhemos os branchs para excluir **(squash)** e renomear com **(reword)**
