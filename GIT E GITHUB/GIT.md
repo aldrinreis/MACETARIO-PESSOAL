@@ -260,3 +260,15 @@ Enviar todas as tags: ```git push origin --tags```
 <br>
 <br>
 <br>
+
+
+> ### **Compartilhamento e atualização de Repositórios**
+
+- **Encontrando branches remotas**
+Usar o ```git fetch``` || ```git fetch -a``` para puxar todos os branchs
+
+- **Recebendo atualizações**
+Usar o ```git pull```
+
+- **Enviando alterações**
+Usar o ```git push```
