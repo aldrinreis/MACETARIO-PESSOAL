@@ -3,7 +3,10 @@
 
 - **[Git Fundamental](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#git-fundamental)**
 - **[Trabalhando com Branches](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#trabalhando-com-branches)**
-
+- **[Compartilhamento e atualização de Repositórios](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#compartilhamento-e-atualiza%C3%A7%C3%A3o-de-reposit%C3%B3rios)**
+- **[Análise e inspenção de repositórios](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#an%C3%A1lise-e-inspen%C3%A7%C3%A3o-de-reposit%C3%B3rios)**
+- **[Adminstração de Repositórios](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#an%C3%A1lise-e-inspen%C3%A7%C3%A3o-de-reposit%C3%B3rios)**
+- **[Melhorando os Commits do projeto](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#melhorando-os-commits-do-projeto)**
 
 <br>
 <br>
@@ -390,9 +393,3 @@ PS D:\LINUX\MACETARIO-PESSOAL> git commit -a -m "Adicionado novas informações 
 >> Melhorando os commits"
 ```
 
-<br>
-<br>
-<br>
-<br>
-
-> ### **Explorando e entendendo o GIT HUB**
