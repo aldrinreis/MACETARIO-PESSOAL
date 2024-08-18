@@ -57,6 +57,27 @@ Comportamento do interpretador de içar as declarações de variáveis(var) e fu
 - **Tipos Primitivos**
 String - Number - boolean - null - undefined
 
+Para verificar o tipo usar o: ```typeof```
+Exemplo:
+```javascript
+let username = "rodrigo"
+console.log(username)
+console.log(typeof username)
+```
+
 - **String**
+- Valor declarado entre aspas simples ou duplas ou crase.
+```javascript 
+console.log('str com aspas simples')
+console.log("str com aspas duplas")
+console.log("str 'simple dentro da 'dupla")
+
+console.log(`
+Uma string com acento grave permite
+    escrever multiplas linhas.
+`)
+```
+
+
 
 
