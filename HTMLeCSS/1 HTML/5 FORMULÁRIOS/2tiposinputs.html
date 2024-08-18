@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Inputs </title>
+</head>
+
+<h1>Tipos de Inputs</h1>
+<p>
+<form> <!--
+       action="form.php
+    -->
+    <input type="text" name="" id="" readonly value="texto qualquer"> <br>
+    <input type="text" name="" id="" disabled value="texto qualquer"> <br>
+    <input type="text" name="" id="" size="60" maxlength="20" minlength="1" required> <br>
+    <input type="text" name="Campo1" id="Campo1" autofocus list="minhalista"> <br>
+    <input type="text" name="Campo2" id="Campo2" autocomplete="on" placeholder="placeholder"> <br>
+    <datalist id="minhalista">
+        <option value="valor8"></option>
+        <option value="valor6"></option>
+        <option value="valor6"></option>
+        <option value="valor5"></option>
+        <option value="valor4"></option>
+        <option value="valor3"></option>
+        <option value="valor2"></option>
+        <option value="valor1"></option>
+    </datalist>
+
+    <input type="text" name="" id="" pattern="[A-Z]{3}-[0-9]{4}" required> <br>
+    <input type="text" name="" id="" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required placeholder="99 99999-9999"><br>
+
+
+    <input type="submit" name="enviar" id="">
+
+    <hr>
+    <hr>
+    <input type="password" name="" id="" placeholder="insira a senha"> <br>
+    <input type="reset" value="Limpar" disabled>
+    <br>
+    <!--
+        Radio os atributos name deve ser igual.
+    -->
+    <input type="radio" name="Programador" id="" value="1" required> p1<br>
+    <input type="radio" name="Programador" id="" value="2" disabled> p2 <br>
+    <input type="radio" name="Programador" id="" value="3"> p3 <br>
+
+
+    <input type="checkbox" name="noticias" id=""> Noticias <br>
+    <input type="checkbox" name="promoções" id=""> Promoções <br>
+    <input type="checkbox" name="alertas" id=""> Alertas <br>
+
+
+    <input type="button" name="" id="" value="Enviar" onclick="this.form.submit()">
+
+
+    <hr>
+    <hr>
+
+    <input type="color" name="" id=""> <br>
+    <input type="date" name="" id="" min="1979-07-01" max="2023-01-01"> <br>
+    <input type="datetime-local" name="" id="" max="2023-01-01T17:00:00"> <br>
+
+    <input type="email" name="" id="">
+
+    <input type="file">
+
+    <input type="hidden" name="id" value="456">
+    <br>
+    <input type="month" name="mesnascimento" min="2020-12" max="2022-05"> <br>
+
+    <input type="number" name="" id="" min="100" max="1000" step="50"> <br>
+    <input type="range" name="" id="" min="100" max="1000" step="50"> <br>
+    <hr>
+    <hr>
+
+    <input type="search" name="termo"> <br>
+
+    <input type="tel" name="telefone" id=""> <br>
+
+    <input type="time" name="horaMarcada" id=""> <br>
+
+    <input type="url" name="enderecoSite"> <br>
+
+    <input type="week" name="semanaCongresso" id="" min="2021-W18">
+
+
+
+
+</form>
+
+</p>
+
+
+<body>
+
+</body>
+
+</html>

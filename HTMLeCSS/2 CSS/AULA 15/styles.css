@@ -1,0 +1,44 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+div.conteiner{
+    width: 80vw;
+    height: 100vh;
+    background-color: gainsboro;
+    margin: 0 auto;
+    
+}
+
+div.cabecalho{
+    height: 120px;
+    background-color: antiquewhite;
+}
+
+div.corpo{
+    background-color: gray;
+    height: calc(100vh - 240px);
+    
+}
+
+div.menu{
+    display: inline-block;
+    background-color: lightcoral;
+    width: 200px;
+    height: 100%;
+}
+
+div.conteudo{
+    display: inline-block;
+    background-color: lightgreen;
+    width: calc(80vw - 200px);
+    height: 100%;
+    
+    
+}
+
+div.rodape{
+    height: 120px;
+    background-color: aqua;
+}

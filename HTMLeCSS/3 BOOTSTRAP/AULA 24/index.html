@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/IFES/1 FRONT END/2 BOOTSTRAP/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/IFES/1 FRONT END/2 BOOTSTRAP/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+    <title>Validação de Formulários</title>
+</head>
+
+<body>
+    <div class="container">
+    <h1 class="display-3">Endereço</h1>
+    <hr>
+    <form method="post" class="needs-validation" novalidate>
+        <div class="row mb-4 g-4">
+            <div class="col-7">
+                <label for="Logradouro" class="form-label">Logradouro</label>
+                <input type="text" class="form-control" id="logradouro" required>
+                <div class="valid-feedback">
+                    Logradouro Informado corretamente
+                </div>
+                <div class="invalid-feedback">
+                    Voce Deve informar o Logradouro
+                </div>
+                
+            </div>
+            <div class="col-2">
+                <label for="numero" class="form-label">Numero</label>
+                <input type="text" class="form-control" id="numero">
+            </div>
+            <div class="col-3">
+                <label for="complemento" class="form-label">Complemento</label>
+                <input type="text" class="form-control" id="complemento">
+            </div>
+            <div class="col-6">
+                <label for="bairro" class="form-label">Bairro</label>
+                <input type="text" class="form-control" id="bairro">
+            </div>
+            <div class="col-6">
+                <label for="cidade" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="cidade">
+            </div>
+
+            <div class="col-6">
+                <label for="estado" class="form-label">Estado</label>
+                <input type="text" class="form-control" id="estado">
+            </div>
+            <div class="col-2">
+                <label for="cep" class="form-label">Cep</label>
+                <input type="text" class="form-control" id="cep" pattern="[0-9]{8}" required>
+            </div>
+            <div class="col-12">
+                <input type="checkbox" value="" class="form-check-input" id="termos">
+                <label for="termos" class="form-check-label">Concordo com os termos e condições</label>
+            </div>
+        </div>
+        <button class="btn btn-primary">Cadastrar</button>
+    </form>
+</div>
+   <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap&family=Sofia&display=swap');
+
+body {
+    color: gray;
+}
+
+h1{
+    font: normal small-caps normal 30px/60px "Sofia";
+    text-align: center;
+    
+    /*
+    font-size: 30px;
+    text-align: center;
+    font-family: "Quicksand";*/
+
+    /*
+    font-family: "Georgia";
+    font-style: italic;
+    font-weight: bolder;
+    font-variant:small-caps;
+    */
+}
+
+p {
+    text-align: justify;
+/*
+direction: rtl;
+unicode-bidi: bidi-override;
+*/
+    text-decoration: none;
+    text-transform: none;
+    text-indent: 20px; 
+    letter-spacing: 2px;
+    line-height: 1.5;
+    word-spacing: 5px;
+    white-space: normal;  
+}
+
+
+a:link{
+    color: black;
+    text-decoration: none;
+    /*cursor: ;*/
+}
+
+a:visited{
+    color: blue;
+}
+
+a:hover{
+    color: red;
+    cursor: pointer;
+    background-color: yellow;
+}
+
+a:active{
+    color: purple;
+}
+
+a{
+    border: solid 1px black;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    line-height: 35px;
+}

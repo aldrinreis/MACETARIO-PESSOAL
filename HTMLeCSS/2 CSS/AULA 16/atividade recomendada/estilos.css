@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+    
+
+}
+.container{
+    width: 800px;
+    height: 800px;
+    background-color: antiquewhite;
+    position:relative;
+    margin: 20px auto;
+    
+    
+
+}
+
+#div1{
+    background-color: grey;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 150px;
+    left: 200px;
+
+}
+
+#div2,#div3,#div4{ 
+    width: 100px;
+    height: 100px;}
+#div2{
+    background-color: yellow;
+   
+}
+
+#div3{
+    background-color: blue;
+    position: absolute;
+    left: 150px;
+    top: 150px;
+   
+}
+
+#div4{
+    background-color: red;
+    position: absolute;
+    bottom: 0px;
+   
+}
+
+#div5{
+    background-color: green;
+    width: 800px;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+}

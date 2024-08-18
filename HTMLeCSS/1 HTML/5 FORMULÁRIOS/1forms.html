@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+
+    <h1>Formulários</h1>
+    <hr>
+
+    <form action="" method="post">
+        <p>
+            <label for="txtNomeCompleto">Nome Completo</label> <br>
+            <input type="text" name="NomeCompleto" id="txtNomeCompleto" placeholder="Insira seu Nome" required>
+        </p>
+
+        <p>
+            <label for="txtEmail">Email</label> <br>
+            <input type="email" name="Email" id="txtEmail" placeholder="email">
+        </p>
+
+
+        <fieldset>
+            <legend>Cargo Pretendido</legend>
+
+            <input type="radio" name="Cargo" id="rdProgramador" value="Programador">
+            <label for="rdProgramador">Programador</label>
+            <br>
+            <input type="radio" name="Cargo" id="rdWebDesigner" value="WebDesigner">
+            <label for="rdWebDesigner">WebDesigner</label>
+        </fieldset>
+
+        <p>
+            <input type="checkbox" name="Aceito" id="chkAceito">
+            <label for="chkAceito">Aceito os termos de uso</label>
+
+
+        </p>
+
+        <p>
+            <Label for="slctEstado">Estado</Label> <br>
+            <select name="Estado" id="slctEstado">
+                <optgroup label="Norte">
+                    <option value="AM">Amazonas</option>
+                    <option value="RO">Rondonia</option>
+                </optgroup>
+                <optgroup label="Nordeste">
+                    <option value="PI">Piaui</option>
+                    <option value="MA">Maranhao</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="SC" selected>Santa Catarina</option>
+                    <option value="RS">Rio Grande do Norte</option>
+                </optgroup>
+
+            </select>
+
+        </p>
+
+        <p>
+            <label for="slctLinguagens">Linguagens de Programação</label> <br>
+            <select name="Linguagens" id="slctLinguagens" size="6" multiple>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="C#">C#</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+
+            </select>
+
+        </p>
+
+        <p>
+            <label for="txtCidade">Cidade</label><br>
+            <input type="text" name="Cidade" id="txtCidade" list="Cidades">
+            <datalist id="Cidades">
+                <option value="Manaus"></option>
+                <option value="Porto Velho"></option>
+                <option value="São Paulo"></option>
+                <option value="Vitória"></option>
+                <option value="Salvador"></option>
+                <option value="Fortaleza"></option>
+                <option value="Curitiba"></option>
+                <option value="Florianópolis"></option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="txtCurriculo">Curriculo</label><br>
+            <textarea name="Curriculo" id="txtCurriculo" cols="30" rows="10"></textarea>
+
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+
+</body>
+
+</html>
