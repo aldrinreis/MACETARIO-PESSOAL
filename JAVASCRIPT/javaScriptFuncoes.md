@@ -1,5 +1,6 @@
 > # **Funções**
 
+**[Apostila de Funções](/JAVASCRIPT/JavaScript-12-Funcoes.pdf)**
 
 > ### **Funções**
 

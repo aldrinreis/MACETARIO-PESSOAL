@@ -24,9 +24,11 @@
 
 
 #### **HTML e CSS**
+* **[Apostila de HTML e CSS IFES](/HTMLeCSS/Apostila%20de%20HTML5%20e%20CSS3.pdf)**
 
 #### **Java Script**
 
+* **[Apostila de Fundamentos](/JAVASCRIPT/Apostila-JavaScript-Fundamentos_01.pdf)**
 * **[Fundamentos](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptFundamentos.md#java-script---fundamentos)**
 * **[Variáveis e Constantes](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptFundamentos.md#vari%C3%A1veis-e-constantes)**
 * **[Tipos de Dados](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptFundamentos.md#tipos-de-dados)**
@@ -35,3 +37,7 @@
 * **[Tratamento de Exeções](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptFundamentos.md#tratamento-de-exce%C3%A7%C3%B5es)**
 
 
+- ##### **Funções**
+
+**[Apostila de Funções](/JAVASCRIPT/JavaScript-12-Funcoes.pdf)**
+**[Doc Funçoes](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/javaScriptFuncoes.md)**
