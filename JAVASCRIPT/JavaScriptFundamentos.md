@@ -349,9 +349,9 @@ switch (option){
 }
 ```
 
-- **TRATAMENTO DE EXCEÇÕES**
+> - ##### **TRATAMENTO DE EXCEÇÕES**
 
-- Try / Catch / Finally
+- **Try / Catch / Finally**
 
 ```javascript
 
