@@ -257,3 +257,133 @@ console.log(!password)
 
 > - ##### **Condicionais e controle de fluxo.**
 
+- **Operador condicional ternário**
+
+```javascript
+let age = 16
+console.log(age >=18 // Condição
+? "Você pode dirigir" // Se verdadeiro
+: "Você não pode dirigir" // Se falso
+)
+
+/*outro modo*/
+
+let idade = 17
+let validacao = 17 >= 18 ? "voce pode" : "Não pode"
+console.log(validacao)
+
+```
+
+- **Falsy e Truthy**
+
+- Exemplos de Falsy
+* false
+* 0 
+* -0
+* "" string vazia
+* null
+* undefined
+* Nan
+
+- Exemplos de Truthy
+* true
+* {} - objeto vazio
+* [] - array vazio
+* número inteiro diferente de 0 negativo ou positivo
+* 1.5 numero float
+* "aldrin" string com conteudo ou espaço
+* Infinity ou - Infinity
+
+- **IF**
+
+```javascript
+let hour = 11
+
+if(hour <= 12){
+    console.log("bom dia")
+}
+
+```
+- **IF ELSE**
+
+```javascript
+let age = 13
+
+if(age >= 18){
+    console.log("Voce pode dirigir")
+} else{
+    console.log("Você não pode")
+}
+```
+- **Else IF**
+
+```javascript
+let hour = 10
+
+if(hour <= 12){
+    console.log("bom dia")
+}else if(hour >= 12 && hour <= 18){
+    console.log("Boa Tarde")
+}else{
+    console.log("Boa noite")
+}
+
+```
+- **Switch**
+
+```javascript
+let option = 2
+
+switch (option){
+    case 1:
+        console.log("Consultar Pedido")
+        break
+    case 2:
+        console.log("Falar com o atendente")
+        break
+    case 3:
+        console.log("Cancelar pedido")
+        break
+    default:
+        console.log("Opção inválida")
+}
+```
+
+- **TRATAMENTO DE EXCEÇÕES**
+
+- Try / Catch / Finally
+
+```javascript
+
+try{
+    //tenta executar algo
+    console.log(result)
+
+} catch(error){
+ //captura o erro pra tratar
+
+    console.log(`print do erro: ${error}`)
+
+} finally {
+    // executa independente se deu certo ou nao
+    // Finally é OPCIONAL
+    console.log("FIM")
+}
+
+```
+- Lançando exceções.
+
+```javascript
+let result = 1
+
+try {
+     if (result === 0){
+        throw new Error(" O valor é igual a 0")
+     }
+
+} catch (error){
+    console.log(error)
+} finally {
+    console.log("fim")
+}
+```
