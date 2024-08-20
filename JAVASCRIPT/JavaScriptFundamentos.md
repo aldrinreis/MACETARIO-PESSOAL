@@ -1,6 +1,20 @@
 # **Java Script**
 
+- **[Fundamentos](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptFundamentos.md#java-script---fundamentos)**
+- **[Variáveis e Constantes](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptFundamentos.md#vari%C3%A1veis-e-constantes)**
+- **[Tipos de Dados](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptFundamentos.md#tipos-de-dados)**
+- **[Expressões e Operadores.](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptFundamentos.md#express%C3%B5es-e-operadores)**
+- **[Condicionais e controle de fluxo.](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptFundamentos.md#condicionais-e-controle-de-fluxo)**
+- **[Tratamento de Exeções](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptFundamentos.md#tratamento-de-exce%C3%A7%C3%B5es)**
+
+<hr>
+
+
+<br>
+<br>
+
 > ### **Java Script - Fundamentos**
+
 
 - **Conectando o Java Script**
 
@@ -19,8 +33,10 @@ Comentário de múltiplas linhas /* */:
 Este é um comentário.
 */
 ```
+<br>
 
-> - ##### **Variáveis e Constantes**
+> - ### **Variáveis e Constantes**
+<br>
 
 - **VARIÁVEIS**
 
@@ -34,9 +50,12 @@ Var tem o escopo global e de função.
 2. exemplo: ```let nome = "aldrin"``` e substituir ```nome = "reis"```
 3. Let possui o escopo de bloco e função.
 
+<br>
+
 - **CONSTANTES**
 
 - Declarar constante ```const``` exemplo: ```const number = 42``` - valor fixo não alterável.
+<br>
 
 - **ESCOPO**
 
@@ -44,15 +63,23 @@ Var tem o escopo global e de função.
     1.1 Variáveis declardas fora de qualquer função ou bloco de código(var).
 2. Bloco
     2.1 Acesíveis apenas dentro do bloco onde foi declarada (let e const).
+<br>
 
 - **HOISTING**
 
 - Içamento.
 Comportamento do interpretador de içar as declarações de variáveis(var) e funções para o topo do escopo onde foram definidas, antes mesmo da execução do código.
+<br>
 
 ![Escopos Js](/JAVASCRIPT/img/escopos1.png)
 
-- ##### **Tipos de Dados**
+<br>
+<br>
+<br>
+<br>
+
+
+- ### **Tipos de Dados**
 
 - **Tipos Primitivos**
 String - Number - boolean - null - undefined
@@ -64,6 +91,7 @@ let username = "rodrigo"
 console.log(username)
 console.log(typeof username)
 ```
+<br>
 
 - **String**
 - Valor declarado entre aspas simples ou duplas ou crase.
@@ -71,12 +99,12 @@ console.log(typeof username)
 console.log('str com aspas simples')
 console.log("str com aspas duplas")
 console.log("str 'simples dentro da 'dupla")
-
 console.log(`
 Uma string com acento grave permite
     escrever multiplas linhas.
 `)
 ```
+<br>
 
 - **Template Literals**
 - Template string e interpolação de strings.
@@ -88,19 +116,24 @@ let email = "aldrinreisdemorais@gmail.com"
 console.log("Olá" + userName)
 console.log(`Olá, ${userName} você logou pelo email: ${email}`)
 ```
+<br>
 
 - **Number**
 
 - Pode armazenar números inteiros positivos e negativos e de ponto flutuante.
 Exemplo: ```const nota = 8.4```
+<br>
 
 - **Boolean**
+<br>
 
 - Guarda verdadeiro ou falso [true or false]
+<br>
 
 - **Undefined e Null**
 
 - undefined é aquilo que ainda não tem valor, não foi definido. O valor null é o vazio definido propositalmente.
+<br>
 
 - **Conversão e Coerção de tipos**
 
@@ -121,8 +154,11 @@ console.log(Boolean(option))
 - Coerção de tipos
 
 Quando o js implicitamente tenta converter um dos valores para um tipo compatível antes de realizar a operação.
+<br>
 
-> - ##### **Expressões e Operadores.**
+> - ### **Expressões e Operadores.**
+
+<br>
 
 - **Operadores Aritiméticos**
 
@@ -136,6 +172,7 @@ console.log("RESTO", 12 % 8)
 console.log("EXPONENCIAÇÃO", 2 ** 8)
 
 ```
+<br>
 
 - **Incremento e Decremento**
 
@@ -157,16 +194,25 @@ console.log("Decremento antes:", --number) //Pode ser usado também para increme
 
 number +=10 // é o mesmo que number = number + 10
 ```
+<br>
 
 - **Ordem de Precedência**
 
 - Define qual operação é realizada primeiro.
+<br>
 
 ![Orden de Precedencia](/JAVASCRIPT/img/ordemdeprecedencia.png)
+<br>
 
 - Parêntese altera a ordem
+<br>
+<br>
+<br>
+<br>
 
-- **Operadores Lógicos**
+
+- #### **Operadores Lógicos**
+<br>
 
 - **Igual e diferente de**
 
@@ -182,6 +228,7 @@ console.log(one == 1) //true  == igual
 console.log(one != two) // true != diferente.
 
 ```
+<br>
 
 - **Estritamente igual e diferente de**
 
@@ -197,6 +244,7 @@ console.log(one === 1) //true  == igual
 console.log(two !== "2") // true Tipo diferente.
 
 ```
+<br>
 
 - **Maior igual e Menor igual**
 
@@ -205,6 +253,7 @@ console.log(two !== "2") // true Tipo diferente.
 - Maior igual ```>=```
 - Menor igual ```<=```
 
+<br>
 
 - **Operador de Atribuição**
 
@@ -233,8 +282,9 @@ value %=2 /*ou*/ value = value % 2
 value **=2 /*ou*/ value = value ** 2
 
 ```
+<br>
 
-- **Operadores Lógicos**
+- #### **Operadores Lógicos**
 
 ```javascript
 let email = true
@@ -254,8 +304,13 @@ console.log(email || password)
 console.log(!password)
 
 ```
+<br>
+<br>
+<br>
+<br>
 
-> - ##### **Condicionais e controle de fluxo.**
+
+> - ### **Condicionais e controle de fluxo.**
 
 - **Operador condicional ternário**
 
@@ -273,6 +328,7 @@ let validacao = 17 >= 18 ? "voce pode" : "Não pode"
 console.log(validacao)
 
 ```
+<br>
 
 - **Falsy e Truthy**
 
@@ -293,6 +349,7 @@ console.log(validacao)
 * 1.5 numero float
 * "aldrin" string com conteudo ou espaço
 * Infinity ou - Infinity
+<br>
 
 - **IF**
 
@@ -304,6 +361,8 @@ if(hour <= 12){
 }
 
 ```
+<br>
+
 - **IF ELSE**
 
 ```javascript
@@ -315,6 +374,8 @@ if(age >= 18){
     console.log("Você não pode")
 }
 ```
+<br>
+
 - **Else IF**
 
 ```javascript
@@ -329,6 +390,8 @@ if(hour <= 12){
 }
 
 ```
+<br>
+
 - **Switch**
 
 ```javascript
@@ -348,6 +411,11 @@ switch (option){
         console.log("Opção inválida")
 }
 ```
+<br>
+<br>
+<br>
+<br>
+
 
 > - ##### **TRATAMENTO DE EXCEÇÕES**
 
@@ -371,7 +439,10 @@ try{
 }
 
 ```
+<br>
+
 - Lançando exceções.
+<br>
 
 ```javascript
 let result = 1
