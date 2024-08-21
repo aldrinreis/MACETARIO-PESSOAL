@@ -5,7 +5,7 @@
 - **[Tipos de Dados](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptFundamentos.md#tipos-de-dados)**
 - **[Expressões e Operadores.](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptFundamentos.md#express%C3%B5es-e-operadores)**
 - **[Condicionais e controle de fluxo.](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptFundamentos.md#condicionais-e-controle-de-fluxo)**
-- **[Tratamento de Exeções](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptFundamentos.md#tratamento-de-exce%C3%A7%C3%B5es)**
+- **[Tratamento de Exceções](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptFundamentos.md#tratamento-de-exce%C3%A7%C3%B5es)**
 
 <hr>
 
@@ -46,7 +46,7 @@ Exemplo: ```nome = "reis"```
 Var tem o escopo global e de função.
 
 - Declarar com LET.
-1. let não permite sobescrever a variável.
+1. let não permite sobrescrever a variável.
 2. exemplo: ```let nome = "aldrin"``` e substituir ```nome = "reis"```
 3. Let possui o escopo de bloco e função.
 
@@ -60,9 +60,9 @@ Var tem o escopo global e de função.
 - **ESCOPO**
 
 1. Global
-    1.1 Variáveis declardas fora de qualquer função ou bloco de código(var).
+    1.1 Variáveis declaradas fora de qualquer função ou bloco de código(var).
 2. Bloco
-    2.1 Acesíveis apenas dentro do bloco onde foi declarada (let e const).
+    2.1 Acessíveis apenas dentro do bloco onde foi declarada (let e const).
 <br>
 
 - **HOISTING**
@@ -180,7 +180,7 @@ console.log("EXPONENCIAÇÃO", 2 ** 8)
 //Incremento
 let number = 10
 // number = number + 1
-//incermento
+//incremento
 number++
 console.log(number)
 //Decremento
@@ -201,7 +201,7 @@ number +=10 // é o mesmo que number = number + 10
 - Define qual operação é realizada primeiro.
 <br>
 
-![Orden de Precedencia](/JAVASCRIPT/img/ordemdeprecedencia.png)
+![Ordem de Precedência](/JAVASCRIPT/img/ordemdeprecedencia.png)
 <br>
 
 - Parêntese altera a ordem
@@ -216,13 +216,13 @@ number +=10 // é o mesmo que number = number + 10
 
 - **Igual e diferente de**
 
-- Considera o conteudo não o tipo. 1 igual a "1"
+- Considera o conteúdo não o tipo. 1 igual a "1"
 
 ```javascript
 let one = 1
 let two = 2
 
-//Considera o conteudo não o tipo. 1 igual a "1"
+//Considera o conteúdo não o tipo. 1 igual a "1"
 
 console.log(one == 1) //true  == igual
 console.log(one != two) // true != diferente.
