@@ -34,10 +34,23 @@
 * **[Tipos de Dados](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptFundamentos.md#tipos-de-dados)**
 * **[Expressões e Operadores.](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptFundamentos.md#express%C3%B5es-e-operadores)**
 * **[Condicionais e controle de fluxo.](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptFundamentos.md#condicionais-e-controle-de-fluxo)**
-* **[Tratamento de Exeções](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptFundamentos.md#tratamento-de-exce%C3%A7%C3%B5es)**
+* **[Tratamento de Exceções](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptFundamentos.md#tratamento-de-exce%C3%A7%C3%B5es)**
 
 
 - ##### **Funções**
 
-**[Apostila de Funções](/JAVASCRIPT/JavaScript-12-Funcoes.pdf)**
-**[Doc Funçoes](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/javaScriptFuncoes.md)**
+* **[Apostila de Funções](/JAVASCRIPT/JavaScript-12-Funcoes.pdf)**
+* **[Doc Funções](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/javaScriptFuncoes.md)**
+
+- ##### **DOM**
+
+* **[DOC](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/domJavaScript.md)**
+* **[Exemplos e Exercícios](/JAVASCRIPT/4%20DOM/)**
+* **[Repo Projeto](https://github.com/aldrinreis/Conversor-de-Moedas---A4NDEV)**
+
+- ##### **JS Intermediário**
+
+* **[DOC JS Intermediário](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScript%20Intermedi%C3%A1rio.md)**
+* **[Objetos](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScript%20Intermedi%C3%A1rio.md#objetos)**
+* **[Métodos de String](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScript%20Intermedi%C3%A1rio.md#m%C3%A9todos-de-texto)**
+* **[Arrays](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScript%20Intermedi%C3%A1rio.md#arrays)**

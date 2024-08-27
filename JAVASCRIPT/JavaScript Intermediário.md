@@ -1,5 +1,10 @@
 > # **JavaScript Intermediário**
 
+
+- **[Objetos](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScript%20Intermedi%C3%A1rio.md#objetos)**
+- **[Métodos de String](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScript%20Intermedi%C3%A1rio.md#m%C3%A9todos-de-texto)**
+- **[Arrays](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScript%20Intermedi%C3%A1rio.md#arrays)**
+
 > ### **Objetos**
 
 - **Criando um Objeto**
