@@ -290,6 +290,7 @@ console.log(message.toLowerCase().includes("javascript"))
 <br>
 
 >### **Arrays**
+<br>
 
 - **Criando um array com construtor**
 
@@ -305,6 +306,7 @@ const available = new Array(10)
 console.log(available.length)
 
 ```
+<br>
 
 - **Criando e Acessando um array**
 
@@ -321,6 +323,7 @@ console.log(fruits[1])
 console.log(fruits[fruits.length - 1])
 
 ```
+<br>
 
 - **Convertendo uma string para array**
 
@@ -342,6 +345,7 @@ Retorno
 
 */
 ```
+<br>
 
 - **Adicionado e Removendo Itens do Array**
 
@@ -370,6 +374,7 @@ console.log(users)
 users.pop()
 console.log(users)
 ```
+<br>
 
 - **Usando o Índice**
 
@@ -390,6 +395,7 @@ fruits.splice(1, 2)
 fruits.splice(position, 1)
 
 ```
+<br>
 
 - **Quais elementos o array aceita?**
 
@@ -414,6 +420,7 @@ myArray[3]()
 console.log(myArray[4].name)
 
 ```
+<br>
 
 - **Verificando se Existe um conteúdo no Array**
 
@@ -425,7 +432,185 @@ console.log(fruits.includes('apple'))
 
 
 ```
+<br>
+<br>
+<br>
+<br>
 
 
 >### **Repetições e iterações**
 
+- **Loop WHILE**
+
+```javascript
+//WHILE => executa enquanto a condição é verdadeira
+let execute = true
+
+while (execute){
+    let response = window.prompt("Deseja continuar? 1(SIM) ou 2 (NAO)")
+
+    if (response === "2"){
+        execute = false
+    }
+}
+```
+<br>
+
+- **Loop Infinto**
+
+```javascript
+// Estrutura de repetição sem fim => usar somente intencionalmente 
+
+let value = true
+while(value){
+    console.log("Executando o while")
+}
+
+```
+<br>
+
+- **Loop DO WHILE**
+
+A instrução é executada ao menos uma vez antes da condição ser verificada
+
+```javascript
+let value = 0
+do {
+    value++
+    console.log(value)
+} while(value < 10)
+```
+<br>
+
+- **Loop FOR**
+
+Repete até que a condição especificada seja falsa.
+
+ - Variável de controle.
+ - Condição
+ - Incremento ou decremento e passo da variável de controle
+
+```javascript
+
+    for (let i = 0; i <= 10; i++) {
+        console.log(i)
+    }
+
+    //Exemplo tabuada
+
+    for (multiplicador = 0; multiplicador <=10 ;multiplicador++ ){
+        console.log(`7 x ${multiplicador} = ${7*multiplicador}`)
+    }
+    
+```
+<br>
+
+- **Loop FOR IN**
+
+Executa iterações a partir de um objeto e percorre as propriedades.
+Pode ser usado com arrays também.
+
+```javascript
+    let person = {
+        name: "aldrin",
+        surname: "reis",
+        email: 'email@email',
+    }
+
+    for (let propriedades in person){
+        console.log(propriedades)
+        //Acessando o conteúdo.
+        console.log(person[propriedades])
+    }
+```
+<br>
+
+- **Loop FOR OF**
+
+Itera sobre os valores de um objeto iterável.
+
+
+```javascript
+let students = ["aldrin","flocos","night"]
+
+for (let estudante of students) {
+    console.log(estudante)
+}
+
+```
+<br>
+
+- **Break**
+Encerra a execução da repetição ou switch para seguir para a instrução seguinte
+
+```javascript
+let option = 3
+switch(option){
+    case 1:
+        console.log("cadastrar")
+        break
+    case 2:
+        console.log("atualizar")
+        break
+    case 3:
+        console.log("Remover")
+        break
+    default:
+       console.log("Opção invalida")
+       break 
+}
+
+//Utilizando o break pra finalizar a repetição
+
+for (let i = 0 ; i < 10; i++){
+    
+    if(i === 5){
+        break
+    }
+    console.log(i)
+}
+/*Retorno
+}
+
+ 0
+ 1
+ 2
+ 3
+ 4
+
+*/
+
+```
+<br>
+
+- **Continue**
+    Encerra (pula) a execução das instruções na iteração atual e continua a execução do loop com a próxima iteração.
+
+```javascript
+
+for (let i = 0 ; i < 10; i++){
+    
+    if(i === 5){
+        continue
+    }
+    console.log(i)
+}
+
+/*Retorno
+0
+1
+2
+3
+4
+6
+7
+8
+9
+*/
+```
+<br>
+<br>
+<br>
+<br>
+
+>### **DATA e HORA**

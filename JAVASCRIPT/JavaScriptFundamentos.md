@@ -41,12 +41,12 @@ Este é um comentário.
 - **VARIÁVEIS**
 
 - Declarar uma variável ```var nome``` exemplo ``` var nome = "aldrin"```
-Uma variável declarada por var pode ter seu valor substituído.
+Uma variável declarada por var pode ter seu valor substituído e ela pode ser redeclarada.
 Exemplo: ```nome = "reis"```
 Var tem o escopo global e de função.
 
 - Declarar com LET.
-1. let não permite sobrescrever a variável.
+1. let não permite sobrescrever ou redeclarar a variável.
 2. exemplo: ```let nome = "aldrin"``` e substituir ```nome = "reis"```
 3. Let possui o escopo de bloco e função.
 
