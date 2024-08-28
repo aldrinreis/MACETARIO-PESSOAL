@@ -279,7 +279,7 @@ let message = "Estou estudando os fundamentos de JavaScript"
 //Obtendo a posição da palavra.
 console.log(message.indexOf("estudando"))
 
-//Verificar se existe a palavra na script
+//Verificar se existe a palavra na String
 console.log(message.includes("JavaScript"))
 console.log(message.toLowerCase().includes("javascript"))
 
@@ -290,4 +290,142 @@ console.log(message.toLowerCase().includes("javascript"))
 <br>
 
 >### **Arrays**
+
+- **Criando um array com construtor**
+
+```javascript
+const newArray = new Array()
+
+console.log(newArray)
+
+console.log(newArray.length)
+
+//Criando com tamanho definido. *Posições vazias
+const available = new Array(10)
+console.log(available.length)
+
+```
+
+- **Criando e Acessando um array**
+
+```javascript
+
+let fruits = ['Apple', 'Banana', 'Orange']
+console.log(fruits)
+console.log(fruits.length)
+
+//Acessando índice => começa do 0
+console.log(fruits[1])
+
+//Acessando a última posição
+console.log(fruits[fruits.length - 1])
+
+```
+
+- **Convertendo uma string para array**
+
+```javascript
+let fullName = "Aldrin Reis de Morais"
+
+// Cria o Array separando pelos espaços
+console.log(fullName.split(" "))
+
+// Retorno (4) ['Aldrin', 'Reis', 'de', 'Morais']
+
+// Criando array com as letras.
+
+console.log(Array.from(fullName))
+
+/*
+Retorno
+(21) ['A', 'l', 'd', 'r', 'i', 'n', ' ', 'R', 'e', 'i', 's', ' ', 'd', 'e', ' ', 'M', 'o', 'r', 'a', 'i', 's']
+
+*/
+```
+
+- **Adicionado e Removendo Itens do Array**
+
+```javascript
+let users = []
+
+//Adicionando ao final com PUSH
+users.push("aldrin") 
+users.push("flocos")
+users.push("night")
+
+console.log(users)
+
+
+// Adicionado no Inicio com unshift
+
+users.unshift("lulu")
+
+//Removendo do Inicio com o shift
+
+users.shift()
+console.log(users)
+
+//Removendo do final com pop
+
+users.pop()
+console.log(users)
+```
+
+- **Usando o Índice**
+
+```javascript
+let fruits = ['apple' , 'watermelon', 'strawberry']
+
+//Retornando a posição ou o índice do elemento
+// Quando não encontra retorna -1
+
+let position = fruits.indexOf('watermelon')
+console.log(position)
+
+//Excluindo pelo índice => posição inicial e quantos itens
+//A partir do 1 remove 2
+fruits.splice(1, 2) 
+
+//Removeu 1 com a posição que foi passada
+fruits.splice(position, 1)
+
+```
+
+- **Quais elementos o array aceita?**
+
+```javascript
+let myArray = [
+    "texto", 
+    10, 
+    true, 
+    function(){
+        console.log("função dentro do array")
+    },
+    {
+        name: "Rodrigo",
+        email: "Rodrigo",
+    },
+]
+
+// Chamando a função
+myArray[3]()
+
+//Objeto
+console.log(myArray[4].name)
+
+```
+
+- **Verificando se Existe um conteúdo no Array**
+
+```javascript
+let fruits = ['apple' , 'watermelon', 'strawberry']
+
+//Verifica se item existe no arrays
+console.log(fruits.includes('apple'))
+
+
+```
+
+
+>### **Repetições e iterações**
 
