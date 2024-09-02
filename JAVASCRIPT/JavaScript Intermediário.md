@@ -614,3 +614,179 @@ for (let i = 0 ; i < 10; i++){
 <br>
 
 >### **DATA e HORA**
+
+- **Obtendo Data e Hora**
+
+```javascript
+console.log(new Date()) // Thu Aug 29 2024 14:30:52 GMT-0300 (Hora padrão de Brasília)
+
+/*Milissegundos desde a data usada como referencia pelo JS
+
+Primeira data usada como referência:
+
+console.log(new Date(0))
+Wed Dec 31 1969 21:00:00 GMT-0300 (Hora padrão de Brasília)
+
+*/
+console.log(new Date().getTime()) 
+
+
+
+```
+<br>
+
+- **Definindo data e hora específica**
+
+```javascript
+/* ano, mes, dia .
+Mês começa do valor 0 - janeiro 0 ....., julho 6.... */
+console.log(new Date(2024, 6, 3)) 
+
+//Definindo data e hora => ano,mes,dia,hora,minuto,segundo
+console.log(new Date(2024,6,3,14,30,0))
+
+//Padrão de string utiliza os meses com números normais
+console.log(new Date("2024-07-03T14:30:00"))
+
+console.log(new Date("July 3, 2024 14:30:00"))
+```
+<br>
+
+- **Métodos para trabalhar com data hora**
+
+```javascript
+let date = new Date("2024-07-02T14:30:10")
+
+// Dia da semana de 0 a 6 (domingo é 0)
+console.log(date.getDay())
+
+// Dia do Mês de 0 a 30
+console.log(date.getDate())
+
+// Mês de 0 a 11
+console.log(date.getMonth() + 1)
+
+//Ano
+console.log(date.getFullYear())
+
+//Hora
+console.log(date.getHours())
+//Minuto
+console.log(date.getMinutes())
+//Segundos
+console.log(date.getSeconds())
+```
+<br>
+
+- **Modificando data e hora**
+
+```javascript
+let date = new Date("July 3, 2024 14:30:00")
+//Modificando o ano
+date.setFullYear(2030)
+
+//Modificando o mês
+date.setMonth(11)
+
+//Modificando o Dia
+date.setDate(11)
+
+//Modificando a hora
+date.setHours(18)
+
+//Modificando os minutos
+date.setMinutes(20)
+
+//Modificando os segundos
+date.setSeconds(11)
+
+console.log(date)
+```
+<br>
+
+- **Formatando data e hora**
+
+```javascript
+let date = new Date("July 3, 2024 14:30:00")
+
+//Formatando para o dia sempre ter 2 dígitos
+let day = date.getDate().toString().padStart(2,"0")
+console.log(day)
+
+//Formatando para o mês sempre ter 2 dígitos
+let month = (date.getMonth() +1 ).toString().padStart(2,"0")
+console.log(month)
+
+//Motar data e hora com um padrão
+let year = date.getFullYear()
+let hour = date.getHours()
+let minute = date.getMinutes()
+let second = date.getSeconds()
+
+console.log(`${day}/${month}/${year} às ${hour}:${minute}:${second}`)
+
+```
+<br>
+
+- **Convertendo uma data para strings**
+```javascript
+let date = new Date("2024-07-02T14:30:10")
+
+//Converte para string
+console.log(date.toString())
+
+//Retorna somente a data
+console.log(date.toDateString())
+
+//Retornando somente Às horas
+console.log(date.toTimeString())
+```
+<br>
+
+- **Exibindo data e hora formatadas de acordo com a localidade**
+
+```javascript
+let date = new Date("2024-07-02T14:00:00")
+/*Exibe a data e hora no formato local*/
+console.log(date.toLocaleDateString())
+console.log(date.toLocaleTimeString())
+
+/*Exibe data e hora no formato escolhido*/
+
+console.log(date.toLocaleDateString("en"))
+console.log(date.toLocaleTimeString("en"))
+console.log(date.toLocaleTimeString("pt-BR"))
+
+```
+
+<br>
+
+- **Usando o toLocaleString()**
+
+```javascript
+let date = new Date("2024-07-02T14:30:10")
+
+console.log(date.toLocaleString())
+console.log(date.toLocaleString("en"))
+console.log(date.toLocaleString("pt-BR"))
+
+//Exibe data e hora styles diferentes
+console.log(date.toLocaleString("pt-BR",{
+    dateStyle: "short",
+}))
+console.log(date.toLocaleString("pt-BR",{
+    dateStyle: "long",
+}))
+console.log(date.toLocaleString("pt-BR",{
+    dateStyle: "medium",
+}))
+console.log(date.toLocaleString("pt-BR",{
+    dateStyle: "full",
+}))
+console.log(date.toLocaleString("pt-BR",{
+    day: "2-digit",
+    month: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+}))
+```
