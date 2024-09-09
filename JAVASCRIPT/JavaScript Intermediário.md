@@ -789,4 +789,64 @@ console.log(date.toLocaleString("pt-BR",{
     hour: "2-digit",
     minute: "2-digit",
 }))
+
+//Editando valores
+let amount = 12.5;
+console.log(amount.toLocaleString("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+}));
+
 ```
+<br>
+
+- **Aprendendo sobre fuso horário**
+
+Referência => meia noite de 01 de Janeiro de 1970 - UTC
+<br>
+
+- **Conhecendo a Intl**
+
+Intl é a API de internacionalização do ECMAScript
+
+```javascript
+//Obtendo informações da localidade
+const currentLocale = Intl.DateTimeFormat().resolvedOptions()
+console.log(currentLocale)
+/*
+RETORNO
+calendar:"gregory"
+day:"2-digit"
+locale:"pt-PT"
+month:"2-digit"
+numberingSystem:"latn"
+timeZone:"America/Sao_Paulo"
+year:"numeric"
+*/
+
+//Formata de acordo com a localidade
+console.log(new Intl.DateTimeFormat("pt-BR").format(new Date()))
+console.log(new Intl.DateTimeFormat("en-US").format(new Date()))
+
+//Pegando diferença de time-zones
+const date = new Date();
+console.log(date.getTimezoneOffset()); //Diferenças em minutos
+console.log(date.getTimezoneOffset() / 60); //Em horas
+
+```
+<br>
+
+- **Criando uma data e hora com fuso horário**
+
+```javascript
+const dateWithTimezone = new Date("2023-12-13T22:56:30.603+03:00");
+//console.log(dateWithTimezone.toISOString());
+
+console.log(dateWithTimezone.toLocaleString())
+```
+<br>
+<br>
+<br>
+<br>
+
+>### **Classes**
