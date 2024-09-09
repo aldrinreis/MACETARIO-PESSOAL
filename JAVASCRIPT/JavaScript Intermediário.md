@@ -850,3 +850,193 @@ console.log(dateWithTimezone.toLocaleString())
 <br>
 
 >### **Classes**
+
+- **Criando uma classe com um método construtor**
+
+```javascript
+    class Person {
+        constructor(){
+            console.log("Classe Instanciada")
+        }
+    }
+
+    const person = new Person()
+```
+<br>
+
+- **Criando propriedades dentro das classes**
+
+```javascript
+    class Product {
+        constructor(name){
+            this.name = name
+        }
+    }
+    const product1 = new Product("teclado")
+    console.log(product1.name)
+
+    const product2 = new Product("mouse")
+    console.log(product2.name)
+```
+
+<br>
+
+- **Adicionando métodos nas classes**
+
+```javascript
+    class User {
+        constructor(name,email){
+            this.name = name
+            this.email = email
+        }
+
+        sendEmail(){
+            console.log("Email enviado para", this.name, "para o endereço", this.email)
+        }
+    }
+
+    const user = new User("teste","teste@gmail.com")
+    user.sendEmail()
+    
+```
+<br>
+
+- **O que é método estático**
+
+```javascript
+//Não utilizar com constructor, constructor necessita de instanciar a classe.
+    class User {
+        static showMessage(){
+            console.log("Essa é uma Mensagem")
+        }
+    }
+   //Acessa sem precisar estanciar a classe.
+   User.showMessage()
+```
+<br>
+
+- **Como aplicar herança com classes?**
+
+```javascript
+    class Animal{
+        constructor(name){
+            this.name = name
+        }
+
+        makeNoise(){
+            console.log("Algum som genérico")
+        }
+    }
+
+    //Herdando
+    class Dog extends Animal{
+        
+    }
+    class Cat extends Animal{
+
+    }
+
+    const dog = new Dog("ted")
+    
+```
+<br>
+
+- **Sobrescrevendo Métodos**
+
+```javascript
+
+class Animal{
+        constructor(name){
+            this.name = name
+        }
+
+        makeNoise(){
+            console.log("Algum som genérico")
+        }
+    }
+
+    //Herdando
+    class Dog extends Animal{
+         makeNoise(){
+            console.log("AU AU AU AU")
+        }
+    }
+    class Cat extends Animal{
+        makeNoise(){
+            console.log("Miau!!!!!!!!!!!!!!")
+        }
+    }
+
+    const dog = new Dog("ted")
+    dog.makeNoise()
+    const cat = new Cat("Mel")
+    cat.makeNoise()
+
+```
+<br>
+
+- **Criando um objeto prototype**
+
+```javascript
+const address = {
+    city: "Sao Paulo",
+    country: "Brazil",
+}
+
+let userName = "teste"
+console.log(userName.__proto__)
+```
+<br>
+
+- **Como utilizar classes para lidar com exceções**
+
+```javascript
+let obj = [17]
+let index = 300
+
+try {
+    //obj.execute() // Descomente isso se quiser gerar um TypeError
+    if(!obj.includes(17)){
+        throw new Error("O numero nao esta disponível")
+    }
+    
+    if(index > 99){
+        throw new RangeError("Numero fora do intervalo.")
+    }
+} catch(error) {
+    if(error instanceof TypeError){
+        console.log("Método indisponível")
+    }
+    else if(error instanceof RangeError){
+        console.log(error.message)
+    }else{
+        //console.log(error)
+        console.log("Não foi possível realizar a ação")
+    }
+   
+}
+
+```
+<br>
+
+- **Como utilizar classes para criar erros customizados**
+
+```javascript
+    class MyCustomError {
+        constructor(message){
+            this.message = "Classe de erro customizada:" + message
+        }
+    }
+
+    try{
+
+        throw new MyCustomError("Erro personalizado")
+
+    }catch(error){
+        if(error instanceof MyCustomError){
+            console.log(error.message)
+        }else{
+            console.log("não foi possível executar")
+        }
+    }
+```
