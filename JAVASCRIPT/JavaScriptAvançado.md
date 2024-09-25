@@ -147,3 +147,9 @@ const data = [
 //desestrutura os objetos
 console.log(...data)
 ```
+<br>
+<br>
+<br>
+<br>
+
+> ### **Métodos de Array**

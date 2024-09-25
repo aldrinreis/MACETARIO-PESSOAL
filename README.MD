@@ -58,3 +58,8 @@
 * **[DATA e HORA](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScript%20Intermedi%C3%A1rio.md#data-e-hora)**
 * **[Classes](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScript%20Intermedi%C3%A1rio.md#classes)**
 * **[Repo Projeto - Reembolso](https://github.com/aldrinreis/Projeto-de-Reembolso---A4NDEV)**
+
+
+- ##### **JS Avançado**
+
+**[DOC JS Avançado](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptAvan%C3%A7ado.md)**
