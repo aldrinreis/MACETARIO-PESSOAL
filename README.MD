@@ -46,7 +46,7 @@
 
 * **[DOC](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/domJavaScript.md)**
 * **[Exemplos e Exercícios](/JAVASCRIPT/4%20DOM/)**
-* **[Repo Projeto](https://github.com/aldrinreis/Conversor-de-Moedas---A4NDEV)**
+* **[Repo Projeto - Conversor de Moeda](https://github.com/aldrinreis/Conversor-de-Moedas---A4NDEV)**
 
 - ##### **JS Intermediário**
 
@@ -57,3 +57,4 @@
 * **[Repetições e iterações](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScript%20Intermedi%C3%A1rio.md#repeti%C3%A7%C3%B5es-e-itera%C3%A7%C3%B5es)**
 * **[DATA e HORA](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScript%20Intermedi%C3%A1rio.md#data-e-hora)**
 * **[Classes](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScript%20Intermedi%C3%A1rio.md#classes)**
+* **[Repo Projeto - Reembolso](https://github.com/aldrinreis/Projeto-de-Reembolso---A4NDEV)**
