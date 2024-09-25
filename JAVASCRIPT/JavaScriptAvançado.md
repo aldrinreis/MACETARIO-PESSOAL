@@ -114,7 +114,7 @@ function values1(a, ...args){
     console.log(args.length)
 }
 
-values(1,2,3,,4)
+values(1,2,3,4)
 values1(1,2,3,,4)
 
 ```
