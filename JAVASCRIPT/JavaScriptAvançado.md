@@ -1,4 +1,7 @@
 > # **JavaScript Antes do Framework**
+**[JavaScript Moderno](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptAvan%C3%A7ado.md#javascript-moderno)**
+**[Métodos de Array](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptAvan%C3%A7ado.md#m%C3%A9todos-de-array)**
+
 <br>
 
 > ### **JavaScript Moderno**
