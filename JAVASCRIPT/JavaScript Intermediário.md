@@ -288,6 +288,34 @@ console.log(message.includes("JavaScript"))
 console.log(message.toLowerCase().includes("javascript"))
 
 ```
+
+- **Método repeat**
+
+Este método é uma funcionalidade da classe String que permite repetir uma string um número especificado de vezes, retornando uma nova string resultante.
+
+```javascript
+const palavra = "Olá! ";
+const repetida = palavra.repeat(3);
+
+console.log(repetida); // "Olá! Olá! Olá! "
+
+const character = "#";
+const count = 8;
+const rows = [];
+
+for (let i = 0; i < count; i = i + 1) {
+  rows.push(character.repeat(i + 1));
+}
+
+let result = "";
+
+for (const row of rows) {
+  result = result + "\n" + row;
+}
+
+console.log(result);
+
+```
 <br>
 <br>
 <br>
