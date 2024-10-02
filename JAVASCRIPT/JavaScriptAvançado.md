@@ -179,7 +179,7 @@ const formatted = products.map((product)=>{
     //return product.toUpperCase()
 
     return {
-        id: Math.random().
+        id: Math.random(),
         description: product,
     }
 })
@@ -319,3 +319,197 @@ const sum = values.reduce((accumulator, currentValue,index)=>{
 
 console.log(sum)
 ```
+<br>
+<br>
+<br>
+<br>
+
+> ### **Imutabilidade**
+
+- **Definição**
+
+Uma vez que algo imutável é criado **você não pode modificar seus valores e propriedades**.
+Em vez disso, você cria uma cópia modificada para manter o original inalterado.
+<br>
+
+- **Aplicando**
+
+```javascript
+const address1 = {
+    street: "Av Brasil",
+    number: 20
+}
+
+/*
+=========> Isto não é uma cópia é uma referência.
+        const address2 = address1
+        address2.number = 30
+=========> Altera nos dois pois é apenas uma referência
+        console.log(address1, address2)
+*/
+
+//  Aqui cria um segundo objeto. (Opção 1)
+const address2 = {...address1}
+address2.number = 30
+//  Só mudou o objeto 2
+console.log(address1, address2)
+
+// (Opção 2)
+const address3 = {...address1, number: 40}
+console.log(address1, address3)
+
+//Exemplo de Array
+
+const list1 = ["Apple", "Banana"]
+const list2 = [...list1]
+
+```
+<br>
+
+- **Shallow e Deep Copy**
+
+Shallow copy(cópia superficial): Não pega os itens aninhados.
+
+```javascript
+const htmlCourse = {
+    course: "HTML",
+    students: [{
+        name: "Rodrigo",
+        email: "rodrigo@email.com"
+    }]
+}
+
+//========> Shallow copy
+const jsCourse = {
+    ...htmlCourse,
+    course: "Javascript"
+}
+//=========> Modificou nos 2 objetos students é uma referência e não uma cópia.
+jsCourse.students.push({
+    name: "joao",
+    email: "joao@email.com"
+})
+
+console.log(htmlCourse, jsCourse)
+
+//=========> Deep Copy(cópia profunda)   (Forma 1)
+
+const tsCourse = {
+    ...htmlCourse,
+    course: "Typescript",
+    students: [...htmlCourse.students]
+}
+
+tsCourse.students.push({
+    name: "josé",
+    email: "josé@email.com"
+})
+
+console.log(htmlCourse,tsCourse)
+
+/*************************************/
+
+//==============> Opção 2
+const javaCourse = {
+    ...htmlCourse,
+    course: "Java"
+}
+
+javaCourse.students = [...htmlCouse.students,{name: "ted", email: "ted@email.com"} ]
+
+```
+<br>
+
+- **Shallow freezing**
+
+```javascript
+const book = {
+    title: "Objetos Imutáveis",
+    category: "Javascript",
+    author: {
+        name: "Rodrigo",
+        email: "rodrigo@email.com"
+    }
+}
+
+// O Javascript em si não impõe restrições a modificações dos objetos.
+book.category = "HTML"
+
+//Congelar o objeto e impedir a modificação.
+Object.freeze(book)
+
+book.category = "CSS" //Não modifica.
+
+// O Object.freeze() não impede modificações profundas em objetos aninhados.
+book.author.name = "João" // Permite a modificação em objeto aninhado "shallow freeze"
+
+```
+<br>
+
+- **Deep freeze**
+
+```javascript
+const book = {
+    title: "Objetos Imutáveis",
+    category: "Javascript",
+    author: {
+        name: "Rodrigo",
+        email: "rodrigo@email.com"
+    }
+}
+
+function deepFreeze(object){
+    //Obtendo um array com a propriedades
+    const props = Reflect.ownKeys(object)
+
+    for(const prop of props){
+        //Obtém o valor associado a propriedade atual
+        const value = object[prop]
+
+
+        //Verifica se o valor é um objeto ou função para continuar aplicando o deepFreeze em objetos aninhados
+        if(value && typeof value === "object" || typeof value === "function" ||){
+            deepFreeze(value)
+        }
+
+    }
+
+
+    return Object.freeze(object)
+}
+
+deepFreeze(book)
+```
+<br>
+
+- **Manipulando Objetos Imutáveis**
+
+```javascript
+const book = {
+    title: "Objetos Imutáveis",
+    category: "Javascript",
+    author: {
+        name: "Rodrigo",
+        email: "rodrigo@email.com"
+    }
+}
+
+const updatedBook = {
+    ...book,
+    title: "Criando um Front End Moderno",
+    category: "html",
+    type: "Programming",
+}
+
+// Usando o operador de desestruturação (rest operator) para remover propriedades.
+
+const {category, ...updatedBook2} = book
+
+```
+<br>
+<br>
+<br>
+<br>
+
+> ### **Módulos**
+
