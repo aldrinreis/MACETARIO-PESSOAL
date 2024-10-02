@@ -1,17 +1,17 @@
 function getAverage(scores) {
     const comprimento = scores.length;
-    let counter = 0;  // Inicializar fora do loop para acumular corretamente
+    let counter = 0;  
     
     for (let i = 0; i < comprimento; i++) {
-      counter = counter + scores[i];  // Acumular os valores de scores[i]
+      counter = counter + scores[i];  
     }
   
-    let average = counter / comprimento;  // Calcular a média fora do loop
-    return average;  // Retornar o valor médio
+    let average = counter / comprimento;  
+    return average;  
   }
   
-  console.log(getAverage([92, 88, 12, 77, 57, 100, 67, 38, 97, 89]));  // 71.7
-  console.log(getAverage([45, 87, 98, 100, 86, 94, 67, 88, 94, 95]));  // 85.4
+  console.log(getAverage([92, 88, 12, 77, 57, 100, 67, 38, 97, 89])); 
+  console.log(getAverage([45, 87, 98, 100, 86, 94, 67, 88, 94, 95])); 
   
 
 // ===========> Outros modos
@@ -19,12 +19,13 @@ function getAverage(scores) {
 //Usando o REDUCE
 
 function getAverage1(scores) {
-    const total = scores.reduce((sum, score) => sum + score, 0);  // Somar os elementos
-    return total / scores.length;  // Calcular a média
+    const total = scores.reduce((sum, score) => sum + score, 0);  
+    
+    return total / scores.length; 
   }
   
-  console.log(getAverage1([92, 88, 12, 77, 57, 100, 67, 38, 97, 89]));  // 71.7
-  console.log(getAverage1([45, 87, 98, 100, 86, 94, 67, 88, 94, 95]));  // 85.4
+  console.log(getAverage1([92, 88, 12, 77, 57, 100, 67, 38, 97, 89])); 
+  console.log(getAverage1([45, 87, 98, 100, 86, 94, 67, 88, 94, 95])); 
 
 
 //Usando o For of
@@ -39,13 +40,12 @@ function getAverage1(scores) {
     return total / scores.length;
   }
   
-  console.log(getAverage2([92, 88, 12, 77, 57, 100, 67, 38, 97, 89]));  // 71.7
-  console.log(getAverage2([45, 87, 98, 100, 86, 94, 67, 88, 94, 95]));  // 85.4
+  console.log(getAverage2([92, 88, 12, 77, 57, 100, 67, 38, 97, 89]));   console.log(getAverage2([45, 87, 98, 100, 86, 94, 67, 88, 94, 95]));
   
 // Reduce coma arrow function
 /*
 const getAverage = scores => scores.reduce((sum, score) => sum + score, 0) / scores.length;
 
-console.log(getAverage([92, 88, 12, 77, 57, 100, 67, 38, 97, 89]));  // 71.7
-console.log(getAverage([45, 87, 98, 100, 86, 94, 67, 88, 94, 95]));  // 85.4
+console.log(getAverage([92, 88, 12, 77, 57, 100, 67, 38, 97, 89]));  
+console.log(getAverage([45, 87, 98, 100, 86, 94, 67, 88, 94, 95]));  
 */
