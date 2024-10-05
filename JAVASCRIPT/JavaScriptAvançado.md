@@ -634,3 +634,43 @@ const calc = new Calc()
 console.log("4 + 6 =", calc.sum( 4,6))
 
 ```
+<br>
+<br>
+<br>
+<br>
+
+> ### **Funções Assíncronas**
+
+
+- **setTimeout()**
+
+====> Executa uma função após um intervalo de tempo especificado, como se fosse um delay
+
+```javascript
+
+setTimeout(()=>{
+    console.log("Olá")
+}, 4000) // ====> Tempo em milissegundos
+```
+<br>
+
+- **EetInterval()**
+
+====> executa uma função a cada intervalo de tempo especificado, como se fosse um tempo de loop
+
+```javascript
+let value = 10
+
+const interval = setInterval(()=>{
+    console.log(value)
+    value--
+
+    if (value === 0){
+        console.log("Happy new Year")
+        //Interrompe o intervalo de execuções
+        clearInterval(interval)
+    }
+}, 1000)
+
+```
+<br>
