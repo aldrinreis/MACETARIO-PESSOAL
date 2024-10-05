@@ -517,32 +517,36 @@ const {category, ...updatedBook2} = book
 
 Define um formato para organizar e estrutura códigos em módulos, permitindo a modularização e reutilização de código.
 
-* **Módulos:** Encapsulamento de código em módulos, permitindo a separação de responsabilidades e reutilização.
-* **Import:** Usado para incluir módulos
-* **Export:** Usado para export de funcionalidades de um módulo para outros.
+- **Módulos:** Encapsulamento de código em módulos, permitindo a separação de responsabilidades e reutilização.
+- **Import:** Usado para incluir módulos
+- **Export:** Usado para export de funcionalidades de um módulo para outros.
+
+<br>
 
 - **Criando Módulos**
 Geralmente o aquivo principal é chamado de main.js
 
-- Indicando que ao HTML que usará módulos.
+- **Indicando que ao HTML que usará módulos.**
 
 ![Indicando que ao HTML que usará módulos](/JAVASCRIPT/img/indicando%20que%20o%20html%20usuara%20modulos.png)
+<br>
 
+- **Exportando um arquivo como módulo.**
 
-- Exportando um arquivo como módulo.
-
-* **Forma 1**
+- **Forma 1**
 
 ![Exportando um arquivo como módulo. 1](/JAVASCRIPT/img/exportando%20arquivo%20como%20modulo%201.png)
 
 <br>
 
-* **Forma 2**
+- **Forma 2**
 
 ![Exportando um arquivo como módulo. 2](/JAVASCRIPT/img/exportando%20arquivo%20como%20modulo%202.png)
 <br>
 
-- Importando um arquivo criado como módulo:
+<br>
+
+- **Importando um arquivo criado como módulo:**
 
 ![Importando um arquivo criado como módulo](/JAVASCRIPT/img/importando%20um%20arquivo%20criado%20como%20modulo.png)
 <br>
@@ -561,19 +565,19 @@ console.log("4 + 6 =", calc.sum( 4,6))
 <br>
 
 - **Exportação padrão ou nomeada**
-
-Exportação default e nomeada
+**
+- **Exportação default e nomeada**
 
 ![Exportação default e nomeada](/JAVASCRIPT/img/exportacao%20default%20e%20nomeada.png)
 
 <br>
 
-Importando função padrão sem o {}
+- **Importando função padrão sem o {}**
 
 ![Importando função padrão sem o {}](/JAVASCRIPT/img/Importando%20função%20padrão%20sem%20o%20{}.png)
 <br>
 
-Pode ser usado qualquer nome na importação do default
+- **Pode ser usado qualquer nome na importação do default**
 
 ![Pode ser usado qualquer nome na importação do default](/JAVASCRIPT/img/Pode%20ser%20usado%20qualquer%20nome%20na%20importação%20do%20default.png)
 <br>
