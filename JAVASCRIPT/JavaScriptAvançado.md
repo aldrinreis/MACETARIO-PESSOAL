@@ -674,3 +674,33 @@ const interval = setInterval(()=>{
 
 ```
 <br>
+
+- **Conhecendo Promises**
+
+```javascript
+//Função que retorna uma promises
+
+function asyncFunction(){
+    return new Promise((resolve,reject)=>{
+
+        // simulando uma operação assíncrona 
+
+        setTimeout(()=>{
+
+        const isSuccess = true
+
+        if(isSuccess){
+            resolve("A operação foi concluída com sucesso.")
+        }else {
+            reject("Algo deu errado!")
+        }
+        }, 3000) 
+    })
+}
+
+// Visualizando que o retorno é uma promise
+//console.log(asyncFunction())
+
+
+asyncFunction().then((response) => {console.log("Sucesso:", response)}).catch((error)=>{console.log("Error: ", error)}).finally(()=>{console.log("Fim da execução")})
+```
