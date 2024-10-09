@@ -704,3 +704,97 @@ function asyncFunction(){
 
 asyncFunction().then((response) => {console.log("Sucesso:", response)}).catch((error)=>{console.log("Error: ", error)}).finally(()=>{console.log("Fim da execução")})
 ```
+<br>
+
+- **Conhecendo async e await**
+
+```javascript
+function asyncFunction(){
+    return new Promise((resolve,reject)=>{
+
+        // simulando uma operação assíncrona 
+
+        setTimeout(()=>{
+
+        const isSuccess = true
+
+        if(isSuccess){
+            resolve("A operação foi concluída com sucesso.")
+        }else {
+            reject("Algo deu errado!")
+        }
+        }, 3000) 
+    })
+}
+
+
+async function fetch(){
+    try{
+        const response = await asyncFunction()
+        console.log(response)
+    }catch(error){
+        console.log("Error", error)
+    }finally{
+        console.log("Fim da Execução")
+    }
+    
+}
+
+fetch()
+
+
+/* ARROW FUNCTION*/
+
+const fetch1 = async () => {
+    const response = await asyncFunction()
+    console.log(response)
+}
+
+fetch1()
+
+
+```
+<br>
+
+- **Prioridade e ordem de execução**
+
+```javascript
+//Características do eventloop
+
+// (1°) => executa de forma síncrona - 1 é impresso imediatamente
+console.log(1)
+
+// (3°) => Microtasks são executadas antes de temporizadores e promises
+queueMicrotask(()=>{
+    console.log(2)
+})
+
+// (5°) Macrotask que aguarda o evento do temporizador
+setTimeout(()=>{
+    console.log(3)
+}, 1000)
+
+// (2°) => executa de forma síncrona - 1 é impresso imediatamente
+console.log(4)
+
+// (4°) => Adiciona uma microtask quando a promise resolve imediatamente
+Promise.resolve(true).then(() =< {
+    console.log(5)
+})
+
+/* Retorno
+
+1
+4
+2
+5
+3
+
+*/
+
+```
+
+<br>
+
+> ### **Pacotes**
+
