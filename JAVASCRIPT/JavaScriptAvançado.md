@@ -798,3 +798,127 @@ Promise.resolve(true).then(() =< {
 
 > ### **Pacotes**
 
+- **Conhecendo o pacote day.js**
+
+[dayJS](https://day.js.org/)
+
+Adicionado dayJs pelo browser
+
+![Dayjs adição browser](/JAVASCRIPT/img/dayjsbrowser.png)
+<br>
+
+- **Resolução de Dependências**
+
+* Versionamento semântico
+
+![Versionamento semântico](/JAVASCRIPT/img/resoliçãodedependencias.png)
+<br>
+
+* O til permite atualizações automáticas para versões compatíveis. Receber os patches.
+
+![til](/JAVASCRIPT/img/til.png)
+
+<br>
+
+* O ^ indica que o npm pode instalar automaticamente a versão mais recente compatível, mas não a próxima versão incompatível. 
+
+Isso permite receber patches, correções de bugs e pequenas alterações de versões, mas não grandes alterações de versões.
+
+<br>
+
+* o @ é usado para instalar uma versão específica de pacote.
+
+ex: ```npm install dayjs@1.11.10```
+<br>
+
+> ### **Working APIs**
+
+- **Definição de API**
+Application Programming Interface - interface que disponibiliza um conjunto de funcionalidades para serem utilizadas.
+<br>
+
+- **Instalando o json-server**
+
+[Link Json Server](https://www.npmjs.com/package/json-server)
+
+* Para instalar: ```npm i json-server```
+* Criar o arquivo server.json.
+* Criar no package.json script para executar nossa api:
+
+![package.json](/JAVASCRIPT/img/packagejson.png)
+<br>
+
+* para rodar numa outra porta editar no arquivo package.json no server a flag ```--port=porta```
+* rodar no terminal ```npm run server```
+<br>
+
+- **Criando uma API de exemplo**
+
+[Link do rep - API de Exemplo](https://github.com/aldrinreis/apideexemplo)
+
+- **Utilizando o fetch**
+
+```javascript
+fetch("http://localhost:3000/products").then((response) =>
+    response.json()).then((data) => console.log(data))
+
+```
+<br>
+
+- **Utilizando o Async e await**
+
+```javascript
+async function fetchProducts(){
+    const response = await fetch("http://localhost:3000/products")
+    const data = await response.json()
+    console.log(data)
+}
+
+
+fetchProducts()
+```
+<br>
+
+- **Passando parâmetros na requisição**
+
+```javascript
+async function fetchProductById(id){
+    const response= await fetch(`http://localhost:3000/products/${id}`)
+    const data = await response.json()
+    console.log(data)
+}
+
+fetchProductById(2)
+```
+<br>
+
+- **Fetch com Post**
+
+```javascript
+const productName = document.getElementById("name")
+const productPrice = document.getElementById("price")
+const form = document.getElementsByTagName("form")
+
+addEventListener("submit", async (event) => {
+    event.preventDefault()
+    await fetch("http://localhost:3000/products", {
+        method: "POST",
+        headers: {
+            "content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            id: new Date().getTime().toString(),
+            name: productName.value,
+            price: productPrice.value
+        })
+    })
+
+    await fetchProducts()
+})
+```
+<br>
+<br>
+<br>
+<br>
+
+> ### **Compiladores**
