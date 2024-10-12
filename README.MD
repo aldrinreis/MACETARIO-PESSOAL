@@ -8,6 +8,8 @@
 * **[Programação Shell Script](/LINUX/PROGRAMAÇÃO%20LINUX.MD)**
 * **[Meus Scripts](/LINUX/CURSO%20LINUX/Meus%20Scripts/)**
 * **[Documetos e Scripts Curso Ricardo Prudenciato](/LINUX/CURSO%20LINUX/CursoShellScript/)**
+<br>
+<br>
 
 #### **Git e GitHub**
 * **[GIT e GitHub](/GIT%20E%20GITHUB/GIT.md)**
@@ -17,14 +19,20 @@
 * **[Análise e inspenção de repositórios](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#an%C3%A1lise-e-inspen%C3%A7%C3%A3o-de-reposit%C3%B3rios)**
 * **[Adminstração de Repositórios](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#an%C3%A1lise-e-inspen%C3%A7%C3%A3o-de-reposit%C3%B3rios)**
 * **[Melhorando os Commits do projeto](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#melhorando-os-commits-do-projeto)**
+<br>
+<br>
 
 
 ###### **Links úteis Git e GitHub**
 - [Documentação de introdução ao git](https://docs.github.com/pt/get-started)
+<br>
+<br>
 
 
 #### **HTML e CSS**
 * **[Apostila de HTML e CSS IFES](/HTMLeCSS/Apostila%20de%20HTML5%20e%20CSS3.pdf)**
+<br>
+<br>
 
 #### **Java Script**
 
@@ -35,18 +43,24 @@
 * **[Expressões e Operadores.](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptFundamentos.md#express%C3%B5es-e-operadores)**
 * **[Condicionais e controle de fluxo.](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptFundamentos.md#condicionais-e-controle-de-fluxo)**
 * **[Tratamento de Exceções](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptFundamentos.md#tratamento-de-exce%C3%A7%C3%B5es)**
+<br>
+<br>
 
 
 - ##### **Funções**
 
 * **[Apostila de Funções](/JAVASCRIPT/JavaScript-12-Funcoes.pdf)**
 * **[Doc Funções](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/javaScriptFuncoes.md)**
+<br>
+<br>
 
 - ##### **DOM**
 
 * **[DOC](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/domJavaScript.md)**
 * **[Exemplos e Exercícios](/JAVASCRIPT/4%20DOM/)**
 * **[Repo Projeto - Conversor de Moeda](https://github.com/aldrinreis/Conversor-de-Moedas---A4NDEV)**
+<br>
+<br>
 
 - ##### **JS Intermediário**
 
@@ -58,7 +72,8 @@
 * **[DATA e HORA](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScript%20Intermedi%C3%A1rio.md#data-e-hora)**
 * **[Classes](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScript%20Intermedi%C3%A1rio.md#classes)**
 * **[Repo Projeto - Reembolso](https://github.com/aldrinreis/Projeto-de-Reembolso---A4NDEV)**
-
+<br>
+<br>
 
 - ##### **JS Avançado**
 
@@ -67,3 +82,8 @@
 * **[Métodos de Array](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptAvan%C3%A7ado.md#m%C3%A9todos-de-array)**
 * **[Imutabilidade](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptAvan%C3%A7ado.md#imutabilidade)**
 * **[Módulos](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptAvan%C3%A7ado.md#m%C3%B3dulos)**
+* **[Funções Assíncronas](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptAvan%C3%A7ado.md#fun%C3%A7%C3%B5es-ass%C3%ADncronas)**
+* **[Pacotes](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptAvan%C3%A7ado.md#pacotes)**
+* **[APIS](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptAvan%C3%A7ado.md#working-apis)**
+* **[Compiladores](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptAvan%C3%A7ado.md#compiladores)**
+* **[Webpack](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptAvan%C3%A7ado.md#bundlers)**

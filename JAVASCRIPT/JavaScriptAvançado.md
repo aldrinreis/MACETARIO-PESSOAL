@@ -3,7 +3,11 @@
 - **[Métodos de Array](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptAvan%C3%A7ado.md#m%C3%A9todos-de-array)**
 - **[Imutabilidade](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptAvan%C3%A7ado.md#imutabilidade)**
 - **[Módulos](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptAvan%C3%A7ado.md#m%C3%B3dulos)**
-
+- **[Funções Assíncronas](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptAvan%C3%A7ado.md#fun%C3%A7%C3%B5es-ass%C3%ADncronas)**
+- **[Pacotes](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptAvan%C3%A7ado.md#pacotes)**
+- **[APIS](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptAvan%C3%A7ado.md#working-apis)**
+- **[Compiladores](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptAvan%C3%A7ado.md#compiladores)**
+- **[Webpack](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptAvan%C3%A7ado.md#bundlers)**
 <br>
 
 > ### **JavaScript Moderno**
@@ -795,6 +799,9 @@ Promise.resolve(true).then(() =< {
 ```
 
 <br>
+<br>
+<br>
+<br>
 
 > ### **Pacotes**
 
@@ -829,6 +836,9 @@ Isso permite receber patches, correções de bugs e pequenas alterações de ver
 * o @ é usado para instalar uma versão específica de pacote.
 
 ex: ```npm install dayjs@1.11.10```
+<br>
+<br>
+<br>
 <br>
 
 > ### **Working APIs**
