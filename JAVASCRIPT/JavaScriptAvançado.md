@@ -922,3 +922,239 @@ addEventListener("submit", async (event) => {
 <br>
 
 > ### **Compiladores**
+
+- **Instalando o Babel**
+
+[Link do Babel](https://babeljs.io/)
+```javascript
+npm install --save-dev @babel/core @babel/cli @babel/preset-env
+```
+<br>
+
+- **Configurando e utilizando o Babel**
+
+Criar na Raiz do projeto o arquivo: **babel.config.js**
+
+```javascript
+const presets = ["@babel/preset-env"]
+
+module.exports = {presets}
+```
+
+Para compilar em um novo dir
+
+```javascript
+.\node_modules\.bin\babel main.js --out-dir .\dist
+
+```
+<br>
+
+- **Criando um script para compilar**
+
+* No package.json adicionar em scripts
+
+```javascript
+ "scripts": {
+    
+    "build":"babel main.js --out-dir ./dist"
+  }
+```
+
+Para rodar o script ```npm run build```
+
+<br>
+
+- **Utilizando o arquivo compilado**
+
+No html apontar para o arquivo js dentro da pasta com  o arquivo compilado.
+<br>
+
+- **Automatizando mudanças**
+
+* No package.json passar a flag --watch
+
+```"build":"babel main.js --watch --out-dir ./dist"``` .
+
+Agora após a primeira compilação cada vez que o arquivo for alterado ele irá automatizar a compilação.
+<br>
+
+- **Configurando targets**
+
+- No babel.config.js podemos adicionar a partir de quais versões de navegadores o código deverá suportar.
+
+```javascript
+const presets = [
+    ["@babel/preset-env",
+        {targets:{
+            edge: "17",
+            firefox: "60",
+            chrome: "67",
+            safari: "11.1"
+        }}
+    ]
+]
+
+module.exports = {presets}
+```
+
+<br>
+<br>
+<br>
+<br>
+
+> ### **Bundlers**
+
+- **Conhecendo o Webpack**
+
+[Doc Webpack](https://webpack.js.org/)
+
+```javascript
+npm install webpack webpack-cli --save-dev
+```
+
+* Adicionar a script no package.json, que irá empacotar os arquivos.
+
+``` "build": "webpack ./src/js/index.js"```
+<br>
+
+- **Configurando o webpack**
+
+* No package.json deixar apenas ``` "build": "webpack"``` e criar o arquivo na raiz: **webpack.config.js**.
+
+```javascript
+const path = require("path")
+
+module.exports = {
+    entry: path.resolve(__dirname, "src","js","index.js"),
+    output: {
+        filename: "main.js",
+        path: path.resolve(__dirname, "dist")
+    },
+    mode: "development"
+}
+```
+<br>
+
+- **Como incluir o html**
+
+* Instalando o plugin do html ```npm install --save-dev html-webpack-plugin```
+
+* Importando no arquivo: **webpack.config.js**.
+
+```javascript
+const HTMLWebpackPlugin = require("html-webpack-plugin")
+
+//Adicionando os plugins no arquivo:
+
+const path = require("path")
+const HTMLWebpackPlugin = require("html-webpack-plugin")
+
+module.exports = {
+    entry: path.resolve(__dirname, "src","js","index.js"),
+    output: {
+        filename: "main.js",
+        path: path.resolve(__dirname, "dist")
+    },
+    mode: "development",
+    plugins: [new HTMLWebpackPlugin]
+
+}
+
+```
+<br>
+
+- **Como incluir o css**
+
+* Importando no arquivo: **webpack.config.js**.
+
+Adicionando Via módulos:
+
+```javascript
+const path = require("path")
+const HTMLWebpackPlugin = require("html-webpack-plugin")
+
+module.exports = {
+    entry: path.resolve(__dirname, "src","js","index.js"),
+    output: {
+        filename: "main.js",
+        path: path.resolve(__dirname, "dist")
+    },
+    mode: "development",
+    plugins: [new HTMLWebpackPlugin],
+    module: {
+        rules: [{
+            test: /\.css$/i,
+            use: ["style-loader", "css-loader"],
+            exclude: "/node_modules"
+        }]
+    }
+}
+```
+
+Instalando os módulos:
+```npm install --save-dev style-loader``` e ```npm install --save-dev css-loader```
+<br>
+
+- **Como incluir o babel**
+
+* Importando no arquivo: **webpack.config.js**.
+
+Instalando o Módulo: ```npm install -D babel-loader @babel/core @babel/preset-env webpack```
+
+```javascript
+const path = require("path")
+const HTMLWebpackPlugin = require("html-webpack-plugin")
+
+module.exports = {
+    entry: path.resolve(__dirname, "src","js","index.js"),
+    output: {
+        filename: "main.js",
+        path: path.resolve(__dirname, "dist")
+    },
+    mode: "development",
+    plugins: [new HTMLWebpackPlugin],
+    module: {
+        rules: [{
+            test: /\.css$/i,
+            use: ["style-loader", "css-loader"],
+            exclude: "/node_modules"
+        },
+        {
+            test: /\.(?:js|mjs|cjs)$/,
+            exclude: /node_modules/,
+            use: {
+              loader: 'babel-loader',
+              options: {
+                targets: "defaults",
+                presets: [
+                  ['@babel/preset-env']
+                ]
+              }
+            }
+          }     
+        ]
+    }
+}
+```
+<br>
+
+- **Webpack dev server**
+
+Instalando o dev server: ```npm install --save-dev webpack-dev-server``` 
+
+```javascript
+mode: "development",
+//Inserir logo após de mode no arquivo: webpack.config.js
+devServer: {
+        static: {
+            directory: path.join(__dirname, "dist", "index.html")
+        },
+        port: 3000,
+        open: true
+      },
+    plugins:
+
+//No package.json adicionar a script.
+"dev": "webpack serve"
+
+```
