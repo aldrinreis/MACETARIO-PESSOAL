@@ -93,4 +93,4 @@
 
 - ##### **Typescript**
 
-* **[Doc Typescript]()**
+* **[Doc Typescript](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/TYPESCRIPT/typescript.md)**
