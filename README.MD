@@ -90,3 +90,7 @@
 * **[Repo Projeto - Hair Day](https://github.com/aldrinreis/hair-day)**
 <br>
 <br>
+
+- ##### **Typescript**
+
+* **[Doc Typescript]()**
