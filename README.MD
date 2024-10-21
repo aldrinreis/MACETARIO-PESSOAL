@@ -87,3 +87,6 @@
 * **[APIS](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptAvan%C3%A7ado.md#working-apis)**
 * **[Compiladores](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptAvan%C3%A7ado.md#compiladores)**
 * **[Webpack](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptAvan%C3%A7ado.md#bundlers)**
+* **[Repo Projeto - Hair Day](https://github.com/aldrinreis/hair-day)**
+<br>
+<br>
