@@ -271,3 +271,211 @@ type TypeNumber = number
 //Interface nao estende valor primitivo.
 interface X extends string {}
 ```
+
+<br>
+
+- **Asserção de tipos**
+
+* Type assertion no TypeScript permite definir a tipagem de um objeto quando o TypeScript não consegue inferir. Veremos um exemplo de uso de type assertion para consumir APIs e converter tipos de objetos.
+
+```typescript
+type UserResponse = {
+    id: number;
+    name: string;
+    avatar: string;
+}
+//convertendo o let userResponse  para o type criado
+let userResponse = {} as UserResponse;
+```
+<br>
+
+- **Restringindo valores**
+
+* Utilizar o type para restringir os valores disponíveis em uma variável. Ao definir os valores possíveis, como "small", "medium" e "large", podemos limitar as opções aceitáveis. Isso ajuda a evitar erros e garantir que apenas os valores desejados sejam utilizados. Ao utilizar essa estratégia, podemos restringir as opções disponíveis e garantir a consistência dos dados utilizados em nosso código.
+
+```typescript
+type Size = "small" | "medium" | "large"
+
+let size: Size
+
+size = "small"
+```
+<br>
+
+- **Enums**
+
+*Enums no TypeScript para nomear constantes, melhorando a legibilidade do código. Vamos criar uma Enum chamada Profile, atribuindo valores como Admin (1), Cliente (2) e Vendedor (3). Ao utilizar Enum, podemos substituir números por constantes, facilitando a compreensão do código. Enum é útil para evitar "números mágicos" e tornar o código mais legível, especialmente para novos membros da equipe.
+
+```typescript
+enum Profile {
+    Admin = 1,
+    Client = 2,
+    Seller = 3
+}
+
+let profile: number = Profile.Admin
+console.log(Profile.Seller)
+```
+<br>
+
+
+- **Generic**
+
+* Utilizar generics no TypeScript para tornar a tipagem mais flexível. Os generics permitem definir o tipo em tempo de execução, diferentemente do union, que oferece opções flexíveis, mas não exige a mesma tipagem. É possível definir um tipo padrão para o generic, caso não seja especificado. A utilização de generics é comum em diversas bibliotecas e tecnologias, como React e Axios, facilitando a flexibilidade e consistência na tipagem.
+
+```typescript
+/**
+ * S => state
+ * T => type
+ * K => key
+ * V => value
+ * E => element
+ */
+
+function useState<T extends number | string = string>() {
+    let state: T;
+
+    function get(){
+        return state;
+    }
+
+    function set(newValue: T){
+        state = newValue;
+    }
+
+    return {get, set};
+}
+
+let newState = useState<string>();
+newState.get();
+newState.set("Rodrigo");
+newState.set(123); //erro
+newState.set("Amanda");
+```
+
+<br>
+<br>
+<br>
+<br>
+
+> ### **Utilitários de Tipos**
+
+* Partial do TypeScript para tornar propriedades de uma interface opcionais. Vamos criar a interface User com propriedades obrigatórias. Com o Partial, podemos tornar propriedades específicas opcionais ao atualizar um usuário, sem a necessidade de preencher todas as propriedades novamente. O Partial permite reaproveitar a tipagem existente, tornando propriedades selecionadas opcionais. Essa ferramenta é útil para cenários em que se deseja flexibilidade na atualização de propriedades.
+
+- **Partial**
+```typescript
+interface User {
+    id: number,
+    name: string,
+    email: string
+}
+
+const newUser: User = { id: 1, name: "Rodrigo", email: "rodrigo@email.com"}
+
+const updatedUser: Partial<User> = { name: "Rodrigo Gonçalves" }
+```
+<br>
+
+- **Pick**
+Pick para criar uma interface chamada Book, representando um livro com propriedades como title, pages e author. O Pick permite selecionar propriedades específicas de um tipo, evitando a necessidade de criar novos tipos. Além disso, é possível reaproveitar várias propriedades de um tipo, garantindo flexibilidade e facilitando a reutilização de tipagens em aplicações.
+
+```typescript
+interface Book {
+    title: string
+    pages: number
+    author: string
+    description: string
+}
+
+interface BookPreview {
+    title: string
+}
+
+const book1: BookPreview = { title: "TypeScript"}
+const book2: Pick<Book, "title" | "pages"> = { title: "TypeScript", pages: 150}
+```
+<br>
+
+- **Omit**
+
+Omit do TypeScript para reutilizar uma tipagem excluindo propriedades. Vamos criar uma interface de livro e aprender como omitir propriedades ao definir um objeto com essa tipagem. O omit é útil para reaproveitar uma tipagem e deixar campos específicos de fora. Além disso, é possível omitir mais de uma propriedade usando o operador de pipe
+
+```typescript
+interface Book {
+    title: string
+    pages: number
+    author: string
+    description: string
+}
+
+const book: Omit<Book, "description" | "pages"> = { title: "TypeScript", author: "Rodrigo"}
+```
+<br>
+
+- **Record**
+
+Record para mapear tipos de objetos. Pode-se definir chaves como String e valores como números, limitando as opções disponíveis. É possível criar objetos com chaves String e valores numéricos, ou até mesmo com tipos personalizados. O Record ajuda a restringir as chaves e valores dentro de um objeto, garantindo a conformidade com a tipagem definida. Essa ferramenta é útil para definir a estrutura que um objeto deve seguir.
+
+```typescript
+// Cria um objeto onde todas as chaves são strings e os valores são números
+const scores: Record<string, number> = {
+    "Rodrigo": 10,
+    "Mayk": 15
+}
+
+// Limitar valores
+type Profile = "admin" | "user" | "guest"
+
+const user: Record<Profile, number> = {
+    "admin": 1,
+    "guest": 2,
+    "user": 3
+}
+
+// Objetos personalizados
+interface User {
+    name: string
+    email: string
+}
+
+const users: Record<string, User> = {
+    1: { name: "Rodrigo", email: "rodrigo@email.com" },
+    2: { name: "Rodrigo", email: "rodrigo@email.com" },
+}
+```
+<br>
+
+- **Typeof**
+
+* typeof para definir tipagens a partir de outras. O typeof permite extrair a tipagem de um objeto já definido e aplicá-la em outro, facilitando a reutilização de tipagens, especialmente ao lidar com bibliotecas externas ou APIs. Essa técnica é útil para definir tipagens a partir de conteúdos já existentes.
+
+```typescript
+interface Product {
+    id: number
+    name: string
+    quantity: number
+}
+
+
+const product1: Product = { id: 1, name: "Produto 1", quantity: 3}
+
+const product2: typeof product1 = { id: 2, name: "Produto 2", quantity: 5}
+```
+<br>
+
+- **Keyof**
+
+* KeyOff para extrair chaves de um objeto e usá-las para tipagem. Criaremos um objeto icons com chaves de nomes de ícones e valores de endereços. Em seguida, criaremos uma tipagem a partir desse objeto usando KeyOff, o que nos permite restringir o uso apenas às chaves disponíveis. Assim, conseguiremos extrair as chaves de uma tipagem usando o KeyOff.
+
+```typescript
+const icons = {
+    "home": "./path/home.svg",
+    "add": "./path/add.svg",
+    "remove": "./path/remove.svg",
+}
+
+type Icon = typeof icons
+
+const icon: keyof Icon = "add"
+```
+
