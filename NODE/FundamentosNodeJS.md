@@ -1,4 +1,7 @@
 > # **Node JS**
+- **[Iniciando com Node](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/NODE/FundamentosNodeJS.md#iniciando-com-node)**
+- **[Fundamentos de API](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/NODE/FundamentosNodeJS.md#fundamentos-de-api)**
+
 
 > ### **Iniciando com Node**
 
@@ -464,5 +467,5 @@ export function routeHandler(request, response){
 ```
 <br>
 
-[LINK DO REPO DA API](https://github.com/aldrinreis/projectApiExemple)
+- **[LINK DO REPO DA API](https://github.com/aldrinreis/projectApiExemple)**
 

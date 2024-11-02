@@ -1,5 +1,10 @@
 > # **Typescript**
 
+- **[Tipos Primitivos](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/TYPESCRIPT/typescript.md#tipos-primitivos)**
+- **[Tipos personalizados no Typescript](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/TYPESCRIPT/typescript.md#tipos-personalizados-no-typescript)**
+- **[Utilitários de Tipos](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/TYPESCRIPT/typescript.md#utilit%C3%A1rios-de-tipos)**
+
+
 <br>
 
 > ### **Tipos Primitivos**
