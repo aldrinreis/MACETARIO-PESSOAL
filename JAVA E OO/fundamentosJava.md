@@ -8,7 +8,7 @@ Comentários são definidos por dupla / ```//```
 
 - **Saída no terminal**
 
-O print é definido por: ```System.out.println("Olá mundo");```
+O print é definido por: ```System.out.println();```
 
 ```java
 public class Main {
