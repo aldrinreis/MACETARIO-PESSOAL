@@ -119,11 +119,11 @@ public class Main {
 		int idade = 30;
 		double renda = 4000.745;
 		
-		System.out.printf("%s tem %d e ganha R$ %.2f reais.%n", nome, idade, renda);
+		System.out.printf("%s tem %d anos e ganha R$ %.2f reais.%n", nome, idade, renda);
 		
 	}
 
 }
 ```
 
-Retorno: **Maria tem 30 e ganha R$ 4000.75 reais.**
+Retorno: **Maria tem 30 anos e ganha R$ 4000.75 reais.**
