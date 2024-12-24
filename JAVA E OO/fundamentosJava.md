@@ -83,8 +83,9 @@ System.out.printf("%.4f%n", x);
 ```
 **Para definir a localidade do programa.**
 
-Importar o locale: ```import java.util.Locale;```
-Definir a localização: ```Locale.setDefault(Locale.US);```
+- Importar o locale: ```import java.util.Locale;```
+
+- Definir a localização: ```Locale.setDefault(Locale.US);```
 ###### 4. **Concatenar vários elementos no mesmo comando de escrita**
 
 - Concatenar as partes com o operador "+" usando print|println
@@ -98,10 +99,10 @@ System.out.printf("A pontuação total foi: " + notaTotal + " e a média: " + me
 System.out.printf("A pontuação total foi: %.2f e média foi %.3f pontos %n", notaTotal, media);
 ```
 
-. **%f = ponto flutuante**
-. **%d = inteiro**
-. **%s = texto**
-. **%n = quebra de linha**
+- **%f = ponto flutuante**
+- **%d = inteiro**
+- **%s = texto**
+- **%n = quebra de linha**
 
 Exemplo:
 
