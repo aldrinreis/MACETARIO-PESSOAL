@@ -20,3 +20,14 @@ public class Main {
 
 }
 ```
+<br>
+<br>
+
+> ### **Estrutura Sequencial**
+
+- **Expressões Aritméticas**
+
+![operadores aritméticos](/JAVA%20E%20OO/IMG/operadoresaritimeticos.png)
+<br>
+
+
