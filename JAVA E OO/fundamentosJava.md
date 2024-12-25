@@ -200,7 +200,7 @@ public class Main {
 ```
 <br>
 
->### ***Entrada de Dados**
+>### **Entrada de Dados**
 
 Para fazer entrada de dados ciramos um objeto do tipo scanner.
 
