@@ -23,12 +23,15 @@ public class Main {
 ```
 <br>
 <br>
+<br>
+<br>
 
 > ### **Estrutura Sequencial**
 
 - **Expressões Aritméticas**
 
 ![operadores aritméticos](/JAVA%20E%20OO/IMG/operadoresaritimeticos.png)
+<br>
 <br>
 
 > ### - **Variáveis e tipos básicos**
@@ -43,16 +46,19 @@ double altura = 1.68;
 char sexo = 'F'; //char é o tipo pra 1 caractere Unicode.
 ```
 <br>
+<br>
 
 > ### **Tipos Primitivos em JAVA**
 
 ![Tipos Primitivos em JAVA](/JAVA%20E%20OO/IMG/tiposprimitivos.png)
 
 <br>
+<br>
 
 >### **Nome de Variáveis**
 
 ![Nome de Variáveis](/JAVA%20E%20OO/IMG/nomedevariaveis.png)
+<br>
 <br>
 
 >### **Saída de Dados**
@@ -63,6 +69,8 @@ System.out.println("Com quebra de linha");
 System.out.print("Sem quebra de Linha");
 
 ```
+<br>
+<br>
 
 ###### 2. **Escrever o conteúdo de uma variável.**
 
@@ -70,6 +78,9 @@ System.out.print("Sem quebra de Linha");
 int y = 32;
 System.out.println(y);
 ```
+<br>
+<br>
+
 
 ###### 3. **Escrever uma varável de ponto flutuante.**
 **ATENÇÃO: para imprimir para definir casas decimais usar o ```printf```(formatado) ex: %.2f**
@@ -82,11 +93,18 @@ System.out.println(x);
 System.out.printf("%.2f%n",x);
 System.out.printf("%.4f%n", x);
 ```
+<br>
+<br>
+
 **Para definir a localidade do programa.**
 
 - Importar o locale: ```import java.util.Locale;```
 
 - Definir a localização: ```Locale.setDefault(Locale.US);```
+<br>
+<br>
+
+
 ###### 4. **Concatenar vários elementos no mesmo comando de escrita**
 
 - Concatenar as partes com o operador "+" usando print|println
@@ -94,6 +112,9 @@ System.out.printf("%.4f%n", x);
 ```java
 System.out.printf("A pontuação total foi: " + notaTotal + " e a média: " + media);
 ```
+<br>
+<br>
+
 - Concatenar usando printf
 
 ```java
@@ -105,6 +126,8 @@ System.out.printf("A pontuação total foi: %.2f e média foi %.3f pontos %n", n
 - **%s = texto**
 - **%n = quebra de linha**
 - **%c = char** - pose usar %s
+<br>
+<br>
 
 Exemplo:
 
@@ -130,7 +153,7 @@ public class Main {
 
 Retorno: **Maria tem 30 anos e ganha R$ 4000.75 reais.**
 
-
+<br>
 <br>
 
 Exercício de Fixação:
@@ -173,6 +196,7 @@ public class Main {
 }
 ```
 <br>
+<br>
 
 >### **Processameto de Daddos - Casting** 
 
@@ -198,6 +222,9 @@ public class Main {
 
 }
 ```
+<br>
+<br>
+<br>
 <br>
 
 >### **Entrada de Dados**
@@ -235,10 +262,15 @@ public class Main {
 
 }
 ```
+<br>
+<br>
 
 - **Para ler uma variável do tipo int.**
 
 ```x = sc.nextInt();```
+<br>
+<br>
+
 
 - **Para ler uma variável com ponto flutuante.**
 ```x = sc.nextDouble();``` - Usa a localidade do sistema.
@@ -247,9 +279,15 @@ Para usar o separador de decimais como . lembrar do locale.
 
 ```Locale.setDefault(Locale.US);```
 
+<br>
+<br>
+
 - **Para ler um caractere**
 
-```x = sc.next().charAt(0);``` - charAt() pega o primeiro caracter do string.
+```x = sc.next().charAt(0);``` - charAt() pega o primeiro caractere do string.
+
+<br>
+<br>
 
 - **Para ler vários dados na mesma Linha**
 
@@ -283,6 +321,9 @@ public class Main {
 }
 ```
 <br>
+<br>
+
+
 
 - **Para ler um texto até a quebra de linha**
 
@@ -312,11 +353,16 @@ public class Main {
 }
 ```
 <br>
+<br>
 
 **ATENÇÃO!!!**
 
 ![Quebra de Linha Pendente](/JAVA%20E%20OO/IMG/quebraDeLinhaPendente.png)
 
+
+<br>
+<br>
+<br>
 <br>
 
 > ### **Funções Matemáticas**
