@@ -276,7 +276,13 @@ public class Main {
 
 
 - **Para ler uma variável com ponto flutuante.**
-```x = sc.nextDouble();``` - Usa a localidade do sistema.
+<br>
+
+```x = sc.nextDouble();``` 
+<br>
+
+- Usa a localidade do sistema.
+<br>
 
 Para usar o separador de decimais como . lembrar do locale.
 
