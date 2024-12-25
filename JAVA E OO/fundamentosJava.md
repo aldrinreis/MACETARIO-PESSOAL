@@ -198,7 +198,7 @@ public class Main {
 <br>
 <br>
 
->### **Processameto de Daddos - Casting** 
+>### **Processamento de Dados - Casting** 
 
 Comando de atribuição. ```<variavel> = <expressão>;```
 
@@ -229,13 +229,16 @@ public class Main {
 
 >### **Entrada de Dados**
 
-Para fazer entrada de dados ciramos um objeto do tipo scanner.
+Para fazer entrada de dados criamos um objeto do tipo scanner.
 
-```Scanner sc = new Sacanner(system.in);```
+```Scanner sc = new Scanner(system.in);```
 
-No início do programa inserir: ```import java.ultil.Scanner;```
+No início do programa inserir: ```import java.util.Scanner;```
 
 Fazer o ```sc.close()``` quando não precisar mais do objeto.
+<br>
+<br>
+
 
 - **Para ler uma variável do tipo string.**
 ```java
