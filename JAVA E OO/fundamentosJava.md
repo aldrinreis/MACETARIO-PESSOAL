@@ -31,7 +31,7 @@ public class Main {
 ![operadores aritméticos](/JAVA%20E%20OO/IMG/operadoresaritimeticos.png)
 <br>
 
-> - **Variáveis e tipos básicos**
+> ### - **Variáveis e tipos básicos**
 
 * **Sintaxe da declaração de variável:**
 <tipo> <nome> = <valor inicial(opcional)>;
@@ -44,18 +44,18 @@ char sexo = 'F'; //char é o tipo pra 1 caractere Unicode.
 ```
 <br>
 
-* **Tipos Primitivos em JAVA**
+> ### **Tipos Primitivos em JAVA**
 
 ![Tipos Primitivos em JAVA](/JAVA%20E%20OO/IMG/tiposprimitivos.png)
 
 <br>
 
-* **Nome de Variáveis**
+>### **Nome de Variáveis**
 
 ![Nome de Variáveis](/JAVA%20E%20OO/IMG/nomedevariaveis.png)
 <br>
 
-* **Saída de Dados**
+>### **Saída de Dados**
 
 ###### 1. **Comando para escrever na tela**
 ```java
@@ -172,3 +172,151 @@ public class Main {
 
 }
 ```
+<br>
+
+>### **Processameto de Daddos - Casting** 
+
+Comando de atribuição. ```<variavel> = <expressão>;```
+
+- Ao fazer contas com números inteiros, inserir o double para que as casas decimais não sejam cortadas(casting)
+
+```java
+public class Main {
+
+    public static void main(String[] args) {
+
+        int a,b;
+        double resultado;
+
+        a = 5;
+        b = 2;
+
+        resultado = (double) a/b;
+        System.out.println(resultado);
+
+    }
+
+}
+```
+<br>
+
+>### ***Entrada de Dados**
+
+Para fazer entrada de dados ciramos um objeto do tipo scanner.
+
+```Scanner sc = new Sacanner(system.in);```
+
+No início do programa inserir: ```import java.ultil.Scanner;```
+
+Fazer o ```sc.close()``` quando não precisar mais do objeto.
+
+- **Para ler uma variável do tipo string.**
+```java
+String x;
+x = sc.next();
+```
+Exemplo:
+```java
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        String nome;
+
+        System.out.print("Digite seu nome: ");
+        nome = sc.next();
+        System.out.printf("O seu nome é %s", nome);
+
+        sc.close();
+    }
+
+}
+```
+
+- **Para ler uma variável do tipo int.**
+
+```x = sc.nextInt();```
+
+- **Para ler uma variável com ponto flutuante.**
+```x = sc.nextDouble();``` - Usa a localidade do sistema.
+
+Para usar o separador de decimais como . lembrar do locale.
+
+```Locale.setDefault(Locale.US);```
+
+- **Para ler um caractere**
+
+```x = sc.next().charAt(0);``` - charAt() pega o primeiro caracter do string.
+
+- **Para ler vários dados na mesma Linha**
+
+* Separados por espaço.
+
+```java
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
+
+        Scanner sc = new Scanner(System.in);
+        String x;
+        int y;
+        double z;
+        x = sc.next();
+        y = sc.nextInt();
+        z = sc.nextDouble();
+        System.out.println("Dados digitados");
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println(z);
+
+
+        sc.close();
+    }
+
+}
+```
+<br>
+
+- **Para ler um texto até a quebra de linha**
+
+```java
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
+
+        Scanner sc = new Scanner(System.in);
+
+        String s1, s2, s3;
+        s1 = sc.nextLine();
+        s2 = sc.nextLine();
+        s3 = sc.nextLine();
+        System.out.println("Dados Digitados");
+        System.out.println(s1);
+        System.out.println(s3);
+        System.out.println(s2);
+
+        sc.close();
+    }
+
+}
+```
+<br>
+
+**ATENÇÃO!!!**
+
+![Quebra de Linha Pendente](/JAVA%20E%20OO/IMG/quebraDeLinhaPendente.png)
+
+<br>
+
+> ### **Funções Matemáticas**
