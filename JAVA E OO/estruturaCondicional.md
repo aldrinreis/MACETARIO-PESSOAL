@@ -148,4 +148,12 @@ Sintaxe:```( condição ) ? valor_se_verdadeiro : valor_se_falso```
 double preco = 34.5;
 double desconto = (preco < 20.0) ? preco * 0.1 : preco * 0.05;
 ```
+<br>
+<br>
 
+> ### **Escopo e Inicialização**
+
+Checklist  
+- Escopo de uma variável: é a região do programa onde a variável é
+válida, ou seja, onde ela pode ser referenciada. 
+- Uma variável não pode ser usada se não for iniciada.
