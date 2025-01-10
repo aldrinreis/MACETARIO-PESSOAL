@@ -65,6 +65,5 @@ public String toString() {
 <br>
 <br>
 
-![Segundo Exemplo OO](/JAVA%20E%20OO/IMG/segundoExemploOO.png)
-<br>
+![Segundo Exemplo OO](/JAVA%20E%20OO/IMG/segundoExemploOO1.png)
 <br>
