@@ -49,7 +49,7 @@ Exemplo 1:
     • hashCode - retorna um código hash do objeto
     • toString - converte o objeto para string
 
-- **Usando o toString**
+> ### **Usando o toString**
 
 ```java
 public String toString() {
