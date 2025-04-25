@@ -107,3 +107,6 @@
 * **[Iniciando com Node](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/NODE/FundamentosNodeJS.md#iniciando-com-node)**
 * **[Fundamentos de API](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/NODE/FundamentosNodeJS.md#fundamentos-de-api)**
 * **[LINK DO REPO DA API](https://github.com/aldrinreis/projectApiExemple)**
+
+
+https://vscode.dev/profile/github/d503dbd375c129587216c548937695d8
