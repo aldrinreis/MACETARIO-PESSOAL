@@ -110,7 +110,7 @@ System.out.printf("%.4f%n", x);
 - Concatenar as partes com o operador "+" usando print|println
 
 ```java
-System.out.printf("A pontuação total foi: " + notaTotal + " e a média: " + media);
+System.out.println("A pontuação total foi: " + notaTotal + " e a média: " + media);
 ```
 <br>
 <br>
