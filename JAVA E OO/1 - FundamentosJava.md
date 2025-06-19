@@ -231,7 +231,7 @@ public class Main {
 
 Para fazer entrada de dados criamos um objeto do tipo scanner.
 
-```Scanner sc = new Scanner(system.in);```
+```Scanner sc = new Scanner(System.in);```
 
 No início do programa inserir: ```import java.util.Scanner;```
 
