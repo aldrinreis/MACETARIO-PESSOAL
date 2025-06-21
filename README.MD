@@ -11,6 +11,11 @@
 <br>
 <br>
 
+<hr>
+
+<br>
+<br>
+
 #### **Git e GitHub**
 * **[GIT e GitHub](/GIT%20E%20GITHUB/GIT.md)**
 * **[Git Fundamental](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#git-fundamental)**
@@ -28,9 +33,19 @@
 <br>
 <br>
 
+<hr>
+
+<br>
+<br>
+
 
 #### **HTML e CSS**
 * **[Apostila de HTML e CSS IFES](/HTMLeCSS/Apostila%20de%20HTML5%20e%20CSS3.pdf)**
+<br>
+<br>
+
+<hr>
+
 <br>
 <br>
 
@@ -91,12 +106,22 @@
 <br>
 <br>
 
+<hr>
+
+<br>
+<br>
+
 - ##### **Typescript**
 
 * **[Doc Typescript](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/TYPESCRIPT/typescript.md)**
 * **[Tipos Primitivos](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/TYPESCRIPT/typescript.md#tipos-primitivos)**
 * **[Tipos personalizados no Typescript](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/TYPESCRIPT/typescript.md#tipos-personalizados-no-typescript)**
 * **[Utilitários de Tipos](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/TYPESCRIPT/typescript.md#utilit%C3%A1rios-de-tipos)**
+
+<br>
+<br>
+
+<hr>
 
 <br>
 <br>
@@ -108,5 +133,30 @@
 * **[Fundamentos de API](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/NODE/FundamentosNodeJS.md#fundamentos-de-api)**
 * **[LINK DO REPO DA API](https://github.com/aldrinreis/projectApiExemple)**
 
+<br>
+<br>
 
-https://vscode.dev/profile/github/d503dbd375c129587216c548937695d8
+<hr>
+
+<br>
+<br>
+
+
+- #### **JAVA**
+
+
+<br>
+
+- #### **1 - FUNDAMENTOS**
+
+* **[Link Material](https://drive.google.com/drive/folders/1Stwgjhj6xwLX4IQQsWPeolPEHfDEV-vB?usp=drive_link)**
+* **[Fundamentos de Java](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/1%20-%20FundamentosJava.md#fundamentos-de-java)**
+* **[Estrutura Sequencial](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/1%20-%20FundamentosJava.md#estrutura-sequencial)**
+* **[ Variáveis e tipos básicos](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/1%20-%20FundamentosJava.md#--vari%C3%A1veis-e-tipos-b%C3%A1sicos)**
+* **[Tipos Primitivos em JAVA](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/1%20-%20FundamentosJava.md#tipos-primitivos-em-java)**
+* **[Nome de Variáveis](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/1%20-%20FundamentosJava.md#nome-de-vari%C3%A1veis)**
+* **[Saída de Dados](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/1%20-%20FundamentosJava.md#sa%C3%ADda-de-dados)**
+* **[Processamento de Dados - Casting](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/1%20-%20FundamentosJava.md#processamento-de-dados---casting)**
+* **[Entrada de Dados](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/1%20-%20FundamentosJava.md#entrada-de-dados)**
+* **[Funções Matemáticas](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/1%20-%20FundamentosJava.md#fun%C3%A7%C3%B5es-matem%C3%A1ticas)**
+
