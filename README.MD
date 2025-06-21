@@ -147,7 +147,11 @@
 
 <br>
 
-- #### **1 - FUNDAMENTOS**
+- **[CURSO DEV SUPERIOR - EXERCÍCIOS E SLIDES](https://github.com/aldrinreis/ExerciciosJava-DevSuperior)**
+
+<br>
+
+- ##### **1 - FUNDAMENTOS**
 
 * **[Link Material](https://drive.google.com/drive/folders/1Stwgjhj6xwLX4IQQsWPeolPEHfDEV-vB?usp=drive_link)**
 * **[Fundamentos de Java](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/1%20-%20FundamentosJava.md#fundamentos-de-java)**
@@ -159,4 +163,18 @@
 * **[Processamento de Dados - Casting](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/1%20-%20FundamentosJava.md#processamento-de-dados---casting)**
 * **[Entrada de Dados](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/1%20-%20FundamentosJava.md#entrada-de-dados)**
 * **[Funções Matemáticas](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/1%20-%20FundamentosJava.md#fun%C3%A7%C3%B5es-matem%C3%A1ticas)**
+
+<br>
+<br>
+
+- ##### **2 - ESTRUTURA CONDICIONAL**
+
+* **[Estruturas Condicionais](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/2%20-%20EstruturaCondicional.md#estruturas-condicionais)**
+* **[Expressões Comparativas](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/2%20-%20EstruturaCondicional.md#express%C3%B5es-comparativas)**
+* **[Expressões Lógicas](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/2%20-%20EstruturaCondicional.md#express%C3%B5es-l%C3%B3gicas)**
+* **[Estrutura Condicional](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/2%20-%20EstruturaCondicional.md#estrutura-condicional)**
+* **[Operadores de atribuição cumulativa](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/2%20-%20EstruturaCondicional.md#sintaxe-opcional---operadores-de-atribui%C3%A7%C3%A3o-cumulativa)**
+* **[Estrutura Switch Case](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/2%20-%20EstruturaCondicional.md#sintaxe-opcional---estrutura-switch-case)**
+* **[Expressão condicional Ternária](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/2%20-%20EstruturaCondicional.md#express%C3%A3o-condicional-tern%C3%A1ria)**
+
 
