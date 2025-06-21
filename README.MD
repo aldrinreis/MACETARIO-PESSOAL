@@ -1,6 +1,7 @@
 # **Meu arquivo de dicas e macetes diversos**
 
-<hr>
+<br>
+<br>
 
 # Índice
 
