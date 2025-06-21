@@ -1,13 +1,30 @@
 # **Meu arquivo de dicas e macetes diversos**
 
+<hr>
+
 # Índice
+
+* **[LINUX](https://github.com/aldrinreis/MACETARIO-PESSOAL/tree/main?tab=readme-ov-file#linux)**
+* **[GIT E GITHUB](https://github.com/aldrinreis/MACETARIO-PESSOAL/tree/main?tab=readme-ov-file#git-e-github)**
+* **[HTML E CSS](https://github.com/aldrinreis/MACETARIO-PESSOAL/tree/main?tab=readme-ov-file#html-e-css)**
+* **[JAVASCRIPT](https://github.com/aldrinreis/MACETARIO-PESSOAL/tree/main?tab=readme-ov-file#java-script)**
+* **[TYPESCRIPT](https://github.com/aldrinreis/MACETARIO-PESSOAL/tree/main?tab=readme-ov-file#typescript)**
+* **[NODE](https://github.com/aldrinreis/MACETARIO-PESSOAL/tree/main?tab=readme-ov-file#fundamentos-de-node)**
+* **[JAVA](https://github.com/aldrinreis/MACETARIO-PESSOAL/tree/main?tab=readme-ov-file#java)**
+
+
+
+<br>
+<br>
+
+<hr>
 
 #### **Linux**
 * **[Comandos Vi](/LINUX/VI.md)**
 * **[Comandos Linux](/LINUX/COMANDOS%20LINUX.md)**
 * **[Programação Shell Script](/LINUX/PROGRAMAÇÃO%20LINUX.MD)**
 * **[Meus Scripts](/LINUX/CURSO%20LINUX/Meus%20Scripts/)**
-* **[Documetos e Scripts Curso Ricardo Prudenciato](/LINUX/CURSO%20LINUX/CursoShellScript/)**
+* **[Documentos e Scripts Curso Ricardo Prudenciato](/LINUX/CURSO%20LINUX/CursoShellScript/)**
 <br>
 <br>
 
@@ -21,8 +38,8 @@
 * **[Git Fundamental](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#git-fundamental)**
 * **[Trabalhando com Branches](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#trabalhando-com-branches)**
 * **[Compartilhamento e atualização de Repositórios](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#compartilhamento-e-atualiza%C3%A7%C3%A3o-de-reposit%C3%B3rios)**
-* **[Análise e inspenção de repositórios](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#an%C3%A1lise-e-inspen%C3%A7%C3%A3o-de-reposit%C3%B3rios)**
-* **[Adminstração de Repositórios](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#an%C3%A1lise-e-inspen%C3%A7%C3%A3o-de-reposit%C3%B3rios)**
+* **[Análise e inspeção de repositórios](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#an%C3%A1lise-e-inspen%C3%A7%C3%A3o-de-reposit%C3%B3rios)**
+* **[Administração de Repositórios](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#an%C3%A1lise-e-inspen%C3%A7%C3%A3o-de-reposit%C3%B3rios)**
 * **[Melhorando os Commits do projeto](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#melhorando-os-commits-do-projeto)**
 <br>
 <br>
@@ -40,6 +57,8 @@
 
 
 #### **HTML e CSS**
+
+* **[Macetário HTML e CSS](https://github.com/aldrinreis/MACETARIO-PESSOAL/tree/main/HTMLeCSS)**
 * **[Apostila de HTML e CSS IFES](/HTMLeCSS/Apostila%20de%20HTML5%20e%20CSS3.pdf)**
 <br>
 <br>
@@ -111,7 +130,7 @@
 <br>
 <br>
 
-- ##### **Typescript**
+- #### **Typescript**
 
 * **[Doc Typescript](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/TYPESCRIPT/typescript.md)**
 * **[Tipos Primitivos](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/TYPESCRIPT/typescript.md#tipos-primitivos)**
