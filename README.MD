@@ -197,4 +197,13 @@
 * **[Estrutura Switch Case](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/2%20-%20EstruturaCondicional.md#sintaxe-opcional---estrutura-switch-case)**
 * **[Expressão condicional Ternária](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/2%20-%20EstruturaCondicional.md#express%C3%A3o-condicional-tern%C3%A1ria)**
 
+<br>
+
+
+- ##### **3 - ESTRUTURA REPETITIVA**
+
+* **[Estruturas Repetitivas](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/3%20-%20EstruturaRepetitiva.md#estruturas-repetitivas)**
+* **[While](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/3%20-%20EstruturaRepetitiva.md#while)**
+* **[For](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/3%20-%20EstruturaRepetitiva.md#for)**
+* **[do While](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/3%20-%20EstruturaRepetitiva.md#do-while)**
 

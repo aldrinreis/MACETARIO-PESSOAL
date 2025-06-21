@@ -1,5 +1,12 @@
 # **Estruturas Repetitivas**
 
+- **[While](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/3%20-%20EstruturaRepetitiva.md#while)**
+- **[For](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/3%20-%20EstruturaRepetitiva.md#for)**
+- **[do While](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/3%20-%20EstruturaRepetitiva.md#do-while)**
+
+
+<br>
+
 > ### **While**
 
 ```java
