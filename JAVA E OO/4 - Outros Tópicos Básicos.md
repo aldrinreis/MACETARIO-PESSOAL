@@ -91,9 +91,10 @@ System.out.println("word3: " + word3);  // word3: lemon
 <br>
 <br>
 
-### **Funções (Sintaxe)**
+> ### **Funções (Sintaxe)**
 
-Funções
+Funções<br>
+
 • Representam um processamento que possui um significado
     • Math.sqrt(double) 
     • System.out.println(string)
@@ -101,8 +102,8 @@ Funções
 • Principais vantagens: modularização, delegação e reaproveitamento
 
 • Dados de entrada e saída
-    • Funções podem receber dados de entrada (parâmetros ou argumentos) 
-    • Funções podem ou não retornar uma saída
+    1. Funções podem receber dados de entrada (parâmetros ou argumentos) 
+    2. Funções podem ou não retornar uma saída
 
 • Em orientação a objetos, funções em classes recebem o nome de "Métodos"
 
