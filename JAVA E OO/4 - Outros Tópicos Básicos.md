@@ -1,5 +1,12 @@
 # **Outros Tópicos Básicos**
 
+ - **[Restrições para nomes de Variáveis](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/4%20-%20Outros%20T%C3%B3picos%20B%C3%A1sicos.md#restri%C3%A7%C3%B5es-para-nomes-de-vari%C3%A1veis)**
+ - **[Comentários](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/4%20-%20Outros%20T%C3%B3picos%20B%C3%A1sicos.md#coment%C3%A1rios)**
+- **[Funções Interessantes para Strings](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/4%20-%20Outros%20T%C3%B3picos%20B%C3%A1sicos.md#fun%C3%A7%C3%B5es-interessantes-para-strings)**
+- **[Funções (Sintaxe)](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/4%20-%20Outros%20T%C3%B3picos%20B%C3%A1sicos.md#fun%C3%A7%C3%B5es-sintaxe)**
+
+
+
 > ### **Restrições para nomes de Variáveis**
 
 - Não pode começar com dígito: **use letra ou _**
@@ -110,12 +117,15 @@ Funções<br>
 • Em orientação a objetos, funções em classes recebem o nome de "Métodos"
 
 
+
+**EX:**
 ```java
 package course;
 import java.util.Scanner;
 
 public class Program {
 public static void main(String[] args) {
+
 Scanner sc = new Scanner(System.in);
 System.out.println("Enter three numbers:");
     int a = sc.nextInt();

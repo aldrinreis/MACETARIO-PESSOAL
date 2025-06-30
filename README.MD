@@ -3,7 +3,7 @@
 <br>
 <br>
 
-# Índice
+> # Índice
 
 * **[LINUX](https://github.com/aldrinreis/MACETARIO-PESSOAL/tree/main?tab=readme-ov-file#linux)**
 * **[GIT E GITHUB](https://github.com/aldrinreis/MACETARIO-PESSOAL/tree/main?tab=readme-ov-file#git-e-github)**
@@ -20,7 +20,7 @@
 
 <hr>
 
-#### **Linux**
+> - #### **Linux**
 * **[Comandos Vi](/LINUX/VI.md)**
 * **[Comandos Linux](/LINUX/COMANDOS%20LINUX.md)**
 * **[Programação Shell Script](/LINUX/PROGRAMAÇÃO%20LINUX.MD)**
@@ -34,7 +34,7 @@
 <br>
 <br>
 
-#### **Git e GitHub**
+> - #### **Git e GitHub**
 * **[GIT e GitHub](/GIT%20E%20GITHUB/GIT.md)**
 * **[Git Fundamental](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#git-fundamental)**
 * **[Trabalhando com Branches](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/GIT%20E%20GITHUB/GIT.md#trabalhando-com-branches)**
@@ -57,7 +57,7 @@
 <br>
 
 
-#### **HTML e CSS**
+> - #### **HTML e CSS**
 
 * **[Macetário HTML e CSS](https://github.com/aldrinreis/MACETARIO-PESSOAL/tree/main/HTMLeCSS)**
 * **[Apostila de HTML e CSS IFES](/HTMLeCSS/Apostila%20de%20HTML5%20e%20CSS3.pdf)**
@@ -69,7 +69,7 @@
 <br>
 <br>
 
-#### **Java Script**
+> - #### **Java Script**
 
 * **[Apostila de Fundamentos](/JAVASCRIPT/Apostila-JavaScript-Fundamentos_01.pdf)**
 * **[Fundamentos](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVASCRIPT/JavaScriptFundamentos.md#java-script---fundamentos)**
@@ -131,7 +131,7 @@
 <br>
 <br>
 
-- #### **Typescript**
+> - #### **Typescript**
 
 * **[Doc Typescript](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/TYPESCRIPT/typescript.md)**
 * **[Tipos Primitivos](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/TYPESCRIPT/typescript.md#tipos-primitivos)**
@@ -146,7 +146,7 @@
 <br>
 <br>
 
-- #### **Fundamentos de NODE**
+> - #### **Fundamentos de NODE**
 
 * **[Doc Fundamentos de NOde](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/NODE/FundamentosNodeJS.md)**
 * **[Iniciando com Node](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/NODE/FundamentosNodeJS.md#iniciando-com-node)**
@@ -162,7 +162,7 @@
 <br>
 
 
-- #### **JAVA**
+> - #### **JAVA**
 
 
 <br>
@@ -206,4 +206,13 @@
 * **[While](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/3%20-%20EstruturaRepetitiva.md#while)**
 * **[For](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/3%20-%20EstruturaRepetitiva.md#for)**
 * **[do While](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/3%20-%20EstruturaRepetitiva.md#do-while)**
+<br>
 
+
+- ##### **4 - Outros Tópicos Básicos**
+
+- **[Outros Tópicos Básicos](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/4%20-%20Outros%20T%C3%B3picos%20B%C3%A1sicos.md#outros-t%C3%B3picos-b%C3%A1sicos)**
+- **[Restrições para nomes de Variáveis](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/4%20-%20Outros%20T%C3%B3picos%20B%C3%A1sicos.md#restri%C3%A7%C3%B5es-para-nomes-de-vari%C3%A1veis)**
+- **[Comentários](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/4%20-%20Outros%20T%C3%B3picos%20B%C3%A1sicos.md#coment%C3%A1rios)**
+- **[Funções Interessantes para Strings](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/4%20-%20Outros%20T%C3%B3picos%20B%C3%A1sicos.md#fun%C3%A7%C3%B5es-interessantes-para-strings)**
+- **[Funções (Sintaxe)](https://github.com/aldrinreis/MACETARIO-PESSOAL/blob/main/JAVA%20E%20OO/4%20-%20Outros%20T%C3%B3picos%20B%C3%A1sicos.md#fun%C3%A7%C3%B5es-sintaxe)**
