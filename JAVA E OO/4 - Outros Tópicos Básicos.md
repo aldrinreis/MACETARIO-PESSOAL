@@ -95,13 +95,15 @@ System.out.println("word3: " + word3);  // word3: lemon
 
 Funções<br>
 
-• Representam um processamento que possui um significado
+• Representam um processamento que possui um significado <br>
+
     • Math.sqrt(double) 
     • System.out.println(string)
 
 • Principais vantagens: modularização, delegação e reaproveitamento
 
-• Dados de entrada e saída
+• Dados de entrada e saída<br>
+
     1. Funções podem receber dados de entrada (parâmetros ou argumentos) 
     2. Funções podem ou não retornar uma saída
 
