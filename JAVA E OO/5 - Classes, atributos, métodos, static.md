@@ -68,3 +68,5 @@ public String toString() {
 Exemplo 2:
 ![Segundo Exemplo OO](/JAVA%20E%20OO/IMG/segundoExemploOO1.png)
 <br>
+
+- **Quando usado o ```this``` se refere ao atributo da classe e não o parâmetro do método.**
