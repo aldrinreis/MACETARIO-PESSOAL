@@ -1,0 +1,52 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+div.container{
+    background-color: aquamarine;
+    height: 100vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+div.header{
+    height: 120px;
+    background-color: grey;
+}
+
+div.cabecalho{
+    background-color: black;
+    height: 60px;
+}
+
+div.corpo{
+    background-color: thistle;
+    height: calc(100vh - 240px);
+}
+div.esquerdo{
+    background-color: yellowgreen;
+    display: inline-block;
+    height: 100%;
+    width: 25%;
+}
+div.centro{
+    background-color: blueviolet;
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+}
+
+div.direito{
+    background-color: yellowgreen;
+    display: inline-block;
+    height: 100%;
+    width: 25%;
+}
+
+
+
+div.rodape{
+    background-color: burlywood;
+    height: 60px;
+}

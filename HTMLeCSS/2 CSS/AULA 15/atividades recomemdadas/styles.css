@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+
+}
+
+div.container{
+   margin: 0 auto;   
+   background-color: antiquewhite;
+   height: 250px;
+   width: 600px;
+}
+
+
+.paragrafo{
+    
+    display: inline-block;
+    width: 28%;;
+    height: 250px;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+        
+}
+
+.paragrafo:nth-child(2){
+    
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+   
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

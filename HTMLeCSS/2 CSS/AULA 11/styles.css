@@ -1,0 +1,52 @@
+/*h1, p {
+    color: blue;
+}
+
+.vermelho{
+    color: red;
+}*/
+
+h1 {
+    color: blue;
+}
+
+i {
+    color: red;
+}
+
+ul{
+    background-color: blueviolet;
+}
+
+p {color: orange;}
+
+.vermelho{
+    color: red;
+}
+
+#p2, a, h1 {
+    font-size: 24px;
+    color: blue;
+}
+
+
+/*  Seletor Universal*/
+* {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 i {
+    color: yellow;
+}
+
+h1 > i {
+    color: green;
+}
+
+ul ~ p {
+text-decoration: underline;
+}
+
+ul + p{
+    text-decoration: none;
+}
