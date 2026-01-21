@@ -85,7 +85,7 @@ systemctl start asterisk
 <hr>
 <br>
 
->### **Intalando no Debia**
+>### **Intalando no Debian**
 
 ```sql
 
