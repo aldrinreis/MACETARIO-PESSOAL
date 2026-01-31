@@ -67,7 +67,7 @@ core show uptime
 core set verbose X
 dialplan show
 sip show peers
-pjsip show *
+pjsip show **
 
 
 ```
@@ -97,4 +97,86 @@ info2=2
 ```
 
 Ou seja, todo bloco de configuração pode ser denominado um contexto de configuração e o que vai mudar de um caso para o outro é o conteúdo do contexto.
+
+<br>
+
+> ### **Conceitos do PJSIP**
+
+TIPOS DE CONTEXTO PJSIP:
+
+- **endpoint:** Representa um terminal SIP: pode ser um ramal,um softphone, uma operadora, etc.
+- **aor:** Significa Address of Record. Define onde e como contatar o endpoint (ex: IP, host, quantidade de Contatos).
+- **auth:** Define credenciais (usuário e senha) para autenticação SIP.
+- **registration:** Usado quando o Asterisk precisa se registrar em outro servidor SIP (como numa operadora).
+- **transport:** Define as opções de transporte: UDP, TCP, TLS, WebSocket, etc.
+- **identify:** Liga um IP remoto a um endpoint (para chamadas entrantes).
+- **global:** Parâmetros globais da stack PJSIP.
+- **system:** É usado para ajustar performance do core do PJSIP.
+- **acl:** É utilizado para regra gerais de entrada de trafego no Asterisk, independentemente da camada.
+- **domain_alias:** Ele faz um alias (um link) entre 2 dominios e pode ser usado para referenciar em buscas do AoR.
+
+<br>
+
+> ### **Pjsip Ramais**
+
+Exemplo:
+
+```bash
+[global]
+type=global
+user_agent=Asterisk
+endpoint_identifier_order=username,ip,anonymous
+
+[transport-udp-nat]
+type=transport
+protocol=udp
+bind=0.0.0.0:5060
+
+[1000]
+type=auth
+auth_type=userpass
+username=1000
+password=123123
+
+[1001]
+type=auth
+auth_type=userpass
+username=1001
+password=123123
+
+[1000]
+type=aor
+max_contacts=2
+
+[1001]
+type=aor
+max_contacts=2
+
+[1000]
+type=endpoint
+aors=1000
+auth=1000
+context=ramais
+disallow=all
+allow=alaw,ulaw
+rewrite_contact=yes # Permite que o cabeçalho sip seja reescrito.
+rtp_symmetric=yes # Quando ativado, o Asterisk ignora o IP/porta informados no SDP do outro lado e passa a enviar o RTP exatamente para o mesmo IP e porta de onde ele recebeu o áudio.
+force_rport=yes # força porta randômica “Ignore a porta SIP anunciada pelo endpoint e responda para a mesma IP/porta de onde o SIP veio.”
+direct_media=no #“Não tire o Asterisk do caminho do áudio. Todo o RTP passa por ele.”
+transport=transport-udp-nat
+
+[1001]
+type=endpoint
+aors=1001
+auth=1001
+context=ramais
+disallow=all
+allow=alaw,ulaw
+rewrite_contact=yes
+rtp_symmetric=yes
+force_rport=yes
+direct_media=no
+transport=transport-udp-nat
+
+```
 
