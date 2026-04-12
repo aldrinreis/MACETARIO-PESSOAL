@@ -61,6 +61,7 @@ cd asterisk-22.7.0/
 sh contrib/scripts/install_prereq_install
 
 ./configure
+
 ```
 
 <br>
