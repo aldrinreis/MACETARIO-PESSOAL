@@ -9,8 +9,8 @@
 - **Instalar utilitários de rede.**
 
 ```bash
-apt install network-manager
-apt install net-tools
+dnf install network-manager
+dnf install net-tools
 ```
 
 <br>
@@ -43,7 +43,7 @@ yum install wget tar chkconfig initscripts
 ```bash
 cd /usr/src 
 
-wget -c https://downloads.asterisk.org/pub/telephony/asterisk/asterisk-22-current.tar.gz
+wget -c https://downloads.asterisk.org/pub/telephony/asterisk/asterisk-22-current.tar.gz #pegar link atualizado no site do asterisk
 
 tar xfvz asterisk-22-current.tar.gz
 
@@ -58,7 +58,7 @@ cd asterisk-22.7.0/
 ```bash
 cd asterisk-22.7.0/
 
-sh contrib/scripts/install_prereq_install
+sh contrib/scripts/install_prereq install
 
 ./configure
 
