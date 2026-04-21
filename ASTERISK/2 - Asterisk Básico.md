@@ -430,3 +430,205 @@ allow=alaw,ulaw
 <br>
 <br>
 
+
+> ### **Plano de discagem Básico**
+
+>#### **Plano de Discagem básico, roteamento**
+
+O dialplan é um conjunto de regras (chamadas de regra de discagem) que determinam o roteamento e/ou destino de cada chamada realizada ou recebida no Asterisk.
+
+Arquivo:**/etc/asterisk/extensions.conf**
+
+Como funciona o Dialplan?
+
+Toda a criação de um dialplan segue a ordem de: CONTEXTO, EXTENSÃO E PRIORIDADE.
+
+O contexto é delimitado pelo bloco de instruções relacionado ao contexto.
+E a prioridade é a ordem que instrução é executada, dentro daquela extensão,naquele contexto, por exemplo:
+
+```bash
+[contexto1]
+exten => 1000,1,NoOp(“Chamada para o ramal 1000)
+exten => 1000,2,Set(CHANNEL(accountcode)=1000)
+exten => 1000,3,Dial(PJSIP/1000,30,tT)
+[contexto2]
+...
+[contexto3]
+...
+```
+
+Neste caso, primeiro eu soltei na tela a mensagem **“Chamada para o ramal 1000”**,
+posteriormente setei a variavel **ACCOUNTCODE** e posteriormente fiz o **dial** para o ramal.
+
+**Eu preciso numerar todas as prioridades?** 
+Não! Você consegue setar automaticamente a prioridade a partir da segunda com o atalho n:
+
+```bash
+[contexto1]
+exten => 1000,1,NoOp(“Chamada para o ramal 1000)
+exten => 1000,n,Set(CHANNEL(accountcode)=1000)
+exten => 1000,n,Dial(PJSIP/1000,30,tT)
+[contexto2]
+...
+[contexto3]
+```
+<br>
+
+O n também serve para nomear uma linha, caso você deseja enviar a instrução novamente para a mesma linha (veremos mais a frente sobre):
+
+```bash
+[contexto1]
+exten => 1000,1,NoOp(“Chamada para o ramal 1000)
+exten => 1000,n,Set(CHANNEL(accountcode)=1000)
+exten => 1000,n(monkeys),Playback(tt-monkeys) ; Aqui eu nomeio a linha
+exten => 1000,n,Goto(monkeys) ; # Aqui eu envio novamente para a linha monkeys (loop)
+exten => 1001,1,NoOp(Chamada para o ramal 1001)
+exten => 1001,n,Goto(discagem) ; # Aqui eu pulo direto para a prioridade discagem, pulando a prox. linha
+exten => 1001,n,Set(ACCOUNTCODE=1001)
+exten => 1001,n(discagem),Dial(PJSIP/1001,30,Tt) ; Cairia diretamente aqui
+```
+
+<br>
+
+
+- **EXPRESSÕES DO DIALPLAN**
+
+No dialplan nós temos dois tipos de expressões:
+**As exatas:**
+```bash
+exten => 1001,1,NoOp(Chamada para o ramal 1001)
+exten => 1001,n,Dial(PJSIP/1001,30,Tt) ; Cairia diretamente aqui
+```
+Ou seja, uma chamada diretamente para o 1001
+
+**As não-exatas:**
+```bash
+exten => _100X,1,NoOp(Chamada para o ramal 1000)
+exten => _100X,n,Dial(PJSIP/1001,30,Tt) ; Cairia diretamente aqui
+```
+Ou seja, poderia ser qualquer ramal do 1000 ao 1009.
+
+O X utilizando nesse exemplo é um dos caracteres coringas que podem ser
+utilizados na construçao de um dialplan.
+
+O grande ponto de atenção (e de falha comum) é não se atentar no uso do
+**UNDERLINE** a frente da expressão.
+<br>
+
+**Sempre que o UNDERLINE é usado o Asterisk interpretará o coringa conforme o que ele representa, quando não tem UNDERLINE ele interpreta de forma exata e esperará um X na digitação**
+
+
+- **Exemplos de coringas para utilizar no dialplan do Asterisk:**
+
+```bash
+X   => Representa um valor numérico de 0 a 9
+Z   => Representa um valor numérico de 1 a 9
+N   => Representa um valor numérico de 2 a 9
+[1234-9]    => Qualquer um dos valores (1 ou 2 ou 3 ou 4 até o 9)
+[a-z]   => Letras de minusculas
+[A-Z]   => Letras maiusculas
+. (ponto)   => O ponto sozinho aceita qualquer valor, com qualquer tamanh (ou seja, inclusive, MAIS DE UM DIGITO) - Usar com moderação.
+
+```
+<br>
+
+- **Se por um acaso eu notar que a expressão que eu montei estava errada,eu preciso alterar em todas as linhas em que ela existe?**
+
+Sim, é necessário alterar, porém, existe uma boa prática da utilização do
+**“same”** que facilita a sua vida na construção do dialplan, tirando a obrigação da repetição do exten.
+
+```bash
+[contexto1]
+exten => 1000,1,NoOp(“Chamada para o ramal 1000)
+same => n,Set(CHANNEL(accountcode)=1000)
+same => n,Dial(PJSIP/1000,30,tT) 
+```
+
+Você seta o exten na primeira prioridade e tudo abaixo que tiver “same” repetira a extensão de forma lógica no dialplan.
+
+<br>
+
+- **Como eu faria para passar o número do ramal completo, porque no Dial esta diretamente para SIP/1000.**
+
+Para isto você tem que usar as variaveis de dialplan e uma delas é o EXTEN.
+
+```bash
+[contexto1]
+exten => _100X,1,NoOp(“Chamada para o ramal 1000)
+same => n,Set(CHANNEL(accountcode)=1000)
+same => n,Dial(PJSIP/${EXTEN},30,tT) ;
+```
+o EXTEN é uma variavel de dialplan que armazena o número que está na extensão, ainda que ele seja dinamico.
+
+
+- **Exemplo de extensions.conf**
+
+```bash
+[general]
+static=yes
+writeprotect=yes
+context=guest
+
+[globals]
+; As variaveis globais elas ficam disponiveis
+; em todos os canais ativos, ou seja, o seu conteudo
+; nao morre quando o canal finaliza e permanece em 
+; memoria do Asterisk
+DEFAULTPROVIDER=operadoravoip
+PBXNAME=EdV
+
+
+
+[ramais]
+;Comecar criando a rota de chamada entre ramais
+exten => _10XX,1,NoOp("Chamada entre ramais do PABX ${PBXNAME}")
+same => n,Dial(PJSIP/${EXTEN},45,tT)
+same => n,Hangup()
+
+;Rota de saida
+; Operadora Voip só aceita padrao E164 (DDI+DDD+NUMERO)
+; Ex: 551142105000
+
+;Chamadas locais fixo
+exten => _0[2-7]XXXXXXX,1,NoOp("Chamada de saida fixo local")
+same => n,Dial(PJSIP/5511${EXTEN:1}@operadoravoip,45,tT)
+same => n,Hangup()
+
+exten => _09XXXXXXXX,1,NoOp("Chamada de saida movel local")
+same => n,Dial(PJSIP/5511${EXTEN:1}@operadoravoip,45,tT)
+same => n,Hangup()
+
+;Chamadas de longa distancia
+exten => _0ZZ[2-7]XXXXXXX,1,NoOp("Chamada de saida LDN FIXO")
+same => n,Dial(PJSIP/55${EXTEN:1}@operadoravoip,45,tT)
+same => n,Hangup()
+
+exten => _0ZZ9XXXXXXXX,1,NoOp("Chamada de saida LDN MOVEL")
+same => n,Dial(PJSIP/55${EXTEN:1}@operadoravoip,45,tT)
+same => n,Hangup()
+
+
+[guest]
+exten => s,1,NoOP("Guest nao autorizado")
+same => n,Hangup()
+
+exten => _X.,1,NoOp("Guest nao autorizado")
+same => n,Hangup()
+
+```
+
+<br>
+
+>#### **Plano de Discagem básico, Variáveis e vars globais**
+
+
+As variaveis globais elas ficam disponiveis em todos os canais ativos, ou seja, o seu conteudo nao morre quando o canal finaliza e permanece em memoria do Asterisk
+
+EX:
+```
+[ramais]
+exten => 2000,1,NoOp("Vars e Global Vars")
+same => n,Set(LALALA=teste do gian)
+same => n,Set(GLOBAL(PBXNAME)=Teste)
+same => n,Hangup()
+```
