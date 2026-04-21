@@ -1,4 +1,4 @@
-# **Asterisk Básico**
+s# **Asterisk Básico**
 <br>
 
 > ### **Estrutura de diretórios**
@@ -121,6 +121,8 @@ TIPOS DE CONTEXTO PJSIP:
 
 Exemplo:
 
+**Arquivo /etc/asterisk/pjsip.conf**
+
 ```bash
 [global]
 type=global
@@ -147,6 +149,7 @@ password=123123
 [1000]
 type=aor
 max_contacts=2
+qualify_frequency=30
 
 [1001]
 type=aor
@@ -359,5 +362,71 @@ line=yes
 
 <hr>
 
-> ### **Legacy-Chan_sip-Ramais**
+> ### **Legacy-Chan_sip-Ramais e Troncos**
+
+
+```bash
+[general]
+context=public
+allowguest=no
+udpbindaddr=0.0.0.0
+tcpenable=no
+transport=udp
+useragent=Asterisk EDV
+videosupport=no
+allow=alaw,ulaw
+
+register => 5512341234:senhadotronco@sip.operadora.com/12341234
+
+[1000]
+type=friend      # ; User, peer e friend
+host=dynamic
+;username=1000
+defaultuser=1000
+fromuser=1000
+secret=123123
+context=interno
+qualify=yes
+disallow=all
+allow=alaw,ulaw,gsm
+directmedia=no
+dtmfmode=rfc2833
+accountcode=1000
+language=pt_BR
+nat=force_rport,comedia
+;deny=0.0.0.0/0.0.0.0
+;permit=192.168.0.0/255.255.255.0
+
+#################################################################
+
+[operadora_ip]
+type=peer
+host=200.0.0.1
+context=entrada
+insecure=invite,port
+disallow=all
+allow=alaw
+qualify=no
+dtmfmode=rfc2833
+
+[operadora_auth]
+type=peer
+host=sip.operadora.com # ;poderia sip.operadora.com
+defaultuser=5512341234
+secret=senhadotronco
+fromuser=5512341234
+fromdomain=sip.operadora.com
+context=entrada
+insecure=invite,port
+qualify=no
+disallow=all
+allow=alaw,ulaw
+
+
+
+
+```
+
+<br>
+<br>
 
