@@ -619,16 +619,122 @@ same => n,Hangup()
 
 <br>
 
->#### **Plano de Discagem básico, Variáveis e vars globais**
+>#### **Plano de Discagem Básico, Variáveis e vars globais**
 
 
 As variaveis globais elas ficam disponiveis em todos os canais ativos, ou seja, o seu conteudo nao morre quando o canal finaliza e permanece em memoria do Asterisk
 
 EX:
-```
+```bash
 [ramais]
 exten => 2000,1,NoOp("Vars e Global Vars")
 same => n,Set(LALALA=teste do gian)
 same => n,Set(GLOBAL(PBXNAME)=Teste)
 same => n,Hangup()
+```
+<br>
+
+>#### **Plano de Discagem Intermediário,Estrutura de condições**
+
+```bash
+[general]
+static=yes
+writeprotect=yes
+context=guest
+
+[globals]
+; As variaveis globais elas ficam disponiveis
+; em todos os canais ativos, ou seja, o seu conteudo
+; nao morre quando o canal finaliza e permanece em 
+; memoria do Asterisk
+DEFAULTPROVIDER=operadoravoip
+PBXNAME=EdV
+EXTENBLOCK=1000
+
+
+[ramais]
+
+exten => 2000,1,NoOp("Vars e Global Vars")
+same => n,Set(LALALA=teste do gian)
+same => n,Set(GLOBAL(PBXNAME)=Teste)
+same => n,Hangup()
+
+;Comecar criando a rota de chamada entre ramais
+exten => _10XX,1,NoOp("Chamada entre ramais do PABX ${PBXNAME}")
+
+; Exemplo pratico do uso do Goto
+;same => n,GotoIf($["${EXTEN}" = "1000"]?block,s,1:disca,${EXTEN},1)
+
+same => n(disca),Dial(PJSIP/${EXTEN},45,tT)
+same => n(desliga),Hangup()
+
+
+
+; Dias da semana no GotoIfTime
+;"sun" = domingo
+;"mon" = segunda
+;"tue" = terça
+;"wed" = quarta
+;"thu" = quinta
+;"fri" = sex
+;"sat" = sab
+
+; Meses do ano no GotoIfTime
+; "jan" = "janeiro"
+; "feb" = "fevereiro"
+; "mar" = "marco"
+; "apr" = "abril" 
+; "may" = "maio"
+; "jun" = "junho"
+; "jul" = "julho"
+; "aug" = "agosto"
+; "sep" = "setembro"
+; "oct" = "outubro"
+; "nov" = "novembro"
+; "dec" = "dezembro"
+
+; Estrutura -> Range de horas; Range de dias da semana; Dia do mes; Mes do ano
+same => n,GotoIfTime(08:00-18:00,mon-fri,*,*?aberto:fechado)
+
+
+
+
+;Rota de saida
+; Operadora Voip só aceita padrao E164 (DDI+DDD+NUMERO)
+; Ex: 551142105000
+;Chamadas locais fixo
+exten => _0[2-7]XXXXXXX,1,NoOp("Chamada de saida fixo local")
+
+; Exemplo pratico de uso do GotoIfTime - bloquear chamada fora do horario com.
+;same => n,GotoIfTime(08:00-18:00,mon-fri,*,*?aberto:fechado)
+
+same => n(aberto),Dial(PJSIP/5511${EXTEN:1}@operadoravoip,45,tT)
+same => n(fechado),Hangup()
+
+exten => _09XXXXXXXX,1,NoOp("Chamada de saida movel local")
+same => n,Dial(PJSIP/5511${EXTEN:1}@operadoravoip,45,tT)
+same => n,Hangup()
+
+;Chamadas de longa distancia
+exten => _0ZZ[2-7]XXXXXXX,1,NoOp("Chamada de saida LDN FIXO")
+same => n,Dial(PJSIP/55${EXTEN:1}@operadoravoip,45,tT)
+same => n,Hangup()
+
+exten => _0ZZ9XXXXXXXX,1,NoOp("Chamada de saida LDN MOVEL")
+same => n,Dial(PJSIP/55${EXTEN:1}@operadoravoip,45,tT)
+same => n,Hangup()
+
+[block]
+exten => s,1,Playback(pbx-invalid)
+
+[disca]
+exten => _1XXX,1,Dial(PJSIP/${EXTEN},30,tT)
+
+[guest]
+exten => s,1,NoOP("Guest nao autorizado")
+same => n,Hangup()
+
+exten => _X.,1,NoOp("Guest nao autorizado")
+same => n,Hangup()
+
 ```
